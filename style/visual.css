@@ -1,0 +1,49 @@
+/* nav selected */
+#visual {
+    text-decoration: underline;
+}
+/* nav selected */
+
+/* project image start*/
+#map {
+    background-image: url("../image/img_visual/thumbnail_map.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ntumpc {
+    background: url("../image/img_visual/thumbnail_ntumpc.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#poster {
+    background: url("../image/img_visual/thumbnail_poster.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cd {
+    background: url("../image/img_visual/thumbnail_cd.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo {
+    background: url("../image/img_visual/thumbnail_logo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mograph {
+    background: url("../image/img_visual/thumbnail_mograph.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* project image end*/

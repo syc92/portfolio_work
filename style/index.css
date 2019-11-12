@@ -1,0 +1,35 @@
+/* nav selected */
+#work {
+    text-decoration: underline;
+}
+/* nav selected */
+
+/* project image start*/
+#cm {
+    background: url("../image/img_work/thumbnail_cm.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#daily {
+    background: url("../image/img_work/thumbnail_dailyui.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#wchc {
+    background: url("../image/img_work/thumbnail_wchc.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#food {
+    background: url("../image/img_work/thumbnail_foodie.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* project image end*/

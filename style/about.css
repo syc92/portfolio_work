@@ -1,0 +1,154 @@
+/* nav selected */
+#about {
+    text-decoration: underline;
+}
+/* nav selected */
+
+
+
+/* grid setup start */
+#personal_info, #personal_resume {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 32px;
+}
+
+#personal_info p, #personal_resume p {
+    padding: 0 64px 0 0;
+}
+
+.about_info:nth-child(odd), .resume:nth-child(odd) {
+    grid-column: 1/4;
+}
+
+.about_info:nth-child(even), .resume:nth-child(even) {
+    grid-column: 4/7;
+}
+/* grid setup end */
+
+
+
+/* self portrait start */
+#self_portrait {
+    max-height: 72vh;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+#self_portrait_img {
+    width: 100%;
+    max-width: 360px;
+}
+/* self portrait end */
+
+
+
+
+/* social start */
+#social_media {
+    margin: 16px 0 0 0;
+}
+
+.social_icon {
+    width: 16px;
+    height: 16px;
+    filter: grayscale(1);
+}
+
+#social_media a {
+    display: inline-block;
+    margin: 0 16px 0 0;
+}
+/* social end */
+
+
+
+#education, #experience {
+    margin: 64px 0 0 0;
+}
+
+.resume_title h3 {
+    margin: 0;
+}
+
+.org {
+    margin: 0 0 4px 0;
+}
+
+.org a {
+    color: #000;
+}
+
+.org a:active {
+    color: #000;
+}
+
+.detail_info {
+    font-family: 'Din_pro_regular', 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    padding: 0 0 0 0;
+    margin: 0px 0 12px 0;
+    color: #333;
+}
+
+.detail_info_line {
+    height: 1px;
+    width: 10px;
+    background-color: #333;
+    margin: 0 0 11px 0;
+}
+
+.exp_section .description, .edu_section .description {
+    margin: 0;
+}
+
+.exp_section, .edu_section {
+    padding: 48px 0 0 0;
+}
+
+#personal_info .about_info #email p {
+    margin: 0;
+}
+
+#full_resume {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 24px 0;  
+    color: #333;
+}
+
+#full_resume:hover {
+        text-decoration: underline;
+}
+
+.detail_description {
+    margin: 0;
+}
+
+
+/* responsive start */
+@media (min-width: 1600px) {
+    #self_portrait {
+        max-width: 440px;
+    }
+}
+
+@media (max-width: 1156px) {
+    .about_info:nth-child(odd), .resume:nth-child(odd), .about_info:nth-child(even), .resume:nth-child(even) {
+        grid-column: 1/7;
+    }
+
+    #self_portrait {
+        max-height: 100%;
+        margin: 0 0 64px 0;
+    }
+
+    #self_portrait_img {
+        max-width: none;
+    }
+}
+
+@media (max-width: 960px) {
+    
+}
+/* responsive end */

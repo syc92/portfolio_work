@@ -1,0 +1,21 @@
+/* nav selected */
+#code {
+    text-decoration: underline;
+}
+/* nav selected */
+
+/* project image start*/
+#color_picker {
+    background: url("../image/img_code/thumbnail_color_picker.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#si539 {
+    background: url("../image/img_code/thumbnail_539.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* project image end*/

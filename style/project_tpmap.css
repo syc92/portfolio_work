@@ -1,0 +1,26 @@
+#hero_img {
+    background-image: url("../image/project_map/0_hero/hero_map.jpg");
+}
+
+#map_animation {
+    padding-top: 56.25%;
+    position: relative;
+    margin: 0 0 48px 0;
+}
+
+.gallery iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+/* #map_fold {
+    grid-column: 1/4;
+    margin: auto 0;
+}
+
+#map_pocket {
+    grid-column: 4/7;
+} */
