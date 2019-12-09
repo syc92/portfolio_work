@@ -30,8 +30,20 @@
             <div id="menu">
                 <ul>
                     <li><a href="#introduction">Introduction</a></li>
-                    <li><a href="#login">Login</a></li>
-                    <li id="last_item_extra_padding"><a href="#countdown" id="last_on_menu">Countdown</a></li>
+                    <li><a href="#key">Design process overview</a></li>
+                    <li><a href="#hiw">How CodementorX works</a></li>
+                    <li><a href="#why">Why dashboard revamp</a></li>
+                    <li><a href="#goal">Project goal</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#finding">Synthesize findings</a></li>
+                    <li><a href="#info_structure">Information architecture</a></li>
+                    <li><a href="#prototype1">Prototype round 1</a></li>
+                    <li><a href="#syncup">Midway sync up</a></li>
+                    <li><a href="#user_testing">User testing</a></li>
+                    <li><a href="#prototype2">Prototype round 2</a></li>
+                    <li><a href="#final">Final design</a></li>
+                    <li><a href="#spec">Design spec</a></li>
+                    <li id="last_item_extra_padding"><a href="#conclusion" id="last_on_menu">Conclusion</a></li>
                 </ul>
                 <div id="extra_for_mobile_scroll_project_detail"></div>
             </div>
@@ -39,24 +51,180 @@
     
         <main class="content_grid" id="main_content">
             <section class="gallery" id="introduction">
-                <h1>Daily UI</h1>
+                <h1>CodementorX – Hiring Dashboard Revamp</h1>
             </section>
             <section class="gallery">
-                <p>When the Daily UI project came out a few years ago, I decided to accept this challenge and explore the possibility of user interface. Here are some of my selected works from this project.</p>
+                <p>CodementorX is a product/service which helps clients hire freelance software developers on-demand. The “hiring dashboard” is for the “clients” to monitor the hiring process and to know what to do next.</p>
             </section>
             <section class="gallery">
                 <p>
-                    <span class="info_point">Year:</span> 2015<br>
-                    <span class="info_point">Type:</span> Personal project<br>
-                    <span class="info_point">Duration:</span> 3months<br>
+                    <span class="info_point">Year:</span> 2018<br>
+                    <span class="info_point">Project type:</span> Work project<br>
+                    <span class="info_point">Duration:</span> 2-3 weeks<br>
+                    <span class="info_point">Role:</span> Product designer<br>
                 </p>
             </section>
             <section class="gallery devider">
             </section>
 
-            <section class="gallery" id="login">
-                <h2>Login</h2>
-                <div class="img_item"><img src="image/project_dailyui/01_login.png" alt="log in"></div>
+            <section class="gallery" id="key">
+                <h2>Design process overview</h2>
+                <div class="img_item"><img src="image/project_cm_dash/cmx_process_overview.jpg" alt="Process overview"></div>
+            </section>
+            <section class="gallery devider_no_line">
+            </section>
+
+            <section class="gallery" id="hiw">
+                <h2>How CodementorX works</h2>
+                <p>Two biggest pain points for a client to hire a freelance developer are the screening process and annoying hassles that occur during the project. To solve these pain points for clients, CodementorX build a very rigorous vetting process to filter high quality developers for clients, and it serves as a third party to make sure both client and developer will comply with the hiring contract.<br><br>
+                    Therefore, it’s extremely easy for the clients to hire a freelance developer on CodementorX. The only things the clients have to do is filling out an onboarding form to tell our sales team what their project is about, and then they will get a shortlist, interview candidates, sign a contract, and they’re good to start the project.</p>
+                <h3></h3>
+                <div class="img_item"><img src="image/project_cm_dash/cmx_hiw.jpg" alt="how CodementorX works"></div>
+            </section>
+            <section class="gallery devider_no_line">
+            </section>
+
+            <section class="gallery" id="why">
+                <h2>Why dashboard revamp</h2>
+                <p>CodementorX’s old hiring dashboard is basically a “chat room”. After the clients sign up and fill out the onboarding form, they will be directed to this chatroom, where they receive the shortlist, interview information, and contract. Basically the entire hiring process happens in the chatroom.<br><br>
+                    However, as we try to scale our business and our hiring process evolves consequently, our sales team finds that the “chat room” is no longer the most efficient way to communicate with clients and thus doesn’t use it anymore. In the new hiring process, our sales team prefers to contact clients via video/audio call and email.</p>
+                <div class="img_item"><img src="image/project_cm_dash/cmx_problem.jpg" alt="Why revamp"></div>
+            </section>
+            <section class="gallery devider_no_line">
+            </section>
+
+            <section class="gallery" id="goal">
+                <h2>Project goal</h2>
+                <p>Therefore, the primary goal of this project is to remove the chat room from the dashboard but still keep other features such as shortlist, interview info, etc. In the meantime, as we want to scale our business, we want to evaluate what improvements we can make in the dashboard to streamline the hiring process, or even automate some parts of the process. Lastly, as this is going to be a huge change of our product, we want to make sure we will be able to maintain users’ experience and even improve it.</p>
+                <div class="img_item"><img src="image/project_cm_dash/cmx_goal.jpg" alt="Project goal"></div>
+            </section>
+            <section class="gallery devider_no_line">
+            </section>
+
+            <section class="gallery" id="research">
+                <h2>Research</h2>
+                <p>First, I talk to our sales team to further clarify the new hiring process and determine what exact content I should add or remove from the new hiring dashboard; second, I find 10+ heavy and/or recent users (clients) in our database, and use Fullstory to observe how they actually use our old dashboard. Last but not least, I collect a lot of user feedback from the weekly meetings I have with our sales team and support team. Although these feedback are “second hand”, they are still valuable data points in terms of validating the data I have from other places and helping me better construct the blueprint of the new dashboard.</p>
+                <div class="img_item"><img src="image/project_cm_dash/cmx_research.jpg" alt="Research"></div>
+            </section>
+            <section class="gallery devider_no_line">
+            </section>
+
+            <section class="gallery" id="finding">
+                <h2>Synthesize findings</h2>
+                <p>After the research I get some data from observing user behavior and user feedback. I turn them into the affinity note and cluster them to identify patterns and prioritize design strategies:</p>
+                <ul class="project_content_list">
+                    <li>Although we need to remove the “chat room”, we still need to include a feature for clients to reach out to our sales team in the dashboard</li>
+                    <li>We have to show the step by step hiring process which provides a better mental model and more transparency. In this way, clients can easily find the information and expect what is next</li>
+                    <li>Allow clients to initiate an action, such as schedule interview, send a contract to developers once they decide to hire them, etc. This will help us “automate” the hiring process</li>
+                    <li>As we are having more and more “returning clients”, we need to introduce the concept of “hiring request” to the dashboard. In our old dashboard, it’s hard to find the information of individual hiring request if they have more than one, and there’s not a clear way for clients to make a new hiring request</li>
+                </ul>
+                <div class="img_item"><img src="image/project_cm_dash/cmx_affinitynote.jpg" alt="Finding notes"></div>
+            </section>
+            <section class="gallery devider_no_line">
+            </section>
+
+            <section class="gallery" id="info_structure">
+                <h2>Information architecture</h2>
+                <p>After talking to our sales team, we clarify the standard hiring process as following: 1) before project start: fill out onboarding form, review the candidates shortlist, check candidates’ profile, schedule interviews, interview, leave feedback, and sign contract; 2) after hiring: the clients can monitor the project process. Combining with this result and the findings, I come up with the following flow chart which serves as the blueprint of my first prototype.</p>
+                <div class="img_item"><img src="image/project_cm_dash/cmx_prototype_structure.jpg" alt="Dash structure"></div>
+            </section>
+            <section class="gallery devider_no_line">
+            </section>
+
+            <section class="gallery" id="prototype1">
+                <h2>Prototype round 1</h2>
+                <h3>Layout exploration</h3>
+                <p>I create three different layouts and evaluate which is the best by the following criteria: 1) is it the easiest way for users to access information; 2) does it look good both in empty case and with full content; 3) are the steps of hiring process clear enough and easy to interact with.</p>
+                <p>Finally, I choose Option A to proceed because it shows Request and Contract upfront, it will look good in empty case, and it has a progress bar in request detail page. Option B pull all the hiring steps out and put them in the highest level of the dashboard. It’s clear but the screen will look too empty in empty case, and it doesn’t display the hiring process very well. Option C has a similar structure as Option A, but it requires an extra step to click into the request detail page, so this is also a no go.</p>
+                <div class="img_item"><img src="image/project_cm_dash/cmx_prototype_opt.jpg" alt="Dash options"></div>
+                <div class="img_item"><img src="image/project_cm_dash/cmx_prototype_revise.jpg" alt="Dash options"></div>
+                <h3>Interaction detail</h3>
+                <p>After deciding which layout to go with, I make an iteration to further explore what the detail should look like and how users are going to interact with it.</p>
+                <div class="img_item"><img src="image/project_cm_dash/cmx_prototype_iteration.jpg" alt="Dash iteration 1"></div>
+            </section>
+            <section class="gallery devider_no_line">
+            </section>
+
+            <section class="gallery" id="syncup">
+                <h2>Midway sync up</h2>
+                <h3>Knowing the constraint and best development practice</h3>
+                <p>Before diving into the design detail, I will always have a sync up meeting with product manager and developers who are going to implement the new dashboard. In meeting like this, I will go through the prototype that I have at the moment and explain every logic and interaction in the prototype. The product manager will make sure that the new design won’t conflict our business goal or defer the project timeline. On the other hand, the developer will provide feedback in terms of the feasibility of implementation.</p>
+                <div class="img_item"><img src="image/project_cm_dash/cmx_sync.jpg" alt="Sync up"></div>
+                <h3>Design strategy adjustment</h3>
+                <p>Usually, the result from the sync up meeting will contribute to the iteration later on. In this case, there are two main takeaways that affect my design decisions.</p>
+                <ul class="project_content_list">
+                    <li>First, using Intercome for clients to communicate with sales. Originally, I plan to design a lightweight chat feature to do that, but it requires too many resources and at the moment we are not sure that this is worth the investment. Intercome is already a third party service we use in other places in our product</li>
+                    <li>Second, confirm that we separate “Hiring request” and “Contract” is the right direction. Previously, I consider put contract under a hiring request because, in common sense, a contract is a part or a result of a hiring request. However, since in the way our current system is designed, we do not link a contract to a hiring request</li>
+                    <li>Third, remove the “blue dot” notification. I planned to use this to notify users what to do next, but this it will require too much effort of implementation</li>
+                </ul>
+                <div class="img_item"><img src="image/project_cm_dash/cmx_adjust.png" alt="Sync up"></div>
+            </section>
+            <section class="gallery devider_no_line">
+            </section>
+
+            <section class="gallery" id="user_testing">
+                <h2>User testing</h2>
+                <p>After the mid way sync up, I use the same prototype to conduct some user testing by which I got the following results:</p>
+                <ul class="project_content_list">
+                    <li><span style="font-family: Rasa_bold">Menu:</span> users feel that the request and contract list (second column) don’t need to take a whole column because they probably won’t have “a lot” of requests or contracts. Also, users can’t focus on the main content immediately because this two-columns-menu takes too much space</li>
+                    <li><span style="font-family: Rasa_bold">Progress bar:</span> users don’t feel like it’s a progress bar because the relationship between each step is not obvious enough</li>
+                    <li><span style="font-family: Rasa_bold">Main content interaction:</span> the interaction in the shortlist step and the interview step is not intuitive, and user can’t figure out what to do with the UI</li>
+                    <li><span style="font-family: Rasa_bold">Main content layout:</span> some users are confused by the two different layouts. They don’t feel they are in the same process</li>
+                </ul>
+            </section>
+            <section class="gallery devider_no_line">
+            </section>
+
+            <section class="gallery" id="prototype2">
+                <h2>Prototype round 2</h2>
+                <h3>Iteration</h3>
+                <p>For the menu, I merge the two-columns-menu into one, and put the request title on top of the progress bar, making them into one nav bar. I also add a background color to the nav bar which provides a stronger hierarchy that can better help users identify the main content and the navbar.</p>
+                <div class="img_item"><img src="image/project_cm_dash/cmx_prototype_detail_iteration_1.jpg" alt="Detail iteration 1"></div>
+                <p>For the main content interaction, the original design is more like a “sub progress” inside each card, and use background color to indicate the status of each “sub step”. Since this is confusing for users, I use a clear status tag to indicate the status and remove the concept of “sub step”.</p>
+                <div class="img_item"><img src="image/project_cm_dash/cmx_prototype_detail_iteration_3.jpg" alt="Detail iteration 3"></div>
+                <p>For the main content layout, I change all the layouts into one column so the content will look more consistent through each step.</p>
+                <div class="img_item"><img src="image/project_cm_dash/cmx_prototype_detail_iteration_2.jpg" alt="Detail iteration 2"></div>
+            </section>
+            <section class="gallery devider_no_line">
+            </section>
+
+            <section class="gallery" id="final">
+                <h2>Final design</h2>
+                <p>Here’s the final design! If you go play with the prototype, there are some screens that you may not find in the design process, such as the “shortlist page”. This is because first, they are not in the scope of this revamp project; and second, if I include the process of all the features, this project will become too messy and hard to read. Enjoy the prototype!</p>                
+                <p>Click the image below to view prototype &#x1F447;</p>
+                <div class="img_web_prototype">
+                    <img class="prototype_img" src="image/project_cm_dash/cmx_final_prototype1.png" alt="Final prototype 1">
+                    <a href="https://invis.io/CXV02KVF9PB" target="_blank">
+                        <div class="overlay_layer">
+                            <p>View prototype<img src="icon/forward_arrow_white.png" alt="forward" class="forward_btn"></p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="gallery devider_no_line">
+            </section>
+
+            <section class="gallery" id="spec">
+                <h2>Design spec</h2>
+                <p>Creating something easy for developer to read is a virtue of a designer. Well, at least there will be less fight and back and forth, right? Besides uploading screens to Zeplin, I will also create a interaction/layout instruction like this for developers along with a comprehensive spec in the format of Github issue.</p>
+                <div class="img_item"><img src="image/project_cm_dash/cmx_spec.png" alt="Design spec"></div>
+            </section>
+            <section class="gallery devider_no_line">
+            </section>
+
+            <section class="gallery" id="conclusion">
+                <h2>Conclusion</h2>
+                <h3>What can be done better</h3>
+                <p>I wish I could have a better understanding of our clients. Designers in CodementorX don’t usually conduct thorough user research because of limited resources and time zone issue (the product team is not in the same time zone as most of the clients). Our understanding of users (both clients and developers) is accumulated from the interaction we have with them over the entire time. It works well in most of the time, but I believe that there might be some bias and we could discover more valuable insight by conducting interviews with clients.</p>
+                <h3>What I learned</h3>
+                <p>This project pretty much summarizes my work experience in Codementor (our company name is Codementor, CodementorX is one of the products that I was in charge of). There are two valuable takeaways I got from being a product designer in this company:</p>
+                <ul class="project_content_list">
+                    <li><span style="font-family: Rasa_bold">First, having a “product sense” is equally important as design skills.</span> Design is only one aspect of a product. Developing a product sense means that pay attention to how the company/business works but not just focus on design itself. It helps me think of user experience as a whole not just the experience using the interface.</li>
+                    <li><span style="font-family: Rasa_bold">Second, learning the implementation knowledge.</span> Designers do not design in the vaccune and never work alone. By collaborating with our developers, I learned a lot about how our database is design and how the front-end works. Acquiring these knowledge helps me design more efficiently.</li>
+                </ul>
+                <h3>Future of CodementorX</h3>
+                <p>You might notice that there are quite a lot of “standalone” pages in CodementorX. This is because of the legacy. CodementorX is built step by step. Over the past few years, we tested different strategies that meet our business goals and user experience, adding one feature at a time. However, in terms of product design, all these standalone pages should be integrated into the dashboard, creating a seamless experience and real powerful product.</p>
+                <p>CodementorX is now rebanded as Arc.dev. At the time I left the company they just started to renovate its identity (logo, landing page, and name, etc). I believe they will soon start working on revamping the hiring process and improving the user experience inside the product.</p>
             </section>
         </main>
     </div>
