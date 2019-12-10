@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Shiyu Chuu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="icon/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="style/html5reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/project_common.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/project_pick_card.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <div id="hero_img"></div>
+
+    <div id="meta_content"> 
+        <div id="jump">
+            <a href="#main_content">Skip to main content</a>
+        </div>
+
+        <nav id="nav_top">
+            <div id="back">
+                <a id="detail_page_name" href="code.html">
+                    <img src="icon/back_arrow.png" alt="back_arrow"><h2>Shiyu Chuu</h2>
+                </a>
+                <img id="menu_icon" src="icon/hamburger.png" alt="menu_icon">
+            </div>
+            <div id="menu">
+                <ul>
+                    <li id="last_item_extra_padding"><a href="#introduction" id="last_on_menu">Introduction</a></li>
+                </ul>
+                <div id="extra_for_mobile_scroll_project_detail"></div>
+            </div>
+        </nav>
+    
+        <main class="content_grid" id="main_content">
+            <section class="gallery" id="introduction">
+                <h1>Pick Card Pick Card</h1>
+            </section>
+            <section class="gallery">
+                <p>This is my final project for the class Complex Web Design.</p>
+            </section>
+            <section class="gallery">
+                <p>
+                    <span class="info_point">Year:</span> 2019<br>
+                    <span class="info_point">Project type:</span> Course project<br>
+                </p>
+            </section>
+            <section class="gallery">
+                <p><a href="https://syc92.github.io/pick_card/" target="_blank" style="text-decoration: underline">Play with it</a><br>
+                    <a href="https://github.com/syc92/pick_card" target="_blank" style="text-decoration: underline">View on Github</a></p>
+            </section>
+            <section class="gallery">
+                <div class="img_item"><img src="image/project_pika/pika_demo.png" alt="color generator screenshot"></div>
+            </section>
+        </main>
+    </div>
+    <script src="js/menu_mobile_project_scroll_ative_item.js"></script>
+    <script src="js/menu_mobile_project_position_adjust.js"></script>
+    <script src="js/menu_open_close.js"></script>
+    <script src="js/image_modal.js"></script>
+</body>
+</html>
