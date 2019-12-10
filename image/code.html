@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Shiyu Chuu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="icon/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="style/html5reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/code.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="meta_content">
+        <div id="jump">
+            <a href="#main_content">Skip to main content</a>
+        </div>
+
+        <nav id="nav_top">
+            <div id="my_name">
+                <a href="index.html"><h1>Shiyu Chuu</h1></a>
+                <img id="menu_icon" src="icon/hamburger.png" alt="menu_icon">
+            </div>
+            <div id="title">
+                <p>Information and Interaction Design</p>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html" id="work">Interaction</a></li>
+                    <li><a href="visual.html" id="visual">Graphic</a></li>
+                    <li><a href="code.html" id="code">Coding</a></li>
+                    <li><a href="about.html" id="about">About</a></li>
+                </ul>
+                <div id="extra_for_mobile_scroll_project_list"></div>
+            </div>
+        </nav>
+        
+        <main id="main_content" class="content_grid project_list">
+            <article class="project">
+                <a href="project_pick_card.html">
+                    <section class="thumbnail">
+                        <div class="thumbnail_img" id="pick_card"></div>
+                    </section>
+                    <section class="info">
+                        <h2 class="project_title">Pick Card Pick Card</h2>
+                        <p class="description">| course project</p>
+                    </section>
+                </a>
+            </article>
+            <article class="project">
+                <a href="project_color_generator.html">
+                    <section class="thumbnail">
+                        <div class="thumbnail_img" id="color_picker"></div>
+                    </section>
+                    <section class="info">
+                        <h2 class="project_title">Color Generator</h2>
+                        <p class="description">| persoanl project</p>
+                    </section>
+                </a>
+            </article>
+        </main>
+
+        <footer id="nav_bottom">
+            <p>&copy; 2019 SHIYU CHUU</p>
+        </footer>
+    </div>
+    <script src="js/menu_open_close.js"></script>
+    <script src="js/load_image.js"></script>
+</body>
+</html>
