@@ -12,22 +12,29 @@
     background-size: cover;
 }
 
-#daily {
-    background: url("../image/img_work/thumbnail_dailyui.png");
+#patient_interface {
+    background: url("../image/img_work/thumbnail_patient.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#wchc {
-    background: url("../image/img_work/thumbnail_wchc.jpeg");
+#pick_card {
+    background: url("../image/img_work/thumbnail_pika.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#food {
-    background: url("../image/img_work/thumbnail_foodie.jpg");
+#map {
+    background-image: url("../image/img_work/thumbnail_map.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ntumpc {
+    background: url("../image/img_work/thumbnail_ntumpc.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
