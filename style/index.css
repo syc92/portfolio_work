@@ -26,17 +26,11 @@
     background-size: cover;
 }
 
-#map {
-    background-image: url("../image/img_work/thumbnail_map.jpg");
+#daily {
+    background: url("../image/img_work/thumbnail_daily.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#ntumpc {
-    background: url("../image/img_work/thumbnail_ntumpc.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 /* project image end*/

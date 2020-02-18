@@ -1,0 +1,14 @@
+/* nav selected */
+#code {
+    text-decoration: underline;
+}
+/* nav selected */
+
+/* project image start*/
+#pick_card {
+    background: url("../image/img_code/thumbnail_pika.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* project image end*/

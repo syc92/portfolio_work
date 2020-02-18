@@ -111,12 +111,13 @@ html {
 
 /* grid & flex set up */
 #meta_content {
-    width: 90%;
+    width: 100%;
     margin: 0 auto 80px auto;
 }
 
 #main_content {
-    padding: 48px 0 0 248px;
+    padding: 40px 40px 0 336px;
+    /* padding: 48px 0 0 248px; */
 }
 
 .content_grid {
@@ -137,9 +138,9 @@ html {
 /* nav style start */
 #nav_top {
     position: fixed;
-    width: 216px;
-    /* padding: 24px; */
-    top: 48px;
+    width: 296px;
+    top: 16px;
+    padding: 0 0 0 16px;
     z-index: 15;
 }
 
@@ -148,14 +149,34 @@ html {
     overflow: scroll;
 }
 
+#menu_divider {
+    margin: 0 0 23px 24px;
+    display: block;
+}
+
+.info_divider {
+    height: 1px;
+    width: 10px;
+    background-color: #333;
+    margin: 0 0 11px 0;
+}
+
 #my_name {
     background-color: white;
     padding: 24px 24px 0 24px;
+    height: 32px;
+}
+
+#sc_logo {
+    width: 32px;
+    display: inline-block;
+    padding: 0 8px 0 0;
 }
 
 #title {
     background-color: white;
-    padding: 8px 24px 24px 24px;
+    padding: 24px 24px 24px 24px;
+    width: 180px;
 }
 
 #title p {
@@ -191,19 +212,26 @@ html {
 
 #nav_bottom {
     position: fixed;
-    width: 168px;
+    width: 180px;
     padding: 24px;
+    padding: 24px 24px 24px 16px;
     margin: 0;
-    bottom: 54px;
+    bottom: 16px;
     z-index: 10;
 }
 
 #nav_bottom p {
     font-size: 12px;
     line-height: 24px;
+    padding: 0 0 0 24px;
     font-family: 'Din_pro_regular', 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     color: #666666;
     margin: 0;
+}
+
+#my_name a {
+    height: 32px;
+    display: inline-block;
 }
 
 #my_name h1 {
@@ -212,7 +240,12 @@ html {
     font-size: 24px;
     line-height: 32px;
     margin: 0;
+    vertical-align: top;
     font-family: 'Din_pro_medium', 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+#sc_logo:hover + h1 {
+    text-decoration: underline;
 }
 
 #my_name h1:hover {
@@ -250,9 +283,6 @@ html {
 
 
 /* project list style start*/
-.project {
-    padding: 24px 0 0 0;
-}
 
 .project:nth-child(odd) {
     grid-column: 1/4;
@@ -291,9 +321,6 @@ html {
     transition: opacity ease-in-out 0.25s;
 } /* the padding-top here is to set the aspect ratio */
 
-.about_info {
-    margin: 24px 0 0 0;
-}
 
 .info {
     margin: 8px 0 0 0;
@@ -422,6 +449,7 @@ html {
 
     #title {
         padding: 4px 0 24px 0;
+        width: auto;
     }
 
     #menu {
@@ -430,6 +458,10 @@ html {
         -webkit-transition: 0.35s ease-out;
         transition: 0.35s ease-out;
         overflow: scroll;
+    }
+
+    #menu_divider {
+        display: none;
     }
 
     #menu ul {

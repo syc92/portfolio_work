@@ -5,8 +5,9 @@
 /* nav selected */
 
 /* project image start*/
-#daily {
-    background: url("../image/img_visual/thumbnail_dailyui.png");
+
+#map {
+    background-image: url("../image/img_visual/thumbnail_map.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,4 +33,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
 /* project image end*/

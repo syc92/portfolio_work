@@ -17,6 +17,10 @@
     padding: 0 64px 0 0;
 }
 
+.about_info {
+    margin: 0 0 0 0;
+}
+
 .about_info:nth-child(odd), .resume:nth-child(odd) {
     grid-column: 1/4;
 }
@@ -37,7 +41,7 @@
 
 #self_portrait_img {
     width: 100%;
-    max-width: 360px;
+    /* max-width: 360px; */
 }
 /* self portrait end */
 
@@ -45,10 +49,6 @@
 
 
 /* social start */
-#social_media {
-    margin: 16px 0 0 0;
-}
-
 .social_icon {
     width: 16px;
     height: 16px;
@@ -88,13 +88,6 @@
     padding: 0 0 0 0;
     margin: 0px 0 12px 0;
     color: #333;
-}
-
-.detail_info_line {
-    height: 1px;
-    width: 10px;
-    background-color: #333;
-    margin: 0 0 11px 0;
 }
 
 .exp_section .description, .edu_section .description {

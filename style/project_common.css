@@ -11,12 +11,19 @@
 /* hero image general setup end */
 
 /* project layout adjust start */
-#main_content {
-    max-width: 760px;
+#nav_top {
+    top: 64vh;
+    padding: 64px 0 0 16px;
+    position: absolute;
 }
 
 #main_content {
-    padding: 64px 48px 0 280px;
+    max-width: 760px;
+    /* position: absolute; */
+}
+
+#main_content {
+    padding: 64px 48px 0 336px;
     margin: 0 auto;
 }
 
@@ -180,6 +187,9 @@
         height: auto;
         top: 24px;
         background: #fff;
+        /* change back to normal */
+        position: fixed;
+        padding: 0 0 0 0;
     }
     
     #back {
