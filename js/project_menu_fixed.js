@@ -7,12 +7,23 @@ $(window).scroll( function() {
     if (w > 960) {
         if (scroll_y >= target_h) {
             $('#nav_top').css('position', 'fixed')
-            $('#nav_top').css('top', 0)
             $('#nav_top').css('padding-top', 24)
         } else {
             $('#nav_top').css('position', 'absolute')
-            $('#nav_top').css('top', target_h - 40)
             $('#nav_top').css('padding-top', 64)
         }
     }
 })
+
+// stick nav right besides main content
+$(window).ready(stick_nav_right_besides_main_content)
+$(window).resize(stick_nav_right_besides_main_content)
+
+function stick_nav_right_besides_main_content() {
+    var w = $(window).width()
+    var target_w = ($(window).width() - 1280)/2
+
+    if (w > 1280) {
+        $('#nav_top').css('left', target_w)
+    }
+}

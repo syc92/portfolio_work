@@ -424,6 +424,7 @@ html {
 @media (max-width: 960px) {
     #meta_content {
         width: 90%;
+        margin: 0 auto 40px auto;
     }
     
     .project:nth-child(odd) {
@@ -497,8 +498,12 @@ html {
 
     #nav_bottom {
         position: static;
-        padding: 16px 16px 16px 0;
-        margin: 80px 0 0 0;
+        padding: 16px 16px 0 0;
+        margin: 40px 0 0 0;
+    }
+
+    #nav_bottom p {
+        padding: 24px 24px 0 0;
     }
 }
 /* responsive end */

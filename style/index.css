@@ -12,6 +12,13 @@
     background-size: cover;
 }
 
+#cm_landing {
+    background: url("../image/img_work/thumbnail_landing.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #patient_interface {
     background: url("../image/img_work/thumbnail_patient.jpg");
     background-position: center;

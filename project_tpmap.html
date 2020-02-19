@@ -21,14 +21,15 @@
     </script>
 </head>
 <body>
-    
+    <div id="jump">
+        <a href="#main_content">Skip to main content</a>
+    </div>
+
+    <div id="hero_img_over"></div>
     <div id="hero_img"></div>
-
+    <img src="image/project_map/0_hero/hero_map.png" class="hero_img_content" alt="hero_img_content" data-scroll-speed="-2">
+    
     <div id="meta_content"> 
-        <div id="jump">
-            <a href="#main_content">Skip to main content</a>
-        </div>
-
         <nav id="nav_top">
             <div id="back">
                 <a id="detail_page_name" href="visual.html">
@@ -103,11 +104,11 @@
             <section class="gallery devider_no_line">
             </section>
 
-            <section class="gallery_left_large" id="map_size">
+            <section class="gallery_left" id="map_size">
                 <h2>Size</h2>
                 <p>Considering that our users might carry this map everywhere and check the information quite often, the map’s unfolded size is 560*378mm, with which is large enough to contain the copious information, but its folded size is only 80*126mm, which users can easily fit the map in their pocket.</p>
             </section>
-            <section class="gallery_right_small">
+            <section class="gallery_right">
                 <div class="img_item"><img src="image/project_map/map_pocket.jpg" alt="map pocket"></div>     
             </section>
             <section class="gallery" id="result">
@@ -131,5 +132,6 @@
     <script src="js/menu_open_close.js"></script>
     <script src="js/image_modal.js"></script>
     <script src="js/project_menu_fixed.js"></script>
+    <script src="js/project_hero_image_content_scroll_speed.js"></script>
 </body>
 </html>
