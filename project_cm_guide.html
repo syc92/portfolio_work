@@ -40,10 +40,10 @@
             <div id="menu">
                 <ul>
                     <li><a href="#introduction">Introduction</a></li>
-                    <li><a href="#overview">Design overview</a></li>
+                    <li><a href="#overview">Overview</a></li>
                     <li><a href="#start">Start from the basics</a></li>
-                    <li><a href="#analyze">Analyzing use cases</a></li>
-                    <li><a href="#detail">Style guide detail</a></li>
+                    <li><a href="#principles">Principles</a></li>
+                    <li><a href="#analyze">Use case analysis</a></li>
                     <li><a href="#final">Final outcome</a></li>
                     <li><a href="#how_to_use">How to use</a></li>
                     <li id="last_item_extra_padding"><a href="#conclusion" id="last_on_menu">Conclusion</a></li>
@@ -54,7 +54,7 @@
     
         <main class="content_grid" id="main_content">
             <section class="gallery" id="introduction">
-                <h1>Codementor Style Guide</h1>
+                <h1>Codementor Design Guideline</h1>
             </section>
             <section class="gallery">
                 <p>During my time working as a product designer at Codementor, the company has two major products: Codementor and CodementorX. Codementor is the software engineering mentorship platform, while CodementorX is a freelance platform for software engineers. Other than that, we also rolled out some side projects or sub products from time to time. Each of these products is handled by different designers. Therefore, this project aims to create a guideline to designer to follow, trying to maintain the consistency across products in sake of branding, but still allowing designers to create the unique design for each product based on this guideline.</p>
@@ -64,70 +64,106 @@
                 <p>
                     <span class="info_point">Year:</span> 2018<br>
                     <span class="info_point">Project type:</span> Work project<br>
-                    <span class="info_point">Duration:</span> 3 weeks<br>
+                    <span class="info_point">Duration:</span> 1 month (first version)<br>
                     <span class="info_point">Role:</span> Product designer<br>
+                    <span class="info_point">Teammates:</span> Vita Tseng, Yvon Hung, Peiyin Lin, Viki Huang<br>
                 </p>
             </section>
             <section class="gallery devider">
             </section>
 
             <section class="gallery" id="overview">
-                <h2>Style guide overview</h2>
+                <h2>Overview</h2>
                 <div class="img_item"><img src="image/project_cm_guide/overview.jpg" alt="style guide overview"></div>
             </section>
 
             <section class="gallery" id="start">
                 <h2>Start from the basics</h2>
-                <ul class="project_content_list">
-                    <li>Collaborate with marketing and growth team to refine the content, and decide the branding strategy</li>
-                    <li>Conduct competitor analysis and make branding strategies</li>
-                </ul>
-                <div class="img_item"><img src="image/project_cm_guide/start.jpg" alt="start point"></div>
+                <p>We start from unifying our color palette and font choice. For the color palette, each product has its own unique color theme for branding, but all of them share the same color theme for common elements. Therefore, our main color theme comprises both the branding color theme and the common color theme. For the typeface, we choose Raleway for title and open sans for body text. </p>
+                <div class="img_item"><img src="image/project_cm_guide/start1.jpg" alt="Colors"></div>
+                <div class="img_item"><img src="image/project_cm_guide/start2.jpg" alt="Typography"></div>
             </section>
             <section class="gallery devider_no_line">
             </section>
             
-            <section class="gallery" id="analyze">
-                <h2>Analyzing use cases</h2>
-                <p>I created the information architecture chart as a blueprint for what to change on the website, as well as a tool that helps me better communicate with stakeholders.</p>
-                <div class="img_item"><img src="image/project_cm_guide/analyze.jpg" alt="analyze"></div>
+            <section class="gallery" id="principles">
+                <h2>Principles</h2>
+                <p>Afterwards, we outline the principles for designing our shared design element and guideline, including dimension, element size, round corner, and element status. The goal of this stage is to minimize the options so we can have a more consistent interface across platforms, but allow designers to be able to have enough options to accommodate different situations. In case you’re interested why we’re using the 4px grid system, <a href="https://builttoadapt.io/intro-to-the-8-point-grid-system-d2573cde8632">[this article by Elliot Dahl]</a> well explained our reasoning.</p>
+                <div class="img_item"><img src="image/project_cm_guide/principles.jpg" alt="Design principles"></div>
             </section>
             <section class="gallery devider_no_line">
             </section>
 
-            <section class="gallery" id="detail">
-                <h2>Style guide detail</h2>
-                <p>I created the information architecture chart as a blueprint for what to change on the website, as well as a tool that helps me better communicate with stakeholders.</p>
-                <div class="img_item"><img src="image/project_cm_landing/info_structure.png" alt="Information structure"></div>
+            <section class="gallery" id="analyze">
+                <h2>Use case analysis</h2>
+                <p>While we continue to build our shared design elements, we found the behavior of some elements are also inconsistent across platforms. Therefore we also look into and unify the use cases and the behavior of certain elements. Here’s one example I’ve done. We have a component called “tag picker”, which behaves differently across platforms. I make this chart to analyze its behavior, and discuss with my team about what is the best way to unify its behavior.</p>
+                <div class="img_item"><img src="image/project_cm_guide/analyze.jpg" alt="analyze"></div>
             </section>
             <section class="gallery devider_no_line">
             </section>
 
             <section class="gallery" id="final">
                 <h2>Final outcome</h2>
-                <p>At the design stage, I spent most of my time testing out different layouts, and tried out different styles of illustration. Other than the landing page itself, I also created some sub pages that are related to it, including SEO pages, FAQ pages, and testimonial pages.</p>
+                <p>Here is the final outcome. There are a lot of them, and I am only showing part of them so you can have a basic understanding of what they look like. We also upload the final outcome to Zeplin, and document our result in Notion, so both design team and development team can refer to them if needed.</p>
             </section>
             <section class="gallery_left">
-                <h3>Landing</h3>
-                <div class="img_item image_final"><img src="image/project_cm_landing/landing.png" alt="landing"></div>
+                <h3>Tag picker</h3>
+                <div class="img_item image_final"><img src="image/project_cm_guide/tag_picker.jpg" alt="Tag picker"></div>
             </section>
             <section class="gallery_right">
-                <h3>Developer page</h3>
-                <div class="img_item image_final"><img src="image/project_cm_landing/devs.png" alt="developer page"></div>
+                <h3>Input</h3>
+                <div class="img_item image_final"><img src="image/project_cm_guide/input.jpg" alt="Input"></div>
+            </section>
+            <section class="gallery_left">
+                <h3>Button-solid</h3>
+                <div class="img_item image_final"><img src="image/project_cm_guide/button_solid.jpg" alt="Button – solid"></div>
+            </section>
+            <section class="gallery_right">
+                <h3>Button-outline</h3>
+                <div class="img_item image_final"><img src="image/project_cm_guide/button_outline.jpg" alt="Button – outline"></div>
+            </section>
+            <section class="gallery_left">
+                <h3>Notification</h3>
+                <div class="img_item image_final"><img src="image/project_cm_guide/notification.jpg" alt="Notification"></div>
+            </section>
+            <section class="gallery_right">
+                <h3>Dropdown</h3>
+                <div class="img_item image_final"><img src="image/project_cm_guide/dropdown.jpg" alt="Dropdown"></div>
+            </section>
+            <section class="gallery_left">
+                <h3>Checkbox/radio/toggle</h3>
+                <div class="img_item image_final"><img src="image/project_cm_guide/checkbox_radio_toggle.jpg" alt="Checkbox/radio/toggle"></div>
+            </section>
+            <section class="gallery_right">
+                <h3>Tooltips</h3>
+                <div class="img_item image_final"><img src="image/project_cm_guide/tooltips.jpg" alt="Tooltips"></div>
+            </section>
+            <section class="gallery_left">
+                <h3>Icons</h3>
+                <div class="img_item image_final"><img src="image/project_cm_guide/icons.jpg" alt="Icons"></div>
+            </section>
+            <section class="gallery_right">
+                <h3>Tech stack</h3>
+                <div class="img_item image_final"><img src="image/project_cm_guide/tech_stack.jpg" alt="Tech stack"></div>
             </section>
             </section>
 
             <section class="gallery" id="how_to_use">
                 <h2>How to use</h2>
-                <p>I created the information architecture chart as a blueprint for what to change on the website, as well as a tool that helps me better communicate with stakeholders.</p>
-                <div class="img_item"><img src="image/project_cm_landing/info_structure.png" alt="Information structure"></div>
+                <p>After we created our guideline, how can it really help the design team to work more efficiently? One of our senior product designers, Vita, comes up with a brilliant way to do that. Our team uses Sketch as our main tool, and its powerful “nested symbol” feature allows us to select all the components from the menu with different status and colors.</p>
+                <div class="img_item"><img src="image/project_cm_guide/how_to_use1.png" alt="How to use – 1"></div>
+                <div class="img_item"><img src="image/project_cm_guide/how_to_use2.png" alt="How to use – 2"></div>
+                <div class="img_item"><img src="image/project_cm_guide/how_to_use3.png" alt="How to use – 3"></div>
             </section>
             <section class="gallery devider_no_line">
             </section>
 
             <section class="gallery" id="conclusion">
                 <h2>Conclusion</h2>
-                <p>Although a landing page is usually not the core of a product, it is important because it makes a first impression to potential users and affects how they see the product. After we rolled out this landing page, the design was shared on a design inspiration site called Landbook, which is a small win for my team and myself. I would definitely say that this website and the branding are not perfect, because the lifecycle of a brand in the tech industry is short that you have to constantly update and improve your product, even for branding as well! IIn the traditional way, however, branding is a very long process. You have to use different methods to communicate with users, build the image of the brand, and test out different strategies. Therefore, the most interesting part, and also the hardest, of rebranding a digital product is how to find the balance between fast and efficiency.</p>
+                <h3>What I learned</h3>
+                <p>Creating a design guideline is a continuing process. As we were creating this guideline, we kept finding that there were some edge cases that we didn’t consider. Sometimes there were also new demands emerging as our products grew. So we have to revisit the principles we outlined at the very beginning and make adjustments to them. Also, the guideline also needs iteration from time to time, so we can make sure the look of our products is always refreshing, and our users have consistent experience all the time.</p>
+                <h3>What could have be done better</h3>
+                <p>One thing I think we could have done better is accessibility. When we outlined our principles and guidelines, we did not consider the accessibility thoroughly. In fact, some of our colors might pass the web accessibility test. It didn’t cause any negative effect to our product performance immediately, but it definitely should be included into our consideration and become a part of the guideline.</p>
             </section>
         </main>
     </div>

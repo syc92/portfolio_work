@@ -83,7 +83,7 @@ html {
 }
 
 .img_item:hover {
-    cursor: crosshair;
+    cursor: pointer;
 }
 /* meta style end*/
 
