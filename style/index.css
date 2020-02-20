@@ -5,39 +5,24 @@
 /* nav selected */
 
 /* project image start*/
-#cm {
+.cm {
     background: url("../image/img_work/thumbnail_cm.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
-#cm_landing {
+.cm_landing {
     background: url("../image/img_work/thumbnail_landing.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
-#patient_interface {
+.cm_guide {
+    background: url("../image/img_work/thumbnail_guide.jpg");
+}
+
+.patient_interface {
     background: url("../image/img_work/thumbnail_patient.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
-#pick_card {
-    background: url("../image/img_work/thumbnail_pika.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#daily {
+.daily {
     background: url("../image/img_work/thumbnail_daily.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 /* project image end*/
