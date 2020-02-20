@@ -6,32 +6,20 @@
 
 /* project image start*/
 
-#map {
+.map {
     background-image: url("../image/img_visual/thumbnail_map.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
-#poster {
+.poster {
     background: url("../image/img_visual/thumbnail_poster.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
-#cd {
+.cd {
     background: url("../image/img_visual/thumbnail_cd.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
-#logo {
+.logo {
     background: url("../image/img_visual/thumbnail_logo.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 

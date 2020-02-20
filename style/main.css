@@ -296,10 +296,6 @@ html {
     display: block;
 }
 
-.project:hover .thumbnail_img {
-    opacity: 0.72;
-}
-
 .project a:hover {
     text-decoration: none;
 }
@@ -308,19 +304,20 @@ html {
     text-decoration: underline;
 }
 
-.thumbnail {
-    opacity: 0;
-}
-
-.thumbnail_img {
-    /* display: block; */
+.thumbnail .thumbnail_img {
     width: auto;
     padding-top: 56%;
     position: relative;
-    -webkit-transition: opacity ease-in-out 0.25s;
-    transition: opacity ease-in-out 0.25s;
+    -webkit-transition: background-size ease-in-out 0.25s;
+    transition: background-size ease-in-out 0.25s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 } /* the padding-top here is to set the aspect ratio */
 
+.project:hover .thumbnail_img {
+    background-size: 103% 103%;
+}
 
 .info {
     margin: 8px 0 0 0;

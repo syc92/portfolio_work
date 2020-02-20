@@ -38,10 +38,13 @@ $.fn.moveIt = function(){
     
     moveItItem.prototype.update = function(scrollTop){
         var w = $(window).width();
+        var h = $(window).height();
+        var target_h_normal = 80;
+        var target_h_mobile = h*0.24;
         if (w > 960) {
-            this.el.css('transform', 'translate(-50%, ' + -(scrollTop / this.speed - 80) + 'px)');
+            this.el.css('transform', 'translate(-50%, ' + -(scrollTop / this.speed - target_h_normal) + 'px)');
         } else {
-            this.el.css('transform', 'translate(-50%, ' + -(scrollTop / this.speed - 120) + 'px)');
+            this.el.css('transform', 'translate(-50%, ' + -(scrollTop / this.speed - target_h_mobile) + 'px)');
         };  
     };
 

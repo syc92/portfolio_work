@@ -8,7 +8,6 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    
     z-index: -1000;
 }
 
@@ -201,8 +200,8 @@
     .hero_img_content {
         height: auto;
         width: 80vw;
-        -webkit-transform: translate(-50%, 120px);
-        transform: translate(-50%, 120px);
+        -webkit-transform: translate(-50%, 24vh);
+        transform: translate(-50%, 24vh);
     }
 
     #nav_top {
