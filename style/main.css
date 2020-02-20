@@ -85,6 +85,11 @@ html {
 .img_item:hover {
     cursor: pointer;
 }
+
+.info_point {
+    font-family: 'Rasa_bold';
+    color: #000;
+}
 /* meta style end*/
 
 
@@ -92,7 +97,7 @@ html {
 .forward_btn {
     width: 10px;
     height: 10px;
-    padding: 0 0 0 8px;
+    padding: 0 8px 0 8px;
     background-color: transparent;
 }
 /* Forword btn end */

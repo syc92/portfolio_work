@@ -58,11 +58,6 @@
 /* project layout adjust end */
 
 /* project typography start */
-.info_point {
-    font-family: 'Rasa_bold';
-    color: #000;
-}
-
 #main_content h1 {
     font-size: 48px;
     line-height: 64px;
