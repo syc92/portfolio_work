@@ -1,6 +1,6 @@
 /* nav selected */
-#code {
-    text-decoration: underline;
+#menu ul li #code {
+    opacity: 100%;
 }
 /* nav selected */
 

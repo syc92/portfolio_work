@@ -16,7 +16,7 @@ $(window).scroll(function() {
     }
 });
 
-// rest when resize
+// reset when resize
 $(window).resize(function(e) {
     var window_width = $(this).width();
     if (window_width > 960) {

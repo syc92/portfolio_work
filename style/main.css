@@ -1,62 +1,61 @@
 /* font set up */
 @font-face {
-    font-family: Din_pro_medium;
-    src: url("../font/DINPro/DINPro-Medium_13936.ttf");
+    font-family: title_bold;
+    src: url("../font/Roboto_slab/RobotoSlab-Bold.ttf");
 }
 
 @font-face {
-    font-family: Din_pro_regular;
-    src: url("../font/Rasa/Rasa-Regular.ttf");
+    font-family: body_regular;
+    src: url("../font/Roboto/Roboto-Regular.ttf");
 }
 
 @font-face {
-    font-family: Rasa_bold;
-    src: url("../font/Rasa/Rasa-Bold.ttf");
+    font-family: body_medium;
+    src: url("../font/Roboto/Roboto-Medium.ttf");
 }
 
-/* @font-face {
-    font-family: Din_pro_light;
-    src: url("../font/Playfair_Display/PlayfairDisplay-Regular.ttf");
-} */
-/* font set up end*/
-
+@font-face {
+    font-family: body_bold;
+    src: url("../font/Roboto/Roboto-Bold.ttf");
+}
 
 
 /* meta style start*/
 body {
-    font-family: 'Din_pro_regular', 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    font-size: 16px;
+    font-family: 'body_regular', 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 14px;
     line-height: 24px;
     color: #333333;
 }
 
 h1 {
     font-size: 48px;
-    font-family: 'Din_pro_medium', 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     line-height: 64px;
+    font-family: 'title_bold', 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     color: #000;
-    margin: 0 0 16px 0;
+    margin: 0 0 64px 0;
 }
 
 h2 {
-    font-size: 24px;
-    font-family: 'Din_pro_medium', 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    line-height: 32px;
+    font-size: 32px;
+    line-height: 48px;
+    font-family: 'title_bold', 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     color: #000;
-    margin: 0 0 24px 0;
+    margin: 0 0 48px 0;
 }
 
 h3 {
-    font-size: 16px;
-    font-family: 'Din_pro_medium', 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    line-height: 24px;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: 'title_bold', 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     color: #000;
-    margin: 0 0 24px 0;
+    margin: 0 0 32px 0;
 }
 
 p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
+    font-family: 'body_regular', 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     color: #333333;
     margin: 0 0 24px 0;
 }
@@ -87,9 +86,9 @@ html {
 }
 
 .info_point {
-    font-family: 'Rasa_bold';
+    font-family: 'body_bold', 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;;
     color: #000;
-}
+} /* body inline bold */
 /* meta style end*/
 
 
@@ -121,8 +120,7 @@ html {
 }
 
 #main_content {
-    padding: 40px 40px 0 336px;
-    /* padding: 48px 0 0 248px; */
+    padding: 40px 40px 0 320px;
 }
 
 .content_grid {
@@ -154,8 +152,17 @@ html {
     overflow: scroll;
 }
 
+#menu ul li a {
+    opacity: 40%;
+}
+
+#menu ul li a:hover {
+    opacity: 100%;
+    text-decoration: none;
+}
+
 #menu_divider {
-    margin: 0 0 23px 24px;
+    margin: 0 0 35px 24px;
     display: block;
 }
 
@@ -180,27 +187,27 @@ html {
 
 #title {
     background-color: white;
-    padding: 24px 24px 24px 24px;
+    padding: 32px 24px 36px 24px;
     width: 200px;
 }
 
-#title p {
-    font-size: 16px;
+#title h2 {
+    font-size: 14px;
     line-height: 24px;
     color: #333;
-    font-family: 'Din_pro_regular', 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-family: 'body_regular', 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     margin: 0;
-}
+} /* font style set to normal p */
 
 #nav_top li {
     list-style-type: none;
     background-color: white;
-    font-family: 'Din_pro_regular', 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-family: 'body_regular', 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     padding: 0 24px 0px 24px;
 }
 
 #nav_top li a {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
     color: #333;
 }
@@ -226,10 +233,11 @@ html {
 }
 
 #nav_bottom p {
+    opacity: 40%;
     font-size: 12px;
     line-height: 24px;
     padding: 0 0 0 24px;
-    font-family: 'Din_pro_regular', 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-family: 'body_regular', 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     color: #666666;
     margin: 0;
 }
@@ -246,7 +254,7 @@ html {
     line-height: 32px;
     margin: 0;
     vertical-align: top;
-    font-family: 'Din_pro_medium', 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-family: 'title_bold', 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
 #sc_logo:hover + h1 {
@@ -305,7 +313,7 @@ html {
     text-decoration: none;
 }
 
-.project a:hover h2 {
+.project a:hover .project_title {
     text-decoration: underline;
 }
 
@@ -325,26 +333,23 @@ html {
 }
 
 .info {
-    margin: 8px 0 0 0;
+    margin: 16px 0 0 0;
 }
 
-.info h2, .info p {
-    display: inline-block;
+.info p {
+    margin: 0;
+}
+
+.info p ~ p {
+    opacity: 40%;
 }
 
 .project_title {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
-    font-family: 'Din_pro_medium', 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-family: 'body_medium', 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;;
     color: #000;
     margin: 8px 0 0 0;
-}
-
-.description {
-    margin: 8px 0 0 0;
-    color: #333;
-    font-family: 'Din_pro_regular', 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    text-transform: uppercase;
 }
 /* project list style end*/
 
@@ -515,7 +520,7 @@ html {
 /* reduce motion start */
 @media (prefers-reduced-motion: reduce) {
     html {
-        scroll-behavior: auto;
+        scroll-behavior: smooth;
     }
 }
 /* reduce motion end */
