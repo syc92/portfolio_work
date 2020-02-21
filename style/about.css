@@ -67,7 +67,7 @@
 
 
 .project_content_list {
-    margin: 0 0 24px 20px;
+    margin: 0 0 0 20px;
     padding: 0 64px 0 20px;
 }
 
@@ -86,7 +86,7 @@
 }
 
 .org {
-    margin: 0 0 4px 0;
+    margin: 0;
 }
 
 .org a {
@@ -100,7 +100,7 @@
 .detail_info {
     font-family: 'body_regular', 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     padding: 0 0 0 0;
-    margin: 0px 0 20px 0;
+    margin: 0px 0 24px 0;
     color: #333;
 }
 
