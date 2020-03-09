@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Shiyu Chuu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="icon/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="style/html5reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/project_common.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/project_balls.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151944711-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('Gitch', new Date());
+
+        gtag('config', 'UA-151944711-2');
+    </script>
+</head>
+<body>
+    <div id="jump">
+        <a href="#main_content">Skip to main content</a>
+    </div>
+
+    <div id="hero_img_over"></div>
+    <div id="hero_img"></div>
+    <img src="image/project_balls/0_hero/hero_balls.png" class="hero_img_content" alt="hero_img_content" data-scroll-speed="-2">
+    
+    <div id="meta_content"> 
+        <nav id="nav_top">
+            <div id="back">
+                <a id="detail_page_name" href="code.html">
+                    <img src="icon/back_arrow.png" alt="back_arrow"><h2>Shiyu Chuu</h2>
+                </a>
+                <img id="menu_icon" src="icon/hamburger.png" alt="menu_icon">
+            </div>
+            <div id="menu">
+                <ul>
+                    <li class="hash_introduction">Introduction</li>
+                    <li id="last_on_menu" class="hash_overview">Overview</li>
+                </ul>
+                <div id="extra_for_mobile_scroll_project_detail"></div>
+            </div>
+        </nav>
+    
+        <main class="content_grid" id="main_content">
+            <section class="gallery" id="introduction">
+                <h1>Balls!</h1>
+            </section>
+            <section class="gallery">
+                <p>This is a course project of mine for an AR/VR development class. This project uses A-Frame, and it’s built on Glitch.</p>
+            </section>
+            <section class="gallery">
+                <p>
+                    <span class="info_point">Year:</span> 2020<br>
+                    <span class="info_point">Project type:</span> Course project<br>
+                    <span class="info_point">Duration:</span> 1.5 days<br>
+                    <span class="info_point">Role:</span> VR Developer, Designer<br>
+                </p>
+            </section>
+            <section class="gallery devider">
+            </section>
+            
+            <section class="gallery" id="overview">
+                <h2>Overview</h2>
+                <h3>Insert objects</h3>
+                <p>When the user clicks the “B button”, a planet (shape) will drop into the box, and the planet position is randomly assigned within the area of the box. The color of the planet is also randomly generated.</p>
+                <h3>Switch shapes with menu</h3>
+                <p>When the user clicks on the left hand trigger, the menu attached to the left hand will show up. The user can then use the raycaster, hovering on the items in the menu to change the shape of the planet.</p>
+                <h3>Manipulate objects</h3>
+                <p>All the objects inserted into the scene are grabbable, droppable, and droppable. You can use the super “right” hand to interact with those planets.</p>
+                <p><a href="https://ax1332-hw4-1-3.glitch.me/" target="_blank" style="text-decoration: underline">Play with it<img src="icon/forward_arrow.png" alt="forward" class="forward_btn"></a><br>
+                    <a href="https://glitch.com/edit/#!/ax1332-hw4-1-3" target="_blank" style="text-decoration: underline">View on Glitch<img src="icon/forward_arrow.png" alt="forward" class="forward_btn"></a></p>
+            </section>
+
+            <section class="gallery" id="balls_demo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gnGRpbA8RaQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+        </main>
+    </div>
+    <script src="js/menu_mobile_project_scroll_ative_item.js"></script>
+    <script src="js/menu_mobile_project_position_adjust.js"></script>
+    <script src="js/menu_open_close.js"></script>
+    <script src="js/image_modal.js"></script>
+    <script src="js/project_menu_fixed.js"></script>
+    <script src="js/project_hero_image_content_scroll_speed.js"></script>
+</body>
+</html>

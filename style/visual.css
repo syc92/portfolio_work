@@ -1,25 +1,26 @@
 /* nav selected */
-#menu ul li #visual {
+#menu ul #visual {
     opacity: 100%;
+    font-family: 'body_medium', 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;;
 }
 /* nav selected */
 
 /* project image start*/
 
 .map {
-    background-image: url("../image/img_visual/thumbnail_map.jpg");
+    background-image: url("../image/img_visual/thumbnail_map.png");
 }
 
 .poster {
-    background: url("../image/img_visual/thumbnail_poster.jpg");
+    background: url("../image/img_visual/thumbnail_poster.png");
 }
 
 .cd {
-    background: url("../image/img_visual/thumbnail_cd.jpg");
+    background: url("../image/img_visual/thumbnail_cd.png");
 }
 
 .logo {
-    background: url("../image/img_visual/thumbnail_logo.jpg");
+    background: url("../image/img_visual/thumbnail_logo.png");
 }
 
 

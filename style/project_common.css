@@ -25,8 +25,8 @@
     position: absolute;
     height: 48vh;
     margin: 0 0 0 50vw;
-    -webkit-transform: translate(-50%, 80px);
-    transform: translate(-50%, 80px);
+    -webkit-transform: translate(-50%, 56px);
+    transform: translate(-50%, 56px);
     z-index: -500;
 }
 /* hero image general setup end */
@@ -55,13 +55,22 @@
 .gallery_left_large p, .gallery_left_small p {
     padding: 0 32px 0 0;
 }
+
+.mobile_demo {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.mobile_demo:hover {
+    cursor: auto;
+}
 /* project layout adjust end */
 
 /* project typography start */
 #main_content p {
-    font-size: 18px;
-    line-height: 32px;
-    margin: 0 0 32px 0;
+    font-size: 13px;
+    line-height: 24px;
+    margin: 0 0 24px 0;
 }
 
 .project_content_list {
@@ -70,8 +79,8 @@
 }
 
 .project_content_list li {
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 13px;
+    line-height: 24px;
     color: #333333;
     margin: 0;
     padding: 0 0 0 8px;
@@ -120,10 +129,10 @@
 /* nav for project page start */
 #back {
     background-color: white;
-    padding: 24px 24px 16px 24px;
+    padding: 16px 24px 16px 24px;
 }
 
-#menu #last_item_extra_padding {
+#menu #last_on_menu {
     padding: 0 24px 16px 24px;
 }
 
@@ -136,15 +145,16 @@
     text-decoration: none;
 }
 
-#menu ul li .active {
+#menu ul .active {
     opacity: 100%;
+    font-family: 'body_medium', 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
 #detail_page_name h2 {
     display: inline-block;
     margin: 0 0 0 8px;
     color: black;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 24px;
     font-family: 'title_bold', 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
@@ -156,11 +166,11 @@
 
 /* mobile start */
 @media (max-width: 1156px) {
-    .gallery_right_large, .gallery_right_small, .gallery_left_large, .gallery_left_small {
+    .gallery_right, .gallery_left {
         grid-column: 1/7;
     }
 
-    .gallery_left_large p, .gallery_left_small p {
+    .gallery_left p {
         padding: 0;
     }
 

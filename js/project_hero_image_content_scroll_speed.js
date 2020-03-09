@@ -1,7 +1,7 @@
 $(window).scroll( function() {
     var scroll_y = window.scrollY
     var h = $(window).height()
-    var target_h = h * 0.64 + 80
+    var target_h = h * 0.64 + 56
 
     $('#hero_img_over').css({
         opacity: function(){
@@ -39,7 +39,7 @@ $.fn.moveIt = function(){
     moveItItem.prototype.update = function(scrollTop){
         var w = $(window).width();
         var h = $(window).height();
-        var target_h_normal = 80;
+        var target_h_normal = 56;
         var target_h_mobile = h*0.24;
         if (w > 960) {
             this.el.css('transform', 'translate(-50%, ' + -(scrollTop / this.speed - target_h_normal) + 'px)');

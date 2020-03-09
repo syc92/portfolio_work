@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Shiyu Chuu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="icon/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="style/html5reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/project_common.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/project_ideapot.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151944711-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-151944711-2');
+    </script>
+</head>
+<body>
+    <div id="jump">
+        <a href="#main_content">Skip to main content</a>
+    </div>
+
+    <div id="hero_img_over"></div>
+    <div id="hero_img"></div>
+    <img src="image/project_ideapot/0_hero/hero_ideapot.png" class="hero_img_content" alt="hero_img_content" data-scroll-speed="-2">
+
+    <div id="meta_content"> 
+        <nav id="nav_top">
+            <div id="back">
+                <a id="detail_page_name" href="index.html">
+                    <img src="icon/back_arrow.png" alt="back_arrow"><h2>Shiyu Chuu</h2>
+                </a>
+                <img id="menu_icon" src="icon/hamburger.png" alt="menu_icon">
+            </div>
+            <div id="menu">
+                <ul>
+                    <li class="hash_introduction">Introduction</li>
+                    <li class="hash_overview">Overview</li>
+                    <li class="hash_goal">Goal</li>
+                    <li class="hash_research">Research</li>
+                    <li class="hash_persona">Persona</li>
+                    <li class="hash_paper_prototype">Paper Prototype</li>
+                    <li class="hash_digital_prototype_1">Digital Prototype 1</li>
+                    <li class="hash_user_testing">Use Testing</li>
+                    <li class="hash_digital_prototype_2">Digital Prototype 2</li>
+                    <li id="last_on_menu" class="hash_conclusion">Conclusion</li>
+                </ul>
+                <div id="extra_for_mobile_scroll_project_detail"></div>
+            </div>
+        </nav>
+    
+        <main class="content_grid" id="main_content">
+            <section class="gallery" id="introduction">
+                <h1>Ideapot</h1>
+            </section>
+            <section class="gallery">
+                <p>As there are already a lot of recipe websites out there, the process of looking for a new recipe is sometimes time consuming and frustrating. Ideapot is a social platform for sharing recipes, which helps users find the right recipes that really meet their preference, and helps them successfully prepare a new dish as well.</p>
+            </section>
+            <section class="gallery">
+                <p>
+                    <span class="info_point">Year:</span> 2019<br>
+                    <span class="info_point">Project type:</span> Personal project<br>
+                    <span class="info_point">Duration:</span> 2 months<br>
+                    <span class="info_point">Role:</span> Product designer, Researcher<br>
+                </p>
+            </section>
+            <section class="gallery devider">
+            </section>
+
+            <section class="gallery" id="goal">
+                <h2>Overview</h2>
+            </section>
+            <section class="gallery_left" id="overview">
+                <h3>System recommended recipes based on your preference</h3>
+                <p>Set up cooking preferences in terms of equipment you have, food type, expected cooking time, and location.</p>
+                <p>So when users enter the homepage, they can see a percentage on each recipe. That means how much a recipe is the right match for the users. </p>
+            </section>
+            <section class="gallery_right" id="overview">
+                <div class="img_item mobile_demo"><img src="image/project_ideapot/ideapot_demo_1.gif" alt="Demo 1"></div>
+            </section>
+            <section class="gallery_left" id="overview">
+                <h3>Share and/or fork a recipe</h3>
+                <p>Taking advantage of social media, users can fork others’ recipe to create diversity and provide alternative solutions for a recipe.</p>
+            </section>
+            <section class="gallery_right" id="overview">
+                <div class="img_item mobile_demo"><img src="image/project_ideapot/ideapot_demo_2.gif" alt="Demo 2"></div>
+            </section>
+            <section class="gallery_left" id="overview">
+                <h3>Cooking navigation mode</h3>
+                <p>Step by step tutorial of the recipe with clear picture and instruction that is easier for users to follow.</p>
+            </section>
+            <section class="gallery_right" id="overview">
+                <div class="img_item mobile_demo"><img src="image/project_ideapot/ideapot_demo_3.gif" alt="Demo 3"></div>
+            </section>
+            <section class="gallery devider_no_line">
+            </section>
+
+            <section class="gallery" id="goal">
+                <h2>Goal</h2>
+                <p>As an international student who wants to save money and thus usually cook at home instead of dine out, I frequently look for recipes online and want to try a new dish from time to time.</p>
+                <p>However, I often find that I can’t try the recipe because I don’t have certain equipment or don’t know where to buy certain ingredients as a newcomer. When I talk to my friends about this, a lot of them are having similar problems. This project aims to solve this problem, making it easier to find and try a right recipe successfully.</p>
+            </section>
+            <section class="gallery devider_no_line">
+            </section>
+
+            <section class="gallery" id="research">
+                <h2>Research</h2>
+                <h3>Survey</h3>
+                <p>In order to find out more needs from the potential users, I first conducted a quick survey among 11 people from different countries. And the following is the most key finding of this survey. It turns out that most people do have similar problems while trying a new recipe.</p>
+                <div class="img_item"><img src="image/project_ideapot/ideapot_survey.png" alt="Survey result"></div>
+
+                <h3>Interviews</h3>
+                <p>I then conducted 3 interviews with some of the potential users. The key finding is that <b>people love to share cooking knowledge with others.</b> This is why I decided to make Ideapot a “social platform”.</p>
+                <p>The help from friends can solve part of a user’s cooking problem, but the help from a whole community can make it much easier to successfully try a new recipe. Also, the social media should be based on users’ location, because the availability of certain ingredients and tools varies from place to place.</p>
+                <p>In addition, more than one user mentioned that it will be great if Ideapot can provide a <b>step by step tutorial.</b> Most of the recipe websites out there only have a plain text instruction, which is hard to follow.</p>
+                <div class="img_item"><img src="image/project_ideapot/ideapot_interview.png" alt="Interview result"></div>
+            </section>
+            <section class="gallery devider_no_line">
+            </section>
+
+            <section class="gallery" id="persona">
+                <h2>Persona</h2>
+                <p>Before design, I create a persona and scenario based on my research. I mainly focus the target audience on people like me – a newcomer, who doesn’t have a lot of cooking experience and not familiar with the new environment and culture.</p>
+                <div class="img_item"><img src="image/project_ideapot/ideapot_persona.png" alt="Persona"></div>
+            </section>
+            <section class="gallery devider_no_line">
+            </section>
+
+            <section class="gallery" id="paper_prototype">
+                <h2>Paper prototype</h2>
+                <p>To test out the idea of this project, I first created a paper prototype and tested it with people who meet the criteria in my persona. I then confirm that, in general, people are having positive feedback for this product. </p>
+                <div class="img_item"><img src="image/project_ideapot/ideapot_paper_prototype.jpg" alt="Paper prototype"></div>
+            </section>
+            <section class="gallery devider_no_line">
+            </section>
+
+            <section class="gallery" id="digital_prototype_1">
+                <h2>Digital prototype #1</h2>
+                <p>For the prototype, I focused on the key features I defined in the research stage, including:</p>
+                <ul class="project_content_list">
+                    <li>Set up their preference (during onboarding, and can modify in settings)</li>
+                    <li>Share and/or  “fork” a recipe (they share the same interface and interaction)</li>
+                    <li>Step by step navigation mode</li>
+                </ul>
+                <h3>Set up proference during onboarding</h3>
+                <div class="img_item"><img src="image/project_ideapot/ideapot_prototype_1_1.png" alt="Digital prototype 1-1"></div>
+                <h3>Share/fork a recipe</h3>
+                <div class="img_item"><img src="image/project_ideapot/ideapot_prototype_1_2.png" alt="Digital prototype 1-2"></div>
+                <h3>Navigation mode</h3>
+                <div class="img_item"><img src="image/project_ideapot/ideapot_prototype_1_3.png" alt="Digital prototype 1-3"></div>
+            </section>
+            <section class="gallery devider_no_line">
+            </section>
+
+            <section class="gallery" id="user_testing">
+                <h2>User testing</h2>
+                <p>After I finished the first version prototype, I conducted some guerilla user testing, and found the following items need improvement most:</p>
+                <ul class="project_content_list">
+                    <li>In the onboarding preference setup process, more than one users suggested that the expected cooking time should be a range.</li>
+                    <li>In the “navigation mode”, some users can’t understand the interface of “steps”. This is also applicable to the steps in sharing/forking a post, because they share the same UI component.</li>
+                    <li>While sharing the post, some users suggested that there should be an extra step to confirm or preview the content before sharing it. It feels much “safer”.</li>
+                </ul>
+                <div class="img_item"><img src="image/project_ideapot/ideapot_user_testing.png" alt="User testing"></div>
+            </section>
+            <section class="gallery devider_no_line">
+            </section>
+
+            <section class="gallery" id="digital_prototype_2">
+                <h2>Digital prototype #2</h2>
+                <p>For the final prototype, I made some improvements based on the testing results, and added more detail to the interface.</p>
+                <h3>Set up proference during onboarding – iteration</h3>
+                <div class="img_item"><img src="image/project_ideapot/ideapot_prototype_2_1.png" alt="Digital prototype 2-1"></div>
+                <h3>Share/fork a recipe – iteration</h3>
+                <div class="img_item"><img src="image/project_ideapot/ideapot_prototype_2_2.png" alt="Digital prototype 2-2"></div>
+                <h3>Navigation mode – iteration</h3>
+                <div class="img_item"><img src="image/project_ideapot/ideapot_prototype_2_3.png" alt="Digital prototype 2-3"></div>
+            </section>
+            <section class="gallery devider_no_line">
+            </section>
+
+            <section class="gallery" id="conclusion">
+                <h2>Conclusion</h2>
+                <h3>What I learned</h3>
+                <p>The first lesson I learned from this project is that it is important to make sure you’re building something that really meets users’ needs. In the research stage, although the data roughly matched my expectation and assumption, there were some important details that I missed. In the user testing stage, there was also a lot of feedback that I didn’t think of. In conclusion, it is always good to ask what the “real” users are thinking, and build a prototype to test it as early and as fast as possible.</p>
+                <h3>If I have more time</h3>
+                <p>Since this is a project for a class, I was not able to work on it full-time, so there is a lot of room for improvement.</p>
+                <ul class="project_content_list">
+                    <li>First, I would like to go into the detail of how people can view the forked recipe, and probably add a price comparing features to it.</li>
+                    <li>Second, I would like to conduct more research outside the student group. I imagine this product can be helpful not only for students, but all the people who like or have to cook at home, but are frustrated by the other recipe websites.</li>
+                </ul>
+                <p>Thanks for watching! If you have any feedback, or you’re interested in this project, please don’t hesitate to contact me! You can find my contact info in my about page:)</p>
+            </section>
+        </main>
+    </div>
+    <script src="js/menu_mobile_project_scroll_ative_item.js"></script>
+    <script src="js/menu_mobile_project_position_adjust.js"></script>
+    <script src="js/menu_open_close.js"></script>
+    <script src="js/image_modal.js"></script>
+    <script src="js/project_menu_fixed.js"></script>
+    <script src="js/project_hero_image_content_scroll_speed.js"></script>
+</body>
+</html>

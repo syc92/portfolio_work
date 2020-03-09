@@ -1,9 +1,10 @@
 /* nav selected */
-#menu ul li #about {
+#menu ul #about {
     opacity: 100%;
+    font-family: 'body_medium', 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;;
 }
 /* nav selected */
-
+    
 
 
 /* grid setup start */
@@ -25,11 +26,11 @@
     margin: 0 0 0 0;
 }
 
-.about_info:nth-child(odd), .resume:nth-child(odd) {
+.about_info:nth-child(even), .resume:nth-child(odd) {
     grid-column: 1/4;
 }
 
-.about_info:nth-child(even), .resume:nth-child(even) {
+.about_info:nth-child(odd), .resume:nth-child(even) {
     grid-column: 4/7;
 }
 /* grid setup end */
@@ -109,7 +110,7 @@
 }
 
 .exp_section, .edu_section {
-    padding: 48px 0 0 0;
+    padding: 0 0 24px 0;
 }
 
 #personal_info .about_info #email p {

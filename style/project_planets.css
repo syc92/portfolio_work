@@ -1,0 +1,8 @@
+#hero_img {
+    background-image: linear-gradient(#222, #222);
+}
+
+#planets_demo {
+    padding-top: 56.25%;
+    position: relative;
+}
