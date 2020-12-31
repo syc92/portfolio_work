@@ -1,0 +1,110 @@
+[
+    {
+        "title": "Codementor",
+        "description": "CodementorX - A Software Development Freelance Platform ",
+        "link": "",
+        "thumbnail_link": "",
+        "categories": [
+            "product and research"
+        ]
+    },
+    {
+        "title": "Codementor",
+        "description": "A Design Guidline For Cross Products",
+        "link": "",
+        "thumbnail_link": "",
+        "categories": [
+            "product and research"
+        ]
+    },
+    {
+        "title": "Chime",
+        "description": "Self Served Ordering System",
+        "link": "",
+        "thumbnail_link": "",
+        "categories": [
+            "product and research"
+        ]
+    },
+    {
+        "title": "Talkie",
+        "description": "A Social Network for Future Work Places",
+        "link": "",
+        "thumbnail_link": "",
+        "categories": [
+            "product and research"
+        ]
+    },
+    {
+        "title": "Fulcrum",
+        "description": "Online Book Collection Research and Design",
+        "link": "",
+        "thumbnail_link": "",
+        "categories": [
+            "product and research"
+        ]
+    },
+    {
+        "title": "Diary atudy app",
+        "description": "An App Makes Diary Study More Efficient",
+        "link": "",
+        "thumbnail_link": "",
+        "categories": [
+            "product and research", "code"
+        ]
+    },
+    {
+        "title": "Case study of an online store",
+        "description": "Users Clustering through Clickstream Data",
+        "link": "",
+        "thumbnail_link": "",
+        "categories": [
+            "data"
+        ]
+    },
+    {
+        "title": "AR/VR",
+        "description": "Experiments with AR/VR Development",
+        "link": "",
+        "thumbnail_link": "",
+        "categories": [
+            "code"
+        ]
+    },
+    {
+        "title": "Pick card pick card",
+        "description": "A Small Cute Web Game, with Pikachu!",
+        "link": "",
+        "thumbnail_link": "",
+        "categories": [
+            "code"
+        ]
+    },
+    {
+        "title": "Taipei tourist map",
+        "description": "A Tourist Map of Taipei Made for Foreign Travelers",
+        "link": "",
+        "thumbnail_link": "",
+        "categories": [
+            "visual"
+        ]
+    },
+    {
+        "title": "Print collection",
+        "description": "Print Design Collection - Posters and Album Covers",
+        "link": "",
+        "thumbnail_link": "",
+        "categories": [
+            "visual"
+        ]
+    },
+    {
+        "title": "Logo collection",
+        "description": "Logo Design Collection",
+        "link": "",
+        "thumbnail_link": "",
+        "categories": [
+            "visual"
+        ]
+    }
+]
