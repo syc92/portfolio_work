@@ -5,8 +5,9 @@
         "link": "",
         "thumbnail_link": "",
         "categories": [
-            "product and research"
-        ]
+            "product_research"
+        ],
+        "id": 1
     },
     {
         "title": "Codementor",
@@ -14,8 +15,9 @@
         "link": "",
         "thumbnail_link": "",
         "categories": [
-            "product and research"
-        ]
+            "product_research"
+        ],
+        "id": 2
     },
     {
         "title": "Chime",
@@ -23,8 +25,9 @@
         "link": "",
         "thumbnail_link": "",
         "categories": [
-            "product and research"
-        ]
+            "product_research"
+        ],
+        "id": 3
     },
     {
         "title": "Talkie",
@@ -32,8 +35,9 @@
         "link": "",
         "thumbnail_link": "",
         "categories": [
-            "product and research"
-        ]
+            "product_research"
+        ],
+        "id": 4
     },
     {
         "title": "Fulcrum",
@@ -41,8 +45,9 @@
         "link": "",
         "thumbnail_link": "",
         "categories": [
-            "product and research"
-        ]
+            "product_research"
+        ],
+        "id": 5
     },
     {
         "title": "Diary atudy app",
@@ -50,8 +55,9 @@
         "link": "",
         "thumbnail_link": "",
         "categories": [
-            "product and research", "code"
-        ]
+            "product_research", "code"
+        ],
+        "id": 6
     },
     {
         "title": "Case study of an online store",
@@ -60,7 +66,8 @@
         "thumbnail_link": "",
         "categories": [
             "data"
-        ]
+        ],
+        "id": 7
     },
     {
         "title": "AR/VR",
@@ -69,7 +76,8 @@
         "thumbnail_link": "",
         "categories": [
             "code"
-        ]
+        ],
+        "id": 8
     },
     {
         "title": "Pick card pick card",
@@ -78,7 +86,8 @@
         "thumbnail_link": "",
         "categories": [
             "code"
-        ]
+        ],
+        "id": 9
     },
     {
         "title": "Taipei tourist map",
@@ -87,7 +96,8 @@
         "thumbnail_link": "",
         "categories": [
             "visual"
-        ]
+        ],
+        "id": 10
     },
     {
         "title": "Print collection",
@@ -96,7 +106,8 @@
         "thumbnail_link": "",
         "categories": [
             "visual"
-        ]
+        ],
+        "id": 11
     },
     {
         "title": "Logo collection",
@@ -105,6 +116,7 @@
         "thumbnail_link": "",
         "categories": [
             "visual"
-        ]
+        ],
+        "id": 12
     }
 ]
