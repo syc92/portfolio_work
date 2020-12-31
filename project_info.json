@@ -2,7 +2,7 @@
     {
         "title": "Codementor",
         "description": "CodementorX - A Software Development Freelance Platform ",
-        "link": "project_cm_dash.html",
+        "url": "project_cm_dash.html",
         "thumbnail_link": "",
         "categories": [
             "product_research"
@@ -12,7 +12,7 @@
     {
         "title": "Codementor",
         "description": "A Design Guidline For Cross Products",
-        "link": "",
+        "url": "",
         "thumbnail_link": "",
         "categories": [
             "product_research"
@@ -22,7 +22,7 @@
     {
         "title": "Chime",
         "description": "Self Served Ordering System",
-        "link": "",
+        "url": "",
         "thumbnail_link": "",
         "categories": [
             "product_research"
@@ -32,7 +32,7 @@
     {
         "title": "Talkie",
         "description": "A Social Network for Future Work Places",
-        "link": "",
+        "url": "",
         "thumbnail_link": "",
         "categories": [
             "product_research"
@@ -42,7 +42,7 @@
     {
         "title": "Fulcrum",
         "description": "Online Book Collection Research and Design",
-        "link": "",
+        "url": "",
         "thumbnail_link": "",
         "categories": [
             "product_research"
@@ -52,7 +52,7 @@
     {
         "title": "Diary atudy app",
         "description": "An App Makes Diary Study More Efficient",
-        "link": "",
+        "url": "",
         "thumbnail_link": "",
         "categories": [
             "product_research", "code"
@@ -62,7 +62,7 @@
     {
         "title": "Case study of an online store",
         "description": "Users Clustering through Clickstream Data",
-        "link": "",
+        "url": "",
         "thumbnail_link": "",
         "categories": [
             "data"
@@ -72,7 +72,7 @@
     {
         "title": "AR/VR",
         "description": "Experiments with AR/VR Development",
-        "link": "",
+        "url": "",
         "thumbnail_link": "",
         "categories": [
             "code"
@@ -82,7 +82,7 @@
     {
         "title": "Pick card pick card",
         "description": "A Small Cute Web Game, with Pikachu!",
-        "link": "",
+        "url": "",
         "thumbnail_link": "",
         "categories": [
             "code"
@@ -92,7 +92,7 @@
     {
         "title": "Taipei tourist map",
         "description": "A Tourist Map of Taipei Made for Foreign Travelers",
-        "link": "",
+        "url": "",
         "thumbnail_link": "",
         "categories": [
             "visual"
@@ -102,7 +102,7 @@
     {
         "title": "Print collection",
         "description": "Print Design Collection - Posters and Album Covers",
-        "link": "",
+        "url": "",
         "thumbnail_link": "",
         "categories": [
             "visual"
@@ -112,7 +112,7 @@
     {
         "title": "Logo collection",
         "description": "Logo Design Collection",
-        "link": "",
+        "url": "",
         "thumbnail_link": "",
         "categories": [
             "visual"
