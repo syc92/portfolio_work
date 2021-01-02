@@ -3,7 +3,7 @@
         "title": "Codementor",
         "description": "CodementorX - A Software Development Freelance Platform",
         "url": "project_cm_dash.html",
-        "thumbnail_url": "image/img_thumbnail/thumbnail_cm.png",
+        "thumbnail_url": "image/img_thumbnail/thumbnail_cm_dash.png",
         "categories": [
             "product_research"
         ],
@@ -13,7 +13,7 @@
         "title": "Codementor",
         "description": "A Design Guidline For Cross Products",
         "url": "",
-        "thumbnail_url": "",
+        "thumbnail_url": "image/img_thumbnail/thumbnail_cm_guideline.png",
         "categories": [
             "product_research"
         ],
@@ -23,7 +23,7 @@
         "title": "Chime",
         "description": "Self Served Ordering System",
         "url": "",
-        "thumbnail_url": "",
+        "thumbnail_url": "image/img_thumbnail/thumbnail_chime.png",
         "categories": [
             "product_research"
         ],
@@ -33,7 +33,7 @@
         "title": "Talkie",
         "description": "A Social Network for Future Work Places",
         "url": "",
-        "thumbnail_url": "",
+        "thumbnail_url": "image/img_thumbnail/thumbnail_talkie.png",
         "categories": [
             "product_research"
         ],
@@ -43,7 +43,7 @@
         "title": "Fulcrum",
         "description": "Online Book Collection Research and Design",
         "url": "",
-        "thumbnail_url": "",
+        "thumbnail_url": "image/img_thumbnail/thumbnail_fulcrum.png",
         "categories": [
             "product_research"
         ],
@@ -53,7 +53,7 @@
         "title": "Diary atudy app",
         "description": "An App Makes Diary Study More Efficient",
         "url": "",
-        "thumbnail_url": "",
+        "thumbnail_url": "image/img_thumbnail/thumbnail_diary_study_app.png",
         "categories": [
             "product_research", "code"
         ],
@@ -63,7 +63,7 @@
         "title": "Case study of an online store",
         "description": "Users Clustering through Clickstream Data",
         "url": "",
-        "thumbnail_url": "",
+        "thumbnail_url": "image/img_thumbnail/thumbnail_data_clickstream.png",
         "categories": [
             "data"
         ],
@@ -73,7 +73,7 @@
         "title": "AR/VR",
         "description": "Experiments with AR/VR Development",
         "url": "",
-        "thumbnail_url": "",
+        "thumbnail_url": "image/img_thumbnail/thumbnail_ar_vr.png",
         "categories": [
             "code"
         ],
@@ -83,7 +83,7 @@
         "title": "Pick card pick card",
         "description": "A Small Cute Web Game, with Pikachu!",
         "url": "",
-        "thumbnail_url": "",
+        "thumbnail_url": "image/img_thumbnail/thumbnail_pika.png",
         "categories": [
             "code"
         ],
@@ -93,7 +93,7 @@
         "title": "Taipei tourist map",
         "description": "A Tourist Map of Taipei Made for Foreign Travelers",
         "url": "",
-        "thumbnail_url": "",
+        "thumbnail_url": "image/img_thumbnail/thumbnail_taipei_map.png",
         "categories": [
             "visual"
         ],
@@ -103,7 +103,7 @@
         "title": "Print collection",
         "description": "Print Design Collection - Posters and Album Covers",
         "url": "",
-        "thumbnail_url": "",
+        "thumbnail_url": "image/img_thumbnail/thumbnail_collection_print.png",
         "categories": [
             "visual"
         ],
@@ -113,7 +113,7 @@
         "title": "Logo collection",
         "description": "Logo Design Collection",
         "url": "",
-        "thumbnail_url": "",
+        "thumbnail_url": "image/img_thumbnail/thumbnail_collection_logo.png",
         "categories": [
             "visual"
         ],
