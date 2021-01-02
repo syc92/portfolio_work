@@ -1,7 +1,7 @@
 [
     {
-        "title": "Codementor",
-        "description": "CodementorX - A Software Development Freelance Platform",
+        "title": "Product Design &amp; UX Research",
+        "description": "CodementorX - A Software Development Freelance SaaS",
         "url": "project_cm_dash.html",
         "thumbnail_url": "image/img_thumbnail/thumbnail_cm_dash.png",
         "categories": [
@@ -10,8 +10,8 @@
         "id": 1
     },
     {
-        "title": "Codementor",
-        "description": "A Design Guidline For Cross Products",
+        "title": "Product Design &amp; UX Research",
+        "description": "Codementor Design Guidline For Cross Products",
         "url": "",
         "thumbnail_url": "image/img_thumbnail/thumbnail_cm_guideline.png",
         "categories": [
@@ -20,8 +20,8 @@
         "id": 2
     },
     {
-        "title": "Chime",
-        "description": "Self Served Ordering System",
+        "title": "Product Design &amp; UX Research",
+        "description": "Chime - Self Served Ordering System for COVID Era",
         "url": "",
         "thumbnail_url": "image/img_thumbnail/thumbnail_chime.png",
         "categories": [
@@ -30,8 +30,8 @@
         "id": 3
     },
     {
-        "title": "Talkie",
-        "description": "A Social Network for Future Work Places",
+        "title": "Product Design &amp; UX Research",
+        "description": "Talkie - Bump into Friends and Collegues Everywhere",
         "url": "",
         "thumbnail_url": "image/img_thumbnail/thumbnail_talkie.png",
         "categories": [
@@ -40,8 +40,8 @@
         "id": 4
     },
     {
-        "title": "Fulcrum",
-        "description": "Online Book Collection Research and Design",
+        "title": "Product Design &amp; UX Research",
+        "description": "Fulcrum - Online Book Collection",
         "url": "",
         "thumbnail_url": "image/img_thumbnail/thumbnail_fulcrum.png",
         "categories": [
@@ -50,7 +50,7 @@
         "id": 5
     },
     {
-        "title": "Diary atudy app",
+        "title": "Product Design &amp; UX Research, Creative Coding",
         "description": "An App Makes Diary Study More Efficient",
         "url": "",
         "thumbnail_url": "image/img_thumbnail/thumbnail_diary_study_app.png",
@@ -60,8 +60,8 @@
         "id": 6
     },
     {
-        "title": "Case study of an online store",
-        "description": "Users Clustering through Clickstream Data",
+        "title": "Data Analysis",
+        "description": "Users Clustering for an Online Store Using Clickstream Data",
         "url": "",
         "thumbnail_url": "image/img_thumbnail/thumbnail_data_clickstream.png",
         "categories": [
@@ -70,7 +70,7 @@
         "id": 7
     },
     {
-        "title": "AR/VR",
+        "title": "Creative Coding",
         "description": "Experiments with AR/VR Development",
         "url": "",
         "thumbnail_url": "image/img_thumbnail/thumbnail_ar_vr.png",
@@ -80,8 +80,8 @@
         "id": 8
     },
     {
-        "title": "Pick card pick card",
-        "description": "A Small Cute Web Game, with Pikachu!",
+        "title": "Creative Coding",
+        "description": "Pick card pick card - A Web Game with Pikachu!",
         "url": "",
         "thumbnail_url": "image/img_thumbnail/thumbnail_pika.png",
         "categories": [
@@ -90,8 +90,8 @@
         "id": 9
     },
     {
-        "title": "Taipei tourist map",
-        "description": "A Tourist Map of Taipei Made for Foreign Travelers",
+        "title": "Visual Work",
+        "description": "Taipei Map - A Tourist Map of Taipei Made for Foreign Travelers",
         "url": "",
         "thumbnail_url": "image/img_thumbnail/thumbnail_taipei_map.png",
         "categories": [
@@ -100,8 +100,8 @@
         "id": 10
     },
     {
-        "title": "Print collection",
-        "description": "Print Design Collection - Posters and Album Covers",
+        "title": "Visual Work",
+        "description": "Print Design Collection: Posters and Album Covers",
         "url": "",
         "thumbnail_url": "image/img_thumbnail/thumbnail_collection_print.png",
         "categories": [
@@ -110,8 +110,8 @@
         "id": 11
     },
     {
-        "title": "Logo collection",
-        "description": "Logo Design Collection",
+        "title": "Visual Work",
+        "description": "Logotype Design Collection",
         "url": "",
         "thumbnail_url": "image/img_thumbnail/thumbnail_collection_logo.png",
         "categories": [
