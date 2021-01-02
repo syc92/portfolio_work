@@ -12,7 +12,7 @@
     {
         "title": "Product Design &amp; UX Research",
         "description": "Codementor Design Guidline For Cross Products",
-        "url": "",
+        "url": "project_cm_guide.html",
         "thumbnail_url": "image/img_thumbnail/thumbnail_cm_guideline.png",
         "categories": [
             "product_research"
@@ -22,7 +22,7 @@
     {
         "title": "Product Design &amp; UX Research",
         "description": "Chime - Self Served Ordering System for COVID Era",
-        "url": "",
+        "url": "project_chime.html",
         "thumbnail_url": "image/img_thumbnail/thumbnail_chime.png",
         "categories": [
             "product_research"
@@ -32,7 +32,7 @@
     {
         "title": "Product Design &amp; UX Research",
         "description": "Talkie - Bump into Friends and Collegues Everywhere",
-        "url": "",
+        "url": "project_talkie.html",
         "thumbnail_url": "image/img_thumbnail/thumbnail_talkie.png",
         "categories": [
             "product_research"
@@ -42,7 +42,7 @@
     {
         "title": "Product Design &amp; UX Research",
         "description": "Fulcrum - Online Book Collection",
-        "url": "",
+        "url": "project_fulcrum.html",
         "thumbnail_url": "image/img_thumbnail/thumbnail_fulcrum.png",
         "categories": [
             "product_research"
@@ -52,7 +52,7 @@
     {
         "title": "Product Design &amp; UX Research, Creative Coding",
         "description": "An App Makes Diary Study More Efficient",
-        "url": "",
+        "url": "project_diary.html",
         "thumbnail_url": "image/img_thumbnail/thumbnail_diary_study_app.png",
         "categories": [
             "product_research", "code"
@@ -61,8 +61,8 @@
     },
     {
         "title": "Data Analysis",
-        "description": "Users Clustering for an Online Store Using Clickstream Data",
-        "url": "",
+        "description": "Online Store Users Clustering Using Clickstream Data",
+        "url": "project_data_clickstream",
         "thumbnail_url": "image/img_thumbnail/thumbnail_data_clickstream.png",
         "categories": [
             "data"
@@ -71,8 +71,8 @@
     },
     {
         "title": "Creative Coding",
-        "description": "Experiments with AR/VR Development",
-        "url": "",
+        "description": "AR/VR Experiments",
+        "url": "project_ar_vr.html",
         "thumbnail_url": "image/img_thumbnail/thumbnail_ar_vr.png",
         "categories": [
             "code"
@@ -82,7 +82,7 @@
     {
         "title": "Creative Coding",
         "description": "Pick card pick card - A Web Game with Pikachu!",
-        "url": "",
+        "url": "project_pika.html",
         "thumbnail_url": "image/img_thumbnail/thumbnail_pika.png",
         "categories": [
             "code"
@@ -92,7 +92,7 @@
     {
         "title": "Visual Work",
         "description": "Taipei Map - A Tourist Map of Taipei Made for Foreign Travelers",
-        "url": "",
+        "url": "project_taipei_map.html",
         "thumbnail_url": "image/img_thumbnail/thumbnail_taipei_map.png",
         "categories": [
             "visual"
@@ -102,7 +102,7 @@
     {
         "title": "Visual Work",
         "description": "Print Design Collection: Posters and Album Covers",
-        "url": "",
+        "url": "project_print.html",
         "thumbnail_url": "image/img_thumbnail/thumbnail_collection_print.png",
         "categories": [
             "visual"
@@ -112,7 +112,7 @@
     {
         "title": "Visual Work",
         "description": "Logotype Design Collection",
-        "url": "",
+        "url": "project_logo.html",
         "thumbnail_url": "image/img_thumbnail/thumbnail_collection_logo.png",
         "categories": [
             "visual"
