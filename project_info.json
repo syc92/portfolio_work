@@ -62,7 +62,7 @@
     {
         "title": "#Data Analysis",
         "description": "Online Store Users Clustering Using Clickstream Data",
-        "url": "project_data_clickstream",
+        "url": "project_data_clickstream.html",
         "thumbnail_url": "image/img_thumbnail/thumbnail_data_clickstream.png",
         "categories": [
             "data"
