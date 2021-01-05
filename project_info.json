@@ -101,16 +101,6 @@
     },
     {
         "title": "#Visual Work",
-        "description": "Print Design Collection",
-        "url": "project_print.html",
-        "thumbnail_url": "image/img_thumbnail/thumbnail_collection_print.png",
-        "categories": [
-            "visual"
-        ],
-        "id": 11
-    },
-    {
-        "title": "#Visual Work",
         "description": "Logotype Design Collection",
         "url": "project_logo.html",
         "thumbnail_url": "image/img_thumbnail/thumbnail_collection_logo.png",
@@ -118,5 +108,15 @@
             "visual"
         ],
         "id": 12
+    },
+    {
+        "title": "#Visual Work",
+        "description": "Print Design Collection",
+        "url": "project_print.html",
+        "thumbnail_url": "image/img_thumbnail/thumbnail_collection_print.png",
+        "categories": [
+            "visual"
+        ],
+        "id": 11
     }
 ]
