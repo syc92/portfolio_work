@@ -72,7 +72,7 @@
     {
         "title": "#Creative Coding",
         "description": "AR/VR Experiments",
-        "url": "project_ar_vr.html",
+        "url": "project_virtual_garden.html",
         "thumbnail_url": "image/img_thumbnail/thumbnail_ar_vr.png",
         "categories": [
             "code"
