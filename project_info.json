@@ -60,16 +60,6 @@
         "id": "project_6"
     },
     {
-        "title": "#Data Analysis",
-        "description": "Online Store Users Clustering Using Clickstream Data",
-        "url": "project_data_clickstream.html",
-        "thumbnail_url": "image/img_thumbnail/thumbnail_data_clickstream.png",
-        "categories": [
-            "data"
-        ],
-        "id": "project_7"
-    },
-    {
         "title": "#Creative Coding",
         "description": "AR Gardening",
         "url": "project_virtual_garden.html",
@@ -77,7 +67,7 @@
         "categories": [
             "code"
         ],
-        "id": "project_8"
+        "id": "project_7"   
     },
     {
         "title": "#Creative Coding",
@@ -86,6 +76,16 @@
         "thumbnail_url": "image/img_thumbnail/thumbnail_pika.png",
         "categories": [
             "code"
+        ],
+        "id": "project_8"
+    },
+    {
+        "title": "#Data Analysis",
+        "description": "Online Store Users Clustering Using Clickstream Data",
+        "url": "project_data_clickstream.html",
+        "thumbnail_url": "image/img_thumbnail/thumbnail_data_clickstream.png",
+        "categories": [
+            "data"
         ],
         "id": "project_9"
     },
