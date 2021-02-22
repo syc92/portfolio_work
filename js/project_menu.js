@@ -20,6 +20,11 @@ let pLineHeight = window.innerWidth / 80 * 1.75;
         // for scroll
         document.addEventListener('scroll', ()=>{
             if (pageYOffset > (menuIconPosition - pageEdge)) {
+                console.log(pageYOffset);
+                console.log(menuIconPosition);
+                console.log(pageEdge);
+                console.log(menuIconPosition - pageEdge);
+                console.log('-----------')
                 if (menuIcon.className.includes("contentBlockFixed contentBlockFixedTopLeft")==false) {
                     menuIcon.setAttribute('class', menuIcon.className + " contentBlockFixed contentBlockFixedTopLeft")
                 }
