@@ -1,33 +1,5 @@
 /* * {-webkit-font-smoothing: antialiased;} */
 
-
-
-/* @font-face {
-    font-family: "roboto_slab_light";
-    font-style: normal;
-    font-weight: 300;
-    src: url('../font/roboto_slab/roboto-slab-v13-latin-regular.eot');
-    src: local(''),
-         url('../font/roboto_slab/roboto-slab-v13-latin-regular.eot?#iefix') format('embedded-opentype'),
-         url('../font/roboto_slab/roboto-slab-v13-latin-regular.woff2') format('woff2'),
-         url('../font/roboto_slab/roboto-slab-v13-latin-regular.woff') format('woff'),
-         url('../font/roboto_slab/roboto-slab-v13-latin-regular.ttf') format('truetype'),
-         url('../font/roboto_slab/roboto-slab-v13-latin-regular.svg#RobotoSlab') format('svg');
-}
-
-@font-face {
-    font-family: "roboto_slab_medium";
-    font-style: normal;
-    font-weight: 500;
-    src: url('../font/roboto_slab/roboto-slab-v13-latin-regular.eot');
-    src: local(''),
-         url('../font/roboto_slab/roboto-slab-v13-latin-regular.eot?#iefix') format('embedded-opentype'),
-         url('../font/roboto_slab/roboto-slab-v13-latin-regular.woff2') format('woff2'),
-         url('../font/roboto_slab/roboto-slab-v13-latin-regular.woff') format('woff'),
-         url('../font/roboto_slab/roboto-slab-v13-latin-regular.ttf') format('truetype'),
-         url('../font/roboto_slab/roboto-slab-v13-latin-regular.svg#RobotoSlab') format('svg');
-} */
-
 /* @font-face {
     font-family: "roboto_slab_medium";
     src: url("../font/roboto_slab/RobotoSlab-Medium.ttf");
@@ -91,7 +63,6 @@ body {
 
 
     font-family: "Roboto Slab";
-    font-style: "regular";
     font-weight: 400;
     word-spacing: 2px;
 
@@ -106,54 +77,44 @@ body {
 h1 {
     font-size: var(--h1Size);
     line-height: var(--h1LineHeight);
-    font-weight: normal;
+    font-weight: 400;
 }
 
 h2 {
     font-size: var(--h2Size);
     line-height: var(--h2LineHeight);
-    font-weight: normal;
+    font-weight: 400;
 }
 
 h3 {
     font-size: var(--h3Size);
     line-height: var(--h3LineHeight);
-    font-weight: normal;
+    font-weight: 400;
 }
 
 p {
     font-size: var(--pSize);
     line-height: var(--pLineHeight);
-    font-weight: normal;
+    font-weight: 400;
 }
 
 .pSub {
     font-size: var(--pSubSize);
     line-height: var(--pSubLineHeight);
-    font-weight: normal;
+    font-weight: 400;
     color: var(--ColorGrayText);
 }
 
 .pRegular {
     font-family: "Roboto Slab";
-    font-style: "regular";
     font-weight: 400;
 }
 .pLight {
     font-family: "Roboto Slab";
-    font-style: "light";
     font-weight: 300;
 }
-/* .pLightH2 {
-    font-family: roboto_slab_regular;
-    font-weight: lighter;
-} */
-/* .pSpacingWide {
-    word-spacing: 2px;
-} */
 .pMedium {
     font-family: "Roboto Slab";
-    font-style: "medium";
     font-weight: 500;
 }
 
