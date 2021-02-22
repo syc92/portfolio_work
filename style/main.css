@@ -8,9 +8,9 @@
 @font-face {
     font-family: "roboto_slab_light";
     src: url("../font/roboto_slab/RobotoSlab-Light.ttf");
-}
+} */
 
-@font-face {
+/* @font-face {
     font-family: "roboto_mono_regular";
     src: url("../font/Roboto_Mono/RobotoMono-Regular.ttf");
 }
@@ -123,11 +123,13 @@ p {
 }
 
 .pHighlightRegular {
-    font-family: roboto_mono_regular;
+    font-family: "Roboto Mono";
+    font-weight: 400;
     word-spacing: 0px;
 }
 .pHighlightLight {
-    font-family: roboto_mono_light;
+    font-family: "Roboto Mono";
+    font-weight: 300;
     word-spacing: 0px;
 }
 
@@ -841,6 +843,12 @@ a:visited {
 
 
 /* project common */
+.hero {
+    width: var(--block12_12);
+    height: calc(var(--block12_12) * 0.54);
+    overflow: hidden;
+}
+
 #menu {
     height: 100vh;
     z-index: 100;

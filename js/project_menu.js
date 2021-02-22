@@ -19,9 +19,6 @@ let pLineHeight = window.innerWidth / 80 * 1.75;
         }
         // for scroll
         document.addEventListener('scroll', ()=>{
-            // update menuIconPosition, cuz sometimes it will count the position before image loaded
-            menuIconPosition = menuIcon.offsetTop;
-
             if (pageYOffset > (menuIconPosition - pageEdge)) {
                 console.log(pageYOffset);
                 console.log(menuIconPosition);
