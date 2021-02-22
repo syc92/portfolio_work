@@ -91,6 +91,7 @@ body {
 
 
     font-family: "Roboto Slab";
+    font-style: "regular";
     font-weight: 400;
     word-spacing: 2px;
 
@@ -135,10 +136,12 @@ p {
 
 .pRegular {
     font-family: "Roboto Slab";
+    font-style: "regular";
     font-weight: 400;
 }
 .pLight {
     font-family: "Roboto Slab";
+    font-style: "light";
     font-weight: 300;
 }
 /* .pLightH2 {
@@ -150,6 +153,7 @@ p {
 } */
 .pMedium {
     font-family: "Roboto Slab";
+    font-style: "medium";
     font-weight: 500;
 }
 
