@@ -1,27 +1,27 @@
 /* * {-webkit-font-smoothing: antialiased;} */
 
 @font-face {
-    font-family: roboto_slab_regular;
+    font-family: "roboto_slab_regular";
     src: url("../font/roboto_slab/RobotoSlab-Regular.ttf");
 }
 
 @font-face {
-    font-family: roboto_slab_medium;
+    font-family: "roboto_slab_medium";
     src: url("../font/roboto_slab/RobotoSlab-Medium.ttf");
 }
 
 @font-face {
-    font-family: roboto_slab_light;
+    font-family: "roboto_slab_light";
     src: url("../font/roboto_slab/RobotoSlab-Light.ttf");
 }
 
 @font-face {
-    font-family: roboto_mono_regular;
+    font-family: "roboto_mono_regular";
     src: url("../font/Roboto_Mono/RobotoMono-Regular.ttf");
 }
 
 @font-face {
-    font-family: roboto_mono_light;
+    font-family: "roboto_mono_light";
     src: url("../font/Roboto_Mono/RobotoMono-Light.ttf");
 }
 
