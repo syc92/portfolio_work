@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shi-Yu Chuuuuuuuuu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="icon/favicon.png"/> 
+    <link rel="stylesheet" type="text/css" href="style/html5reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/main.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <!-- need review -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151944711-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-151944711-2');
+    </script>
+    <script>
+        function preLoadImage (e) {
+            let classes = e.className.replace('imgBeforeLoaded', '')
+            e.setAttribute('class', classes + " imgAnimation")
+        };
+    </script>
+</head>
+<body>
+    <div id="contentContainer" class="contentBlockHLayoutStretchSevenly">
+        
+        <nav id="navTop" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+            <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
+                <p class="pUppercase"><a class="aWhite" href="index.html">Shih-Yu Chu</a></p>
+                <p>|</p>
+                <p><a class="aWhite aInternalNormal" href="index.html">Work</a></p>
+                <p><a class="aWhite aInternalNormal" href="about.html">Meee</a></p>
+                <p><a class="aWhite aInternalNormal" href="random_work.html">Pppp</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="mailto:sychuu@umich.edu" target="blank_">Email</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://linkedin.com/in/shiyuchuu" target="blank_">LinkedIn</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://drive.google.com/file/d/16LKEUGu0CgxXOrWYTA1Jtj-HCgP9r48e/view" target="blank_">Resume</a></p>
+            </div>
+        </nav>
+
+        <main id="mainContent" class="contentBlockWidth_1">
+            <section class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+                <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
+                    <div class="contentBlockWidth_12_12">
+                        <h1>Taipei Map</h1>
+                        <h2 class="pLight marginTop16">A Tourist Map Made for Foreign Travelers</h2>
+                    </div>
+
+                    <div class="contentBlockWidth_12_12">
+                        <div class="vSpace80"></div>
+                        <video class="contentBlockWidth_12_12" onload="preLoadImage(this)" autoplay muted loop>
+                            <source src="image/project_taipei_map/map.mp4" type="video/mp4"/>
+                        </video>
+                    </div>
+                </div>
+                <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">                    
+                    <div class="contentBlockWidth_3_12">
+                        <div class="vSpace56"></div>
+                        <p>Client: <span class="pGray pLight">Like It Formosa</span></p>
+                        <p>Expertise: <span class="pGray pLight">infographic, illustration</span></p>
+                        <p>Period: <span class="pGray pLight">2015</span></p>
+                    </div>
+
+                    <div class="contentBlockWidth_8_12">
+                        <div class="vSpace56"></div>
+                        <h3>Project Overview</h3>
+                        <p class="pLight pGray marginTop28">Invited by Like It Formosa (LIF), together we created and published this map in 2015, aiming to help foreign travelers quickly learn Taiwanese culture and provide a tour guide of what to do and where to visit in Taipei. The content was organized by the LIF team, and I was responsible for the design, including layout and dimensions, visual style, and print.</p>
+                    </div>
+
+                    <div class="contentBlockWidth_12_12 vSpace80"></div>
+                </div>
+            </section>
+
+            <section id="menu" class="contentBlockWidth_1 displayNone whiteBackground contentBlockFixed contentBlockFixedTopLeft0">
+                <div class="contentBlockWidth_12_12 contentBlockVLayoutLeftTop">
+                    <img id="close" class="marginTopFixedEdge" src="icon/icon_close_black.svg" alt="">
+                    <div id="menuList" class="contentBlockWidth_12_12 menuFadeIn">
+                        <h2 id="menuTitle" class="marginTop28">Taipei Map</h2>
+                        <div class="contentBlockWidth_12_12 lineBlack marginTop28"></div>
+                        <h2 id="tag-results" class="tag marginTop28 aInternalSelected">Results</h2>
+                        <h2 id="tag-process" class="tag marginTop8 aInternalNormal">Concept & Process</h2>
+                        <h2 id="tag-dimension" class="tag menuLastItem marginTop8 aInternalNormal">Dimension</h2>
+                        <div class="contentBlockWidth_12_12 vSpaceFixedEdge"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contentBlockWidth_1 contentBlockHLayoutCenterSaround whiteBackground">
+                <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
+                    <div class="contentBlockWidth_4_12">
+                        <div class="vSpace120 whiteBackground"></div>
+                        <div id="menuIcon"></div>
+                        <div class="vSpace80"></div>
+                    </div>
+
+                    <div class="contentBlockWidth_8_12">
+
+                        <div id="results" class="target">
+                                <div class="vSpace120"></div>
+                            <h2 class="pMedium pUppercase">Results</h2>
+                                <div class="vSpace80"></div>
+                            <img onload="preLoadImage(this)" class="imageWidthInsideContainer imgBeforeLoaded" src="image/project_taipei_map/map_whole_1.jpg" alt="">
+                            <p class="marginTop8 pSub">On the front page, we shows the daily life information that the travelers would like to know.</p>
+                                <div class="vSpace28"></div>
+                            <img onload="preLoadImage(this)" class="imageWidthInsideContainer imgBeforeLoaded" src="image/project_taipei_map/map_whole_2.jpg" alt="">
+                            <p class="marginTop8 pSub">The back page shows the map of Taipei and recommendations for sightseeing.</p>
+                                <div class="vSpace28"></div>
+                            <img onload="preLoadImage(this)" class="imageWidthInsideContainer imgBeforeLoaded" src="image/project_taipei_map/map_illustration3.png" alt="">
+                            <p class="marginTop8 pSub">Food illustration</p>
+                        </div>
+
+                        <div id="process" class="target">
+                                <div class="vSpace120"></div>
+                            <h2 class="pMedium pUppercase">Concept & Process</h2>
+                                <div class="vSpace80"></div>
+                            <p>We wanted to create a map that is playful and not only contains information but also shows what Taipei is like. Therefore, we decided to embed the information in the cartoon style illustration of Taipei. I first put all the information in the map, roughly gauged dimensions of the map, and iterated on how to combine information and illustration and how to group them into different sections. After figuring out the layout, I sketched the Taipei street scenery, and finished the illustration on the computer.</p>
+                                <div class="vSpace28"></div>
+                            <div class="contentBlockHLayoutStretchSbetween">
+                                <img onload="preLoadImage(this)" class="contentBlockWidth_1_4 imgBeforeLoaded" src="image/project_taipei_map/map_draft1.jpg" alt="">
+                                <img onload="preLoadImage(this)" class="contentBlockWidth_1_4 imgBeforeLoaded" src="image/project_taipei_map/map_draft2.jpg" alt="">
+                                <img onload="preLoadImage(this)" class="contentBlockWidth_1_4 imgBeforeLoaded" src="image/project_taipei_map/map_draft3.jpg" alt="">
+                                <img onload="preLoadImage(this)" class="contentBlockWidth_1_4 imgBeforeLoaded" src="image/project_taipei_map/map_draft5.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div id="dimensions" class="target">
+                                <div class="vSpace120"></div>
+                            <h2 class="pMedium pUppercase">Dimensions</h2>
+                                <div class="vSpace80"></div>
+                            <p>To make sure that the map is easy to be carried by the travelers, I made the folded size of the map small enough that it can be fitted into a pocket.</p>
+                            <div class="contentBlockHLayoutStretchSbetween">
+                                <img onload="preLoadImage(this)" class="contentBlockWidth_4_12 imgBeforeLoaded marginTop28" src="image/project_taipei_map/map_size.jpg" alt="">
+                                <img onload="preLoadImage(this)" class="contentBlockWidth_4_12 imgBeforeLoaded marginTop28" src="image/project_taipei_map/map_pocket.jpg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="vSpace120 contentBlockWidth_12_12"></div>
+            </section>
+        </main>
+
+        <footer id="footerBottom" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+            <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
+                <p>© Shih-Yu Chu 2021</p>
+                <p>|</p>
+                <p><a class="aWhite aInternalNormal" href="index.html" id="navMenuProject">Work</a></p>
+                <p><a class="aWhite aInternalNormal" href="about.html" id="navMenuAbout">Meee</a></p>
+                <p><a class="aWhite aInternalNormal" href="random_work.html">Pppp</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="mailto:sychuu@umich.edu" target="blank_">Email</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://linkedin.com/in/shiyuchuu" target="blank_">LinkedIn</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://drive.google.com/file/d/16LKEUGu0CgxXOrWYTA1Jtj-HCgP9r48e/view" target="blank_">Resume</a></p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="js/project_menu.js"></script>
+
+</body>
+</html>

@@ -1,9 +1,0 @@
-#hero_img {
-    background-image: linear-gradient(#222, #222);
-}
-
-@media (max-width: 1156px) {
-    .gallery, .gallery_right, .gallery_left {
-        grid-column: 1/7;
-    }
-}

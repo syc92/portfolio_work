@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shi-Yu Chuuuuuuuuu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="icon/favicon.png"/> 
+    <link rel="stylesheet" type="text/css" href="style/html5reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/main.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    
+    <!-- need review -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151944711-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-151944711-2');
+    </script>
+    <script>
+        function preLoadImage (e) {
+            let classes = e.className.replace('imgBeforeLoaded', '')
+            e.setAttribute('class', classes + " imgAnimation")
+        };
+    </script>
+</head>
+<body>
+    <div id="contentContainer" class="contentBlockHLayoutStretchSevenly">
+        
+        <nav id="navTop" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+            <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
+                <p class="pUppercase"><a class="aWhite" href="index.html">Shih-Yu Chu</a></p>
+                <p>|</p>
+                <p><a class="aWhite aInternalNormal" href="index.html">Work</a></p>
+                <p><a class="aWhite aInternalNormal" href="about.html">Meee</a></p>
+                <p><a class="aWhite aInternalSelected" href="random_work.html">Pppp</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="mailto:sychuu@umich.edu" target="blank_">Email</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://linkedin.com/in/shiyuchuu" target="blank_">LinkedIn</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://drive.google.com/file/d/16LKEUGu0CgxXOrWYTA1Jtj-HCgP9r48e/view" target="blank_">Resume</a></p>
+            </div>
+        </nav>
+
+        <main id="mainContent" class="contentBlockWidth_1">
+            <section class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+                <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
+                    <div class="contentBlockWidth_12_12">
+                        <h2 class="pLight marginTop28">Playground – My Random Design Work</h2>
+                    </div>
+                </div>
+                <div class="vSpace120 contentBlockWidth_12_12"></div>
+            </section>
+
+            <section class="contentBlockWidth_1 contentBlockHLayoutCenterSaround">
+                <div class="contentBlockWidth_12_12 contentBlockHLayoutTopSbetween">
+                    <video class="contentBlockWidth_6_12 marginTop28" onload="preLoadImage(this)" autoplay muted loop>
+                        <source src="image/img_random/Comp 1.mp4" type="video/mp4"/>
+                    </video>
+                    <video class="contentBlockWidth_6_12 marginTop28" onload="preLoadImage(this)" autoplay muted loop>
+                        <source src="image/img_random/sphere.mov" type="video/mp4"/>
+                    </video>
+                    <img onload="preLoadImage(this)" class="contentBlockWidth_4_12 imgBeforeLoaded marginTop28" src="image/img_random/01_login.png" alt="">
+                    <img onload="preLoadImage(this)" class="contentBlockWidth_4_12 imgBeforeLoaded marginTop28" src="image/img_random/02_check_out.png" alt="">
+                    <img onload="preLoadImage(this)" class="contentBlockWidth_4_12 imgBeforeLoaded marginTop28" src="image/img_random/04_caculator.png" alt="">
+                    <img onload="preLoadImage(this)" class="contentBlockWidth_4_12 imgBeforeLoaded marginTop28" src="image/img_random/06_map.png" alt="">
+                    <img onload="preLoadImage(this)" class="contentBlockWidth_4_12 imgBeforeLoaded marginTop28" src="image/img_random/07_filter.png" alt="">
+                    <img onload="preLoadImage(this)" class="contentBlockWidth_4_12 imgBeforeLoaded marginTop28" src="image/img_random/08_404.png" alt="">
+                    <img onload="preLoadImage(this)" class="contentBlockWidth_4_12 imgBeforeLoaded marginTop28" src="image/img_random/09_music_player.png" alt="">
+                    <img onload="preLoadImage(this)" class="contentBlockWidth_4_12 imgBeforeLoaded marginTop28" src="image/img_random/10_share.png" alt="">
+                    <img onload="preLoadImage(this)" class="contentBlockWidth_4_12 imgBeforeLoaded marginTop28" src="image/img_random/13_message.png" alt="">
+                    <img onload="preLoadImage(this)" class="contentBlockWidth_4_12 imgBeforeLoaded marginTop28" src="image/img_random/intro_3_cmyk.jpg" alt="">
+                    <img onload="preLoadImage(this)" class="contentBlockWidth_4_12 imgBeforeLoaded marginTop28" src="image/img_random/bitchy_annie_2-01.png" alt="">
+                    <video class="contentBlockWidth_4_12 marginTop28" onload="preLoadImage(this)" autoplay muted loop>
+                        <source src="image/img_random/switch.mov" type="video/mp4"/>
+                    </video>
+                </div>
+                <div class="vSpace120 contentBlockWidth_12_12"></div>
+            </section>
+        </main>
+
+        <footer id="footerBottom" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+            <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
+                <p>© Shih-Yu Chu 2021</p>
+                <p>|</p>
+                <p><a class="aWhite aInternalNormal" href="index.html" id="navMenuProject">Work</a></p>
+                <p><a class="aWhite aInternalNormal" href="about.html" id="navMenuAbout">Meee</a></p>
+                <p><a class="aWhite aInternalNormal" href="random_work.html">Pppp</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="mailto:sychuu@umich.edu" target="blank_">Email</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://linkedin.com/in/shiyuchuu" target="blank_">LinkedIn</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://drive.google.com/file/d/16LKEUGu0CgxXOrWYTA1Jtj-HCgP9r48e/view" target="blank_">Resume</a></p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>

@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Shi-Yu Chuuuuuuuuu</title>
     <meta charset="utf-8">
-    <title>Shiyu Chuu: About</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="icon/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="icon/favicon.png"/> 
     <link rel="stylesheet" type="text/css" href="style/html5reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="style/main.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="style/about.css">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+
+    <!-- need review -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151944711-2"></script>
     <script>
@@ -18,132 +21,94 @@
 
         gtag('config', 'UA-151944711-2');
     </script>
+    <script>
+        function preLoadImage (e) {
+            let classes = e.className.replace('imgBeforeLoaded', '')
+            e.setAttribute('class', classes + " imgAnimation")
+        };
+    </script>
 </head>
 <body>
-    <div id="meta_content">
-        <div id="jump">
-            <a href="#main_content">Skip to main content</a>
-        </div>
+    <div id="contentContainer" class="contentBlockHLayoutStretchSevenly">
         
-        <nav id="nav_top">
-            <div id="my_name">
-                <a href="index.html"><img src="icon/logo.svg" id="sc_logo"><h1>Shiyu Chuu</h1></a>
-                <img id="menu_icon" src="icon/hamburger.png" alt="menu_icon">
-            </div>
-            <!-- <div id="title">
-                <h2>A Product Designer with Interdisciplinary Background</h2>
-            </div> -->
-            <div id="menu">
-                <div id="menu_divider"></div>
-                <ul>
-                    <li id="work"><a href="index.html">Product Design &amp; UX Research</a></li>
-                    <li id="code"><a href="code.html">AR/VR &amp; Front-end</a></li>
-                    <li id="visual"><a href="visual.html">Graphic Design</a></li>
-                    <li id="about"><a href="about.html">About</a></li>
-                </ul>
-                <div id="extra_for_mobile_scroll_project_list"></div>
+        <nav id="navTop" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+            <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
+                <p class="pUppercase"><a class="aWhite" href="index.html">Shih-Yu Chu</a></p>
+                <p>|</p>
+                <p><a class="aWhite aInternalNormal" href="index.html">Work</a></p>
+                <p><a class="aWhite aInternalSelected" href="about.html">Meee</a></p>
+                <p><a class="aWhite aInternalNormal" href="random_work.html">Pppp</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="mailto:sychuu@umich.edu" target="blank_">Email</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://linkedin.com/in/shiyuchuu" target="blank_">LinkedIn</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://drive.google.com/file/d/16LKEUGu0CgxXOrWYTA1Jtj-HCgP9r48e/view" target="blank_">Resume</a></p>
             </div>
         </nav>
 
-        <main id="main_content">
-            <section id="personal_info">
-                <h2 class="project_cat">Design, Research, Data, and Development</h2>
-                <section class="about_info">
-                    <p>I’m a curious and passionate product designer who is interested in emerging technologies, social good, advocating bringing UX mindset to all fields of work, and being the bridge between design and development, data analysis, and user research, and converging their perspectives and insights into valuable products. (<a href="#experience"># See my work experience</a>)</p>
-                    <p>I’m currently pursuing a master degree of UX Design and Research / Data analysis / Agile Development at the University of Michigan, Science of Information. For user research and data analysis, I focus on both qualitative and quantitative research methods, such as contextual inquiry, data manipulation with Python. For agile development, I focus on front-end and  AR / VR development. (<a href="#education"># See my academic experience</a>)</p>
-                    <p>I'm actively looking for an internship opportunity, and I’m also open to any interesting projects.<br>free to reach out to me!</p>
-                    <div id="email">
-                        <span class="info_point">Email: </span><a href="mailto:sychuu@umich.edu" target="_blank">sychuu@umich.edu<img src="icon/forward_arrow.png" alt="forward" class="forward_btn"></a>
+        <main id="mainContent" class="contentBlockWidth_1">
+            <section class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+                <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
+                    <div class="contentBlockWidth_6_12">
+                        <h1>Hello!</h1>
                     </div>
-                    <div id="full_resume">
-                        <span class="info_point">Full resume: </span><a href="https://drive.google.com/file/d/16LKEUGu0CgxXOrWYTA1Jtj-HCgP9r48e/view" target="_blank">Shih-Yu Chu 2020.pdf<img src="icon/forward_arrow.png" alt="forward" class="forward_btn"></a>
+                    <div class="contentBlockWidth_6_12">
+                        <h2 class="pLight marginTop28">I’m Chu. I would love to talk about anything related to product design, user research, and programming. Hit me up and let’s chat!</h2>
+                        <div class="vSpace56"></div>
+                        <h3 class="pLight" style="font-weight: bold;">University of Michigan, MSI</h3>
+                        <p class="marginTop28 pLight pGray">I’m currently studying UX design and research in the MSI program at the University of Michigan, and will be graduating in May 2021. My study focuses on user research methodologies, discovering unmet user needs and designing products to solve their problem for users. I also work on (front-end) development and data analysis projects that are related to user experience.</p>
+                        <div class="vSpace56"></div>
+                        <h3 class="pLight" style="font-weight: bold;">I’ve been designing products for 3+ years</h3>
+                        <p class="marginTop28 pLight pGray">Before I joined MSI, I worked as a product designer for 2 years. Most of my experience is in a startup called Codementor (they’re now rebranded as Arc.dev), where I learned the full lifecycle of product development, collaborating with stakeholders, and solving problems for business while advocating for users. In summer 2020, I did my product design intern at a startup team called Chime. Currently I’m working as an assistant product designer for UM library, working on an online book collection product.</p>
+                        <div class="vSpace56"></div>
                     </div>
-                    <div id="social_media">
-                        <a title="LinkedIn" href="https://linkedin.com/in/shiyuchuu" target="_blank"><img src="social_media/linkedin.svg" alt="linkedin" id="linkedin" class="social_icon"></a>
-                        <a title="Behance" href="https://www.behance.net/RCchu" target="_blank"><img src="social_media/behance.svg" alt="behance" id="behance" class="social_icon"></a>
-                        <a title="Github" href="https://github.com/syc92/" target="_blank"><img src="social_media/gitHub.png" alt="gitHub" id="gitHub" class="social_icon"></a>
-                    </div>
-                </section>
-                <section class="about_info thumbnail" id="self_portrait">
-                    <img src="image/img_about/portrait.jpg" alt="shiyu chuu portrait" id="self_portrait_img">
-                </section>
+                </div>
             </section>
-            <section id="personal_resume">
-                <section class="resume" id="experience">
-                    <div class="resume_title">
-                        <h2>Experience</h2>
+
+            <section class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+                <div class="contentBlockWidth_12_12 contentBlockHLayoutCenterRight">
+                    <!-- <div class="contentBlockWidth_12_12">
+                        <h2 class="pLight">I’m interested in user experience design and research related to Internet of Things and Mixed Reality applications.</h2>
+                    </div> -->
+                    <div class="contentBlockWidth_6_12">
+                        <!-- <p class="marginTop28 pLight pGray">In the past decade, the design paradigm is built upon the technology of the web and smartphones. Recently, however, more and more smart home devices and XR applications are embedded in our everyday lives. I’m interested in how these technologies can solve problems more efficiently than traditional devices, and discover the opportunities to discover the unmet human needs.</p>
+                        <div class="vSpace56"></div> -->
+                        <h3 class="pLight" style="font-weight: bold;">I love programming</h3>
+                        <p class="marginTop28 pLight pGray">Besides design, I’m really interested in programming. During my past 2 years at UMSI, I learned programming languages for front-end development and data analysis. For data analysis, I am familiar with Python, and data-analysis-related libraries such as Pandas, Numpy, Sklearn, etc. For front-end-development, I am fluent in html, CSS, and JavaScript / jQuery. I also know how to build apps with React Native + Expo. Last but not least, I have some experience using A-frame, Unity and C# to build XR applications.</p>
+                        <div class="vSpace56"></div>
+                        <h3 class="pLight" style="font-weight: bold;">Graphic design</h3>
+                        <p class="marginTop28 pLight pGray">Prior to my product design career, I was a graphic designer, specializing in visual identity, print design, and infographic. My personal work explored visual expressions that could tell compelling stories, and my professional work helped my client to produce a unique identity and tell their story.</p>
+                        <div class="vSpace80"></div>
                     </div>
-                    <div class="exp_section" id="codementor">
-                        <p class="org info_point"><a href="https://codementor.io" target="_blank"><b>Codementor</b><img src="icon/forward_arrow.png" alt="forward" class="forward_btn"></a></p>
-                        <div>
-                            <p class="detail_info">Product Designer<br>August 2017 – May 2019, Taipei</p>
-                        </div>
-                        <ul class="project_content_list">
-                            <li>Led the user experience design, user interface design, and visual design of CodementorX <br>(A freelance platform for hiring software developers (SaaS). It's now rebranded as <a href="https://arc.dev/">Arc<img src="icon/forward_arrow.png" alt="forward" class="forward_btn"></a>)</li>
-                            <li>Redesigned CodementorX dashboard and optimized the user flow which helped the product double its users and revenue</li>
-                            <li>Redesigned CodementorX visual identity</li>
-                            <li>Established a cross-products brand guidelines and user interface design guidelines</li>
-                        </ul>
-                    </div>
-                    <div class="exp_section" id="yoctol">
-                        <p class="org info_point"><a href="https://yoctol.ai/" target="_blank"><b>YOCTOL.AI</b><img src="icon/forward_arrow.png" alt="forward" class="forward_btn"></a></p>
-                        <div>
-                            <p class="detail_info">User Interface / Data Visualization Intern<br>October 2016 – March 2017, Taipei</p>
-                        </div>
-                        <ul class="project_content_list">
-                            <li>Designed and launched a web app, Pttr, which visualized the public sentiment on Ptt (an iconic local social media in Taiwan)</li>
-                        </ul>
-                    </div>
-                    <div class="exp_section" id="freelance">
-                        <p class="org info_point"><b>Freelance</b></p>
-                        <div>
-                            <p class="detail_info">Graphic Designer<br>June 2015 – September 2016, Taipei</p>
-                        </div>
-                        <ul class="project_content_list">
-                            <li>Designed a Taipei tour map with a circulation of 4,000</li>
-                            <li>Redesigned the identity and wayfinding system of Taipei Da-an Park for the Public Wayfinding Redesign Project</li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="resume" id="education">
-                    <div class="resume_title">
-                        <h2>Education</h2>
-                    </div>
-                    <div class="edu_section" id="umich">
-                        <p class="org info_point"><a href="https://www.si.umich.edu/" target="_blank"><b>University of Michigan</b><img src="icon/forward_arrow.png" alt="forward" class="forward_btn"></a></p>
-                        <div>
-                            <p class="detail_info">MS in UX Design and Research / Data Analysis / Agile Development<br>April 2021, Ann Arbor, MI</p>
-                        </div>
-                        <ul class="project_content_list">
-                            <li>SI 501: Contextual Inquiry</li>
-                            <li>SI 506: Python - Intro</li>
-                            <li>SI 507: Python - Intermediate</li>
-                            <li>SI 539: Complex Web Design (JavaScript, html, CSS)</li>
-                            <li>SI 544: Statistics and R</li>
-                            <li>SI 582: Interaction Design</li>
-                            <li>SI 588: Human Behavior</li>
-                            <li>SI 618: Data Manipulation (Data Viz, NLP, ML)</li>
-                            <li>SI 622: Needs Assessment and Usability Testing</li>
-                            <li>SI 659: AR / VR Development</li>
-                        </ul>
-                    </div>
-                    <div class="edu_section" id="ntu">
-                        <p class="org info_point"><a href="https://www.ntu.edu.tw/english/" target="_blank"><b>National Taiwan University</b><img src="icon/forward_arrow.png" alt="forward" class="forward_btn"></a></p>
-                        <div>
-                            <p class="detail_info">Bachelor of Science in Geology<br>June 2015, Taipei</p>
-                        </div>
-                        <ul class="project_content_list">
-                            <li>Yes, geology. I Rock!</li>
-                        </ul>
-                    </div>
-                </section>
+                </div>
             </section>
-            <footer id="nav_bottom">
-                <p>&copy; 2020 Designed and coded by Shiyu Chuu</p>
-            </footer>
+
+            <section class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+                <div class="contentBlockWidth_12_12 contentBlockHLayoutCenterRight">
+                    <img onload="preLoadImage(this)" class="imgBeforeLoaded contentBlockWidth_12_12" src="image/img_about/portrait.jpg" alt="">
+                    <div class="contentBlockWidth_12_12 vSpace56"></div>
+                    <div class="contentBlockWidth_12_12 textOverFlowHidden">
+                        <div class="contentBlockWidth_12_12 line"></div>
+                        <h2 class="pHighlightLight marginTop8 revolvingTextAnimation textNowrap">I’m looking for full time product design position and interesting projects opportunities. 👀 &gt&gt&gt&gt sychuu@umich.edu &lt&lt&lt&lt </h2>
+                        <div class="contentBlockWidth_12_12 line marginTop8"></div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="vSpace120 contentBlockWidth_12_12"></div>
         </main>
+
+        <footer id="footerBottom" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+            <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
+                <p>© Shih-Yu Chu 2021</p>
+                <p>|</p>
+                <p><a class="aWhite aInternalNormal" href="index.html" id="navMenuProject">Work</a></p>
+                <p><a class="aWhite aInternalNormal" href="about.html" id="navMenuAbout">Meee</a></p>
+                <p><a class="aWhite aInternalNormal" href="random_work.html">Pppp</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="mailto:sychuu@umich.edu" target="blank_">Email</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://linkedin.com/in/shiyuchuu" target="blank_">LinkedIn</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://drive.google.com/file/d/16LKEUGu0CgxXOrWYTA1Jtj-HCgP9r48e/view" target="blank_">Resume</a></p>
+            </div>
+        </footer>
+
     </div>
-    <script src="js/menu_open_close.js"></script>
-    <script src="js/load_image.js"></script>
 </body>
 </html>

@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Shi-Yu Chuuuuuuuuu</title>
     <meta charset="utf-8">
-    <title>Shiyu Chuu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="icon/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="icon/favicon.png"/> 
     <link rel="stylesheet" type="text/css" href="style/html5reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="style/main.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="style/project_common.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="style/project_cm_dash.css">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <!-- need review -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151944711-2"></script>
     <script>
@@ -19,220 +20,389 @@
 
         gtag('config', 'UA-151944711-2');
     </script>
+    <script>
+        function preLoadImage (e) {
+            let classes = e.className.replace('imgBeforeLoaded', '')
+            e.setAttribute('class', classes + " imgAnimation")
+        };
+    </script>
 </head>
 <body>
-    <div id="jump">
-        <a href="#main_content">Skip to main content</a>
-    </div>
-
-    <div id="hero_img_over"></div>
-    <div id="hero_img"></div>
-    <img src="image/project_cm_dash/0_hero/hero_cm_dash.png" class="hero_img_content" alt="hero_img_content" data-scroll-speed="-2">
-
-    <div id="meta_content"> 
-        <nav id="nav_top">
-            <div id="back">
-                <a id="detail_page_name" href="index.html">
-                    <img src="icon/back_arrow.png" alt="back_arrow"><h2>Shiyu Chuu</h2>
-                </a>
-                <img id="menu_icon" src="icon/hamburger.png" alt="menu_icon">
-            </div>
-            <div id="menu">
-                <ul>
-                    <li class="hash_introduction">Introduction</li>
-                    <li class="hash_hiw">How CodementorX works</li>
-                    <li class="hash_why">Why dashboard revamp</li>
-                    <li class="hash_goal">Project goal</li>
-                    <li class="hash_research">Research</li>
-                    <li class="hash_finding">Synthesize findings</li>
-                    <li class="hash_info_structure">Information architecture</li>
-                    <li class="hash_prototype1">Prototype round 1</li>
-                    <li class="hash_syncup">Midway sync up</li>
-                    <li class="hash_user_testing">User testing</li>
-                    <li class="hash_prototype2">Prototype round 2</li>
-                    <li class="hash_final">Final design</li>
-                    <li class="hash_spec">Design spec</li>
-                    <li id="last_on_menu" class="hash_conclusion">Conclusion</li>
-                </ul>
-                <div id="extra_for_mobile_scroll_project_detail"></div>
+    <div id="contentContainer" class="contentBlockHLayoutStretchSevenly">
+        
+        <nav id="navTop" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+            <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
+                <p class="pUppercase"><a class="aWhite" href="index.html">Shih-Yu Chu</a></p>
+                <p>|</p>
+                <p><a class="aWhite aInternalNormal" href="index.html">Work</a></p>
+                <p><a class="aWhite aInternalNormal" href="about.html">Meee</a></p>
+                <p><a class="aWhite aInternalNormal" href="random_work.html">Pppp</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="mailto:sychuu@umich.edu" target="blank_">Email</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://linkedin.com/in/shiyuchuu" target="blank_">LinkedIn</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://drive.google.com/file/d/16LKEUGu0CgxXOrWYTA1Jtj-HCgP9r48e/view" target="blank_">Resume</a></p>
             </div>
         </nav>
-    
-        <main class="content_grid" id="main_content">
-            <section class="gallery" id="introduction">
-                <h1>CodementorX Dashboard</h1>
-            </section>
-            <section class="gallery">
-                <p>CodementorX is a product/service which helps clients hire freelance software developers on-demand. The “hiring dashboard” is for the “clients” to monitor the hiring process and to know what to do next.</p>
-                <p>(Sadly, CodementorX is now rebranded as <a href="https://arc.dev/">Arc.dev</a>, so you can’t see my work in production:( But go check their new look and branding. It’s awesome!) </p>
-            </section>
-            <section class="gallery">
-                <p>
-                    <span class="info_point">Year:</span> 2018<br>
-                    <span class="info_point">Project type:</span> Work project<br>
-                    <span class="info_point">Duration:</span> 2-3 weeks<br>
-                    <span class="info_point">Role:</span> Product designer<br>
-                </p>
-            </section>
-            <section class="gallery devider">
-            </section>
 
-            <section class="gallery" id="hiw">
-                <h2>How CodementorX works</h2>
-                <p>Two biggest pain points for a client to hire a freelance developer are the screening process and annoying hassles that occur during the project. To solve these pain points for clients, CodementorX build a very rigorous vetting process to filter high quality developers for clients, and it serves as a third party to make sure both client and developer will comply with the hiring contract.<br><br>
-                    Therefore, it’s extremely easy for the clients to hire a freelance developer on CodementorX. The only things the clients have to do is filling out an onboarding form to tell our sales team what their project is about, and then they will get a shortlist, interview candidates, sign a contract, and they’re good to start the project.</p>
-                <h3></h3>
-                <div class="img_item"><img src="image/project_cm_dash/cmx_hiw.jpg" alt="how CodementorX works"></div>
-            </section>
-            <section class="gallery devider_no_line">
-            </section>
+        <main id="mainContent" class="contentBlockWidth_1">
+            <section class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+                <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
+                    <div class="contentBlockWidth_12_12">
+                        <h1>CodementorX</h1>
+                        <h2 class="pLight marginTop16">Freelance Software Developers Hiring Platform Redesign</h2>
+                    </div>
 
-            <section class="gallery" id="why">
-                <h2>Why dashboard revamp</h2>
-                <p>CodementorX’s old hiring dashboard is basically a “chat room”. After the clients sign up and fill out the onboarding form, they will be directed to this chatroom, where they receive the shortlist, interview information, and contract. Basically the entire hiring process happens in the chatroom.<br><br>
-                    However, as we try to scale our business and our hiring process evolves consequently, our sales team finds that the “chat room” is no longer the most efficient way to communicate with clients and thus doesn’t use it anymore. In the new hiring process, our sales team prefers to contact clients via video/audio call and email.</p>
-                <div class="img_item"><img src="image/project_cm_dash/cmx_problem.jpg" alt="Why revamp"></div>
-            </section>
-            <section class="gallery devider_no_line">
-            </section>
+                    <div class="contentBlockWidth_12_12">
+                        <div class="vSpace80"></div>
+                        <img onload="preLoadImage(this)" class="contentBlockWidth_12_12 imgBeforeLoaded" src="image/img_hero/hero_cm_dash.png" alt="">
+                    </div>
+                </div>
+                <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
+                    <div class="contentBlockWidth_3_12">
+                        <div class="vSpace56"></div>
+                        <p>Team: <span class="pGray pLight">Yu-tang Cheng, CMX dev team, Shih-Yu Chu</span></p>
+                        <p>Expertise: <span class="pGray pLight">product design</span></p>
+                        <p>Period: <span class="pGray pLight">2018</span></p>
+                    </div>
 
-            <section class="gallery" id="goal">
-                <h2>Project goal</h2>
-                <p>Therefore, the primary goal of this project is to remove the chat room from the dashboard but still keep other features such as shortlist, interview info, etc. In the meantime, as we want to scale our business, we want to evaluate what improvements we can make in the dashboard to streamline the hiring process, or even automate some parts of the process. Lastly, as this is going to be a huge change of our product, we want to make sure we will be able to maintain users’ experience and even improve it.</p>
-                <div class="img_item"><img src="image/project_cm_dash/cmx_goal.jpg" alt="Project goal"></div>
-            </section>
-            <section class="gallery devider_no_line">
-            </section>
+                    <div class="contentBlockWidth_8_12">
+                        <div class="vSpace56"></div>
+                        <h3>Project Overview</h3>
+                        <p class="pLight pGray marginTop28">The main work I did for CodementorX (CMX) was redesigning the hiring dashboard. Since we’re an agile team, the redesigned features were designed and released separately over a long period of time. To provide a more comprehensive view of what I did for CMX, I will show all the (most important) work I did for it in this article.</p>
+                    </div>
 
-            <section class="gallery" id="research">
-                <h2>Research</h2>
-                <p>First, I talk to our sales team to further clarify the new hiring process and determine what exact content I should add or remove from the new hiring dashboard; second, I find 10+ heavy and/or recent users (clients) in our database, and use Fullstory to observe how they actually use our old dashboard. Last but not least, I collect a lot of user feedback from the weekly meetings I have with our sales team and support team. Although these feedback are “second hand”, they are still valuable data points in terms of validating the data I have from other places and helping me better construct the blueprint of the new dashboard.</p>
-                <div class="img_item"><img src="image/project_cm_dash/cmx_research.jpg" alt="Research"></div>
-            </section>
-            <section class="gallery devider_no_line">
-            </section>
-
-            <section class="gallery" id="finding">
-                <h2>Synthesize findings</h2>
-                <p>After the research I get some data from observing user behavior and user feedback. I turn them into the affinity note and cluster them to identify patterns and prioritize design strategies:</p>
-                <ul class="project_content_list">
-                    <li>Although we need to remove the “chat room”, we still need to include a feature for clients to reach out to our sales team in the dashboard</li>
-                    <li>We have to show the step by step hiring process which provides a better mental model and more transparency. In this way, clients can easily find the information and expect what is next</li>
-                    <li>Allow clients to initiate an action, such as schedule interview, send a contract to developers once they decide to hire them, etc. This will help us “automate” the hiring process</li>
-                    <li>As we are having more and more “returning clients”, we need to introduce the concept of “hiring request” to the dashboard. In our old dashboard, it’s hard to find the information of individual hiring request if they have more than one, and there’s not a clear way for clients to make a new hiring request</li>
-                </ul>
-                <div class="img_item"><img src="image/project_cm_dash/cmx_affinitynote.jpg" alt="Finding notes"></div>
-            </section>
-            <section class="gallery devider_no_line">
-            </section>
-
-            <section class="gallery" id="info_structure">
-                <h2>Information architecture</h2>
-                <p>After talking to our sales team, we clarify the standard hiring process as following: 1) before project start: fill out onboarding form, review the candidates shortlist, check candidates’ profile, schedule interviews, interview, leave feedback, and sign contract; 2) after hiring: the clients can monitor the project process. Combining with this result and the findings, I come up with the following flow chart which serves as the blueprint of my first prototype.</p>
-                <div class="img_item"><img src="image/project_cm_dash/cmx_prototype_structure.jpg" alt="Dash structure"></div>
-            </section>
-            <section class="gallery devider_no_line">
-            </section>
-
-            <section class="gallery" id="prototype1">
-                <h2>Prototype round 1</h2>
-                <h3>Layout exploration</h3>
-                <p>I create three different layouts and evaluate which is the best by the following criteria: 1) is it the easiest way for users to access information; 2) does it look good both in empty case and with full content; 3) are the steps of hiring process clear enough and easy to interact with.</p>
-                <p>Finally, I choose Option A to proceed because it shows Request and Contract upfront, it will look good in empty case, and it has a progress bar in request detail page. Option B pull all the hiring steps out and put them in the highest level of the dashboard. It’s clear but the screen will look too empty in empty case, and it doesn’t display the hiring process very well. Option C has a similar structure as Option A, but it requires an extra step to click into the request detail page, so this is also a no go.</p>
-                <div class="img_item"><img src="image/project_cm_dash/cmx_prototype_opt.jpg" alt="Dash options"></div>
-                <div class="img_item"><img src="image/project_cm_dash/cmx_prototype_revise.jpg" alt="Dash options"></div>
-                <h3>Interaction detail</h3>
-                <p>After deciding which layout to go with, I make an iteration to further explore what the detail should look like and how users are going to interact with it.</p>
-                <div class="img_item"><img src="image/project_cm_dash/cmx_prototype_iteration.jpg" alt="Dash iteration 1"></div>
-            </section>
-            <section class="gallery devider_no_line">
-            </section>
-
-            <section class="gallery" id="syncup">
-                <h2>Midway sync up</h2>
-                <h3>Knowing the constraint and best development practice</h3>
-                <p>Before diving into the design detail, I will always have a sync up meeting with product manager and developers who are going to implement the new dashboard. In meeting like this, I will go through the prototype that I have at the moment and explain every logic and interaction in the prototype. The product manager will make sure that the new design won’t conflict our business goal or defer the project timeline. On the other hand, the developer will provide feedback in terms of the feasibility of implementation.</p>
-                <div class="img_item"><img src="image/project_cm_dash/cmx_sync.jpg" alt="Sync up"></div>
-                <h3>Design strategy adjustment</h3>
-                <p>Usually, the result from the sync up meeting will contribute to the iteration later on. In this case, there are two main takeaways that affect my design decisions.</p>
-                <ul class="project_content_list">
-                    <li>First, using Intercome for clients to communicate with sales. Originally, I plan to design a lightweight chat feature to do that, but it requires too many resources and at the moment we are not sure that this is worth the investment. Intercome is already a third party service we use in other places in our product</li>
-                    <li>Second, confirm that we separate “Hiring request” and “Contract” is the right direction. Previously, I consider put contract under a hiring request because, in common sense, a contract is a part or a result of a hiring request. However, since in the way our current system is designed, we do not link a contract to a hiring request</li>
-                    <li>Third, remove the “blue dot” notification. I planned to use this to notify users what to do next, but this it will require too much effort of implementation</li>
-                </ul>
-                <div class="img_item"><img src="image/project_cm_dash/cmx_adjust.png" alt="Sync up"></div>
-            </section>
-            <section class="gallery devider_no_line">
-            </section>
-
-            <section class="gallery" id="user_testing">
-                <h2>User testing</h2>
-                <p>After the mid way sync up, I use the same prototype to conduct some user testing by which I got the following results:</p>
-                <ul class="project_content_list">
-                    <li><span class="info_point">Menu:</span> users feel that the request and contract list (second column) don’t need to take a whole column because they probably won’t have “a lot” of requests or contracts. Also, users can’t focus on the main content immediately because this two-columns-menu takes too much space</li>
-                    <li><span class="info_point">Progress bar:</span> users don’t feel like it’s a progress bar because the relationship between each step is not obvious enough</li>
-                    <li><span class="info_point">Main content interaction:</span> the interaction in the shortlist step and the interview step is not intuitive, and user can’t figure out what to do with the UI</li>
-                    <li><span class="info_point">Main content layout:</span> some users are confused by the two different layouts. They don’t feel they are in the same process</li>
-                </ul>
-            </section>
-            <section class="gallery devider_no_line">
-            </section>
-
-            <section class="gallery" id="prototype2">
-                <h2>Prototype round 2</h2>
-                <h3>Iteration</h3>
-                <p>For the menu, I merge the two-columns-menu into one, and put the request title on top of the progress bar, making them into one nav bar. I also add a background color to the nav bar which provides a stronger hierarchy that can better help users identify the main content and the navbar.</p>
-                <div class="img_item"><img src="image/project_cm_dash/cmx_prototype_detail_iteration_1.jpg" alt="Detail iteration 1"></div>
-                <p>For the main content interaction, the original design is more like a “sub progress” inside each card, and use background color to indicate the status of each “sub step”. Since this is confusing for users, I use a clear status tag to indicate the status and remove the concept of “sub step”.</p>
-                <div class="img_item"><img src="image/project_cm_dash/cmx_prototype_detail_iteration_3.jpg" alt="Detail iteration 3"></div>
-                <p>For the main content layout, I change all the layouts into one column so the content will look more consistent through each step.</p>
-                <div class="img_item"><img src="image/project_cm_dash/cmx_prototype_detail_iteration_2.jpg" alt="Detail iteration 2"></div>
-            </section>
-            <section class="gallery devider_no_line">
-            </section>
-
-            <section class="gallery" id="final">
-                <h2>Final design</h2>
-                <p>Here’s the final design! If you go play with the prototype, there are some screens that you may not find in the design process, such as the “shortlist page”. This is because first, they are not in the scope of this revamp project; and second, if I include the process of all the features, this project will become too messy and hard to read. Enjoy the prototype!</p>                
-                <p>Click the image below to view prototype &#x1F447;</p>
-                <div class="img_web_prototype">
-                    <img class="prototype_img" src="image/project_cm_dash/cmx_final_prototype1.png" alt="Final prototype 1">
-                    <a href="https://invis.io/CXV02KVF9PB" target="_blank">
-                        <div class="overlay_layer">
-                            <p>View prototype<img src="icon/forward_arrow_white.png" alt="forward" class="forward_btn"></p>
-                        </div>
-                    </a>
+                    <div class="contentBlockWidth_12_12 vSpace80"></div>
                 </div>
             </section>
-            <section class="gallery devider_no_line">
+
+            <section id="menu" class="contentBlockWidth_1 displayNone whiteBackground contentBlockFixed contentBlockFixedTopLeft0">
+                <div class="contentBlockWidth_12_12 contentBlockVLayoutLeftTop">
+                    <img id="close" class="marginTopFixedEdge" src="icon/icon_close_black.svg" alt="">
+                    <div id="menuList" class="contentBlockWidth_12_12 menuFadeIn">
+                        <h2 id="menuTitle" class="marginTop28">CodementorX</h2>
+                        <div class="contentBlockWidth_12_12 lineBlack marginTop28"></div>
+                        <h2 id="tag-intro" class="tag marginTop28 aInternalSelected">Introduction</h2>
+                        <h2 id="tag-research" class="tag marginTop8 aInternalNormal">Design Research</h2>
+                        <h2 id="tag-strategy" class="tag marginTop8 aInternalNormal">Design Strategy</h2>
+                        <h2 id="tag-journey" class="tag marginTop8 aInternalNormal">User Journey</h2>
+                        <h2 id="tag-design-1" class="tag marginTop8 aInternalNormal">Design - I</h2>
+                        <h2 id="tag-design-2" class="tag marginTop8 aInternalNormal">Design - II</h2>
+                        <h2 id="tag-results" class="tag marginTop8 aInternalNormal">Final Results</h2>
+                        <h2 id="tag-spec" class="tag menuLastItem marginTop8 aInternalNormal">Design Spec</h2>
+                        <div class="contentBlockWidth_12_12 vSpaceFixedEdge"></div>
+                    </div>
+                </div>
             </section>
 
-            <section class="gallery" id="spec">
-                <h2>Design spec</h2>
-                <p>Creating something easy for developer to read is a virtue of a designer. Well, at least there will be less fight and back and forth, right? Besides uploading screens to Zeplin, I will also create a interaction/layout instruction like this for developers along with a comprehensive spec in the format of Github issue.</p>
-                <div class="img_item"><img src="image/project_cm_dash/cmx_spec.png" alt="Design spec"></div>
-            </section>
-            <section class="gallery devider_no_line">
-            </section>
+            <section class="contentBlockWidth_1 contentBlockHLayoutCenterSaround whiteBackground">
+                <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
+                    <div class="contentBlockWidth_4_12">
+                        <div class="vSpace120 whiteBackground"></div>
+                        <div id="menuIcon"></div>
+                        <div class="vSpace80"></div>
+                    </div>
 
-            <section class="gallery" id="conclusion">
-                <h2>Conclusion</h2>
-                <h3>What can be done better</h3>
-                <p>I wish I could have a better understanding of our clients. Designers in CodementorX don’t usually conduct thorough user research because of limited resources and time zone issue (the product team is not in the same time zone as most of the clients). Our understanding of users (both clients and developers) is accumulated from the interaction we have with them over the entire time. It works well in most of the time, but I believe that there might be some bias and we could discover more valuable insight by conducting interviews with clients.</p>
-                <h3>What I learned</h3>
-                <p>This project pretty much summarizes my work experience in Codementor (our company name is Codementor, CodementorX is one of the products that I was in charge of). There are two valuable takeaways I got from being a product designer in this company:</p>
-                <ul class="project_content_list">
-                    <li><span class="info_point">First, having a “product sense” is equally important as design skills.</span> Design is only one aspect of a product. Developing a product sense means that pay attention to how the company/business works but not just focus on design itself. It helps me think of user experience as a whole not just the experience using the interface.</li>
-                    <li><span class="info_point">Second, learning the implementation knowledge.</span> Designers do not design in the vaccune and never work alone. By collaborating with our developers, I learned a lot about how our database is design and how the front-end works. Acquiring these knowledge helps me design more efficiently.</li>
-                </ul>
+                    <div class="contentBlockWidth_8_12">
+
+                        <div id="intro" class="target">
+                                <div class="vSpace120"></div>
+                            <h2 class="pMedium pUppercase">Introduction</h2>
+                                <div class="vSpace80"></div>
+                            <video class="imageWidthInsideContainer" onload="preLoadImage(this)" autoplay muted loop controls>
+                                <source src="image/project_cm_dash/cmx_hiw.mp4" type="video/mp4"/>
+                            </video>
+                            <p class="pSub marginTop8">How CMX works and problem</p>
+                                <div class="vSpace40"></div>
+                            <h3 class="pMedium">How CodementorX Works</h3>
+                            <p class="marginTop28">CMX is a SaaS that helps clients hire freelance software developers on-demand. To hire a freelance developer, clients need to fill out an onboarding form to express their needs. From there, CMX’s salespeople will take over the hiring process, all the way from helping the clients hire a developer, to making sure they start a contract and both parties comply with it until the contract ends properly.</p>
+                                <div class="vSpace40"></div>
+                            <h3 class="pMedium">Problem</h3>
+                            <p class="marginTop28">As you can tell from how CMX works, the hiring process highly relies on salespeople’s assistance. However, as CMX grew fast during that time, the workload for salespeople became overwhelmed. That means it’s hard for the sales team to maintain their conversion rate of turning a lead into a client, and it’s conceivable that the user's experience went bad as well.</p>
+                                <div class="vSpace40"></div>
+                            <h3 class="pMedium">Project Goal</h3>
+                            <p class="marginTop28">The overarching goal of the redesign was to help salespeople from being overwhelmed by endless sales calls, while keeping the business growth. In another word, we wanted the hiring process to be scalable, but with the same quality hiring experience as before, or even better. Therefore, through the redesign we wanted to achieve two things:</p>
+                            <div class="contentBlockHLayoutStretchSbetween marginTop28">
+                                <h3 class="contentBlockWidth_1_20 pHighlightRegular">1.</h3>
+                                <h3 class="contentBlockWidth_19_20 pHighlightRegular">Automate the hiring process, i.e. minimize the time a salesperson spends on each client</h3>
+                            </div>
+                            <div class="contentBlockHLayoutStretchSbetween marginTop28">
+                                <h3 class="contentBlockWidth_1_20 pHighlightRegular">2.</h3>
+                                <h3 class="contentBlockWidth_19_20 pHighlightRegular">Figure out what design/step in the process can be added or removed to improve the hiring experience</h3>
+                            </div>
+                        </div>
+
+                        <div id="research" class="target">
+                            <div class="vSpace120"></div>
+                            <h2 class="pMedium pUppercase">Design Research</h2>
+                                <div class="vSpace80"></div>
+                            <div class="contentBlockHLayoutStretchSbetween">
+                                <div class="contentBlockWidth_1_4">
+                                    <img class="imageWidthInsideContainer imgBeforeLoaded" onload="preLoadImage(this)" src="image/project_cm_dash/cmx_research_1.png" alt="">
+                                    <p class="pSub marginTop8">Interviews</p>
+                                </div>
+                                <div class="contentBlockWidth_1_4">
+                                    <img class="imageWidthInsideContainer imgBeforeLoaded" onload="preLoadImage(this)" src="image/project_cm_dash/cmx_research_2.png" alt="">
+                                    <p class="pSub marginTop8">Fullstory</p>
+                                </div>
+                                <div class="contentBlockWidth_1_4">
+                                    <img class="imageWidthInsideContainer imgBeforeLoaded" onload="preLoadImage(this)" src="image/project_cm_dash/cmx_research_3.png" alt="">
+                                    <p class="pSub marginTop8">Competitors</p>
+                                </div>
+                                <div class="contentBlockWidth_1_4">
+                                    <img class="imageWidthInsideContainer imgBeforeLoaded" onload="preLoadImage(this)" src="image/project_cm_dash/cmx_research_4.png" alt="">
+                                    <p class="pSub marginTop8">Affinity ntoe</p>
+                                </div>
+                            </div>
+                            <div class="vSpace40"></div>
+                            <h3 class="pMedium">Interview, Feedback, and Observations</h3>
+                            <p class="marginTop28">The overarching questions of the research are: how the salespeople and clients interact with the old design, what portion can be automated, and what are the potential problems. I employed three methods in the research: stakeholders interviews (salespeople + project manager) user feedback analysis, and observing users’ behavior with Fullstory.</p>
+                                <div class="vSpace40"></div>
+                            <h3 class="pMedium">Competitive Analysis</h3>
+                            <p class="marginTop28">I also investigated how our competitors design their hiring process and corresponding interaction, especially large scale competitors such as Upwork, because they must have faced the same challenge as we did. This provided me a picture of what the design paradigm looked like in the industry, and what direction I should be heading to with the design.</p>
+                                <div class="vSpace40"></div>
+                            <h3 class="pMedium">Key Findings</h3>
+                                <div class="vSpace28"></div>
+                            <ul>
+                                <li><p>Sales team tends to not use “Chat room” for communication</p></li>
+                                <li><p>Information regarding hiring request is hard to find in old dashboard (chat room)</p></li>
+                                <li><p>Status of hiring process is not shown in the dashboard, but it’s a standard among competitors</p></li>
+                                <li><p>Salespeople have to spend great amount of time dealing with unexpected events because clients don’t have control over those things</p></li>
+                                <li><p>Client’s demographic is changing. More returning clients than before</p></li>
+                            </ul>
+                        </div>
+                        
+                        <div id="strategy" class="target">
+                                <div class="vSpace120"></div>
+                            <h2 class="pMedium pUppercase">Design Strategy</h2>
+                                <div class="vSpace80"></div>
+                            <img onload="preLoadImage(this)" class="imageWidthInsideContainer imgBeforeLoaded" src="image/project_cm_dash/cmx_sync.jpg" alt="">
+                            <p class="pSub marginTop8">Discussion with PM and dev team</p>
+                                <div class="vSpace40"></div>
+                            <h3 class="pMedium">Decide What Should Be Automated and How</h3>
+                            <p class="marginTop28">Based on the findings from design research, I discussed with the team and we came up with the following redesign strategy. The strategy illustrated the portion we want to automate, and what we need to be aware of in order to ensure users have great user experience.</p>
+                            <div class="contentBlockHLayoutStretchSbetween marginTop28">
+                                <h3 class="contentBlockWidth_1_20 pHighlightRegular">1.</h3>
+                                <div class="contentBlockWidth_19_20">
+                                    <h3 class="pHighlightRegular">Remove chat room and replace it with a dashboard</h3>
+                                    <p class="marginTop8">But still allow clients to communicate with us in the dashboard</p>
+                                </div>
+                            </div>
+                            <div class="contentBlockHLayoutStretchSbetween marginTop28">
+                                <h3 class="contentBlockWidth_1_20 pHighlightRegular">2.</h3>
+                                <div class="contentBlockWidth_19_20">
+                                    <h3 class="pHighlightRegular">Provide clear information and status about the hiring process (hiring request)</h3>
+                                    <p class="marginTop8">Making the process transparent can increase client’s trust. For the returning clients, this can also help them easily start a new hiring request and manage their contracts without too much help from our salespeople. We might not be able to automate the process thoroughly at this stage, but a great starting point is to show all related information in the dashboard</p>
+                                </div>
+                            </div>
+                            <div class="contentBlockHLayoutStretchSbetween marginTop28">
+                                <h3 class="contentBlockWidth_1_20 pHighlightRegular">3.</h3>
+                                <div class="contentBlockWidth_19_20">
+                                    <h3 class="pHighlightRegular">Allow clients to start a contract hassle free on their own and manage contracts easily</h3>
+                                    <p class="marginTop8">Once a client decides to hire a developer, the new design should guide them to sign contracts, sync up on working style, set up communication tools, and all other things they need to agree upon before the project starts. The new design should also be friendly for returning clients to manage multiple contracts</p>
+                                </div>
+                            </div>
+                            <div class="contentBlockHLayoutStretchSbetween marginTop28">
+                                <h3 class="contentBlockWidth_1_20 pHighlightRegular">4.</h3>
+                                <div class="contentBlockWidth_19_20">
+                                    <h3 class="pHighlightRegular">Incorporate “Team” features</h3>
+                                    <p class="marginTop8">For those clients who have more than one person involved in the hiring process, the new design should support them to join the process. This can reduce the time our sales team spend on communicating with clients</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="journey" class="target">
+                                <div class="vSpace120"></div>
+                            <h2 class="pMedium pUppercase">User Journey</h2>
+                                <div class="vSpace80"></div>
+                            <h3 class="pMedium">Old v.s. Refactored User Journey</h3>
+                            <p class="marginTop28">I charted an user journey map for the old design to make sure that I took every scenario and interaction into consideration. Based on the user research and competitive analysis, I refactored the user journey, making it more aligned with our strategy.</p>
+                            <div class="contentBlockHLayoutStretchSbetween marginTop28">
+                                <div class="contentBlockWidth_1_2">
+                                    <img class="imageWidthInsideContainer imgBeforeLoaded" onload="preLoadImage(this)" src="image/project_cm_dash/cmx_flow.jpg" alt="">
+                                    <p class="pSub marginTop8">Old user journey</p>
+                                </div>
+                                <div class="contentBlockWidth_1_2">
+                                    <img class="imageWidthInsideContainer imgBeforeLoaded" onload="preLoadImage(this)" src="image/project_cm_dash/cmx_prototype_structure.jpg" alt="">
+                                    <p class="pSub marginTop8">Refactored user journey (info architecture)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="design-1" class="target">
+                                <div class="vSpace120"></div>
+                            <h2 class="pMedium pUppercase">Design - I</h2>
+                                <div class="vSpace80"></div>
+                            <h3 class="pMedium">The New Layout</h3>
+                            <p class="marginTop28">Our first goal is to remove the chat room and replace it with a new design to display hiring and contract information clearly. I came up with four different mockups based on competitive analysis and what information we want to show in the dashboard. I evaluated which one to go with by two major following criteria:</p>
+                            <div class="contentBlockHLayoutStretchSbetween marginTop28">
+                                <h3 class="contentBlockWidth_1_20 pHighlightRegular">1.</h3>
+                                <div class="contentBlockWidth_19_20">
+                                    <h3 class="pHighlightRegular">It has to look good both when the page is empty and when it’s full of content</h3>
+                                    <p class="marginTop8">Since our business was growing and a great percentage of users of ours are first time users, so the design needs to look legit for the first time users. For the returning users, we wanted to make sure they can easily navigate through old and new information</p>
+                                </div>
+                            </div>
+                            <div class="contentBlockHLayoutStretchSbetween marginTop28">
+                                <h3 class="contentBlockWidth_1_20 pHighlightRegular">2.</h3>
+                                <div class="contentBlockWidth_19_20">
+                                    <h3 class="pHighlightRegular">The hiring process steps has to be clear and easy to interact with</h3>
+                                    <p class="marginTop8">The steps should be able to identified easily, and the guidance of what to do in each step should also be clear and intuitive</p>
+                                </div>
+                            </div>
+                                <div class="vSpace40"></div>
+                            <img class="imageWidthInsideContainer imgBeforeLoaded" onload="preLoadImage(this)" src="image/project_cm_dash/cmx_prototype_opt.jpg" alt="">
+                            <p class="pSub marginTop8">Four different mockups for layout exploration</p>
+                                <div class="vSpace40"></div>
+                            <p>Finally I chose layout A to proceed because it uses a progress bar to present the hiring status which matches most people’s mental model of “process”. Also, it uses two columns layout design, and only shows information about a single step in the main area, meaning that it will look good in any case so users only need to focus on the information they need at a time. </p>
+                                <div class="vSpace28"></div>
+                            <p>In the revised layout A (below), I also added a column for showing the list of hiring requests. For the contract page, we planned to reuse the main content (view report) from the old design, so I simply made sure that it could fit into the new design.</p>
+                                <div class="vSpace28"></div>
+                            <img class="imageWidthInsideContainer imgBeforeLoaded" onload="preLoadImage(this)" src="image/project_cm_dash/cmx_prototype_revise.jpg" alt="">
+                            <p class="pSub marginTop8">Final layout (A), also adding a column for displaying request and contract list</p>
+                                <div class="vSpace80"></div>
+                            <h3 class="pMedium">Interaction Detail – Request</h3>
+                            <p class="marginTop28">The primary goal here is to make sure the interaction does align our hiring (sales) process, and users can understand it instinctively. The process can be broken down into four steps:</p>
+                            <div class="contentBlockHLayoutStretchSbetween">
+                                <div class="contentBlockWidth_4_12 marginTop28">
+                                    <img class="imageWidthInsideContainer imgBeforeLoaded" onload="preLoadImage(this)" src="image/project_cm_dash/cmx_prototype_interaction_request_1.jpg" alt="">
+                                    <p class="marginTop8">1. Request detail: <br> users can see the detail about their request that they filled out in the onboarding form</p>
+                                </div>
+                                <div class="contentBlockWidth_4_12 marginTop28">
+                                    <img class="imageWidthInsideContainer imgBeforeLoaded" onload="preLoadImage(this)" src="image/project_cm_dash/cmx_prototype_interaction_request_2.jpg" alt="">
+                                    <p class="marginTop8">2. Consultation: <br> after filling out the onboarding form, users will schedule a consultation call with our sales team. They can see the information here</p>
+                                </div>
+                                <div class="contentBlockWidth_4_12 marginTop28">
+                                    <img class="imageWidthInsideContainer imgBeforeLoaded" onload="preLoadImage(this)" src="image/project_cm_dash/cmx_prototype_interaction_request_3.jpg" alt="">
+                                    <p class="marginTop8">3. Shortlists: <br> users will get one or more shortlists, they can see the list here and click the link and go to shortlist page</p>
+                                </div>
+                                <div class="contentBlockWidth_4_12 marginTop28">
+                                    <img class="imageWidthInsideContainer imgBeforeLoaded" onload="preLoadImage(this)" src="image/project_cm_dash/cmx_prototype_interaction_request_4.jpg" alt="">
+                                    <p class="marginTop8">4. Interviews: <br> this page will display all the candidates the users are going to interview. Once they finish the interview, they can leave a “Feedback” to let us know if they want to hire them or not</p>
+                                </div>
+                            </div>
+                                <div class="vSpace80"></div>
+                            <h3 class="pMedium">Replacing Chat with Intercom</h3>
+                            <div class="contentBlockHLayoutStretchSbetween">
+                                <div class="contentBlockWidth_4_12 marginTop28">
+                                    <img class="imageWidthInsideContainer imgBeforeLoaded" onload="preLoadImage(this)" src="image/project_cm_dash/cmx_intercom.png" alt="">
+                                    <p class="marginTop8">Intercom</p>
+                                </div>
+                                <p class="contentBlockWidth_4_12 marginTop28">There’s not much of design in this but just a decision. I originally planned to design a lightweight chat room in the new dashboard, but it turned out to be too much effort for the dev team. At the same time, we realized that our sales team used Intercom in our other products. In addition, Intercom can be integrated with Slack, by which salespeople can reply to the message more in time. Therefore, we decided to use it for communicating with clients in the dashboard.</p>
+                            </div>
+                        </div>
+
+                        <div id="design-2" class="target">
+                                <div class="vSpace120"></div>
+                            <h2 class="pMedium pUppercase">Design - II</h2>
+                                <div class="vSpace80"></div>
+                            <h3 class="pMedium">Internal User Testing</h3>
+                            <p class="marginTop28">I asked some colleagues to play with the prototype of the hiring request page, and have the following results:</p>
+                            <div class="contentBlockHLayoutStretchSbetween marginTop28">
+                                <h3 class="contentBlockWidth_1_20 pHighlightRegular">1.</h3>
+                                <div class="contentBlockWidth_19_20">
+                                    <h3 class="pHighlightRegular">Menu</h3>
+                                    <p class="marginTop8">Users feel that the request and contract list (second column) don’t need to take a whole column because they probably won’t have “a lot” of requests or contracts. Also, users can’t focus on the main content immediately because this two-columns-menu takes too much space</p>
+                                </div>
+                            </div>
+                            <div class="contentBlockHLayoutStretchSbetween marginTop28">
+                                <h3 class="contentBlockWidth_1_20 pHighlightRegular">2.</h3>
+                                <div class="contentBlockWidth_19_20">
+                                    <h3 class="pHighlightRegular">Progress bar</h3>
+                                    <p class="marginTop8">Users don’t feel like it’s a progress bar because the relationship between each step is not obvious enough</p>
+                                </div>
+                            </div>
+                            <div class="contentBlockHLayoutStretchSbetween marginTop28">
+                                <h3 class="contentBlockWidth_1_20 pHighlightRegular">3.</h3>
+                                <div class="contentBlockWidth_19_20">
+                                    <h3 class="pHighlightRegular">Main content interaction</h3>
+                                    <p class="marginTop8">The interaction in the shortlist step and the interview step is not intuitive, and user can’t figure out what to do with the UI</p>
+                                </div>
+                            </div>
+                            <div class="contentBlockHLayoutStretchSbetween marginTop28">
+                                <h3 class="contentBlockWidth_1_20 pHighlightRegular">4.</h3>
+                                <div class="contentBlockWidth_19_20">
+                                    <h3 class="pHighlightRegular">Main content layout</h3>
+                                    <p class="marginTop8">Some users are confused by the two different layouts between “Request detail” and the other steps. They don’t feel they are in the same process</p>
+                                </div>
+                            </div>
+                                <div class="vSpace56"></div>
+                            <h3 class="pMedium">Request Page Iteration</h3>
+                            <p class="marginTop28">For the menu, I merged the two-columns-menu into one, and put the request title on top of the progress bar, making them into one nav bar. I also added a background color to the nav bar which provides a stronger hierarchy that can better help users identify the main content and the navbar.</p>
+                            <img class="marginTop28 imageWidthInsideContainer imgBeforeLoaded" onload="preLoadImage(this)" src="image/project_cm_dash/cmx_prototype_detail_iteration_1.jpg" alt="">
+                            <p class="pSub marginTop8">Sidebar and navbar iteration</p>
+                                <div class="vSpace28"></div>
+                            <p class="marginTop28">Regarding the content and interaction, the first interaction was more like a “sub progress” inside each card, and used background color to indicate the status of each “sub step”. Since this was confusing for users, I used a clear status tag to indicate the status and remove the concept of “sub step”. For the interview page, we also added a “reschedule” option for clients if they need it, giving them more control over the hiring process.</p>
+                            <img class="marginTop28 imageWidthInsideContainer imgBeforeLoaded" onload="preLoadImage(this)" src="image/project_cm_dash/cmx_prototype_detail_iteration_2.jpg" alt="">
+                            <p class="pSub marginTop8">Shortlist and interview interaction iteration</p>
+                                <div class="vSpace28"></div>
+                            <p class="marginTop28">For the main content layout, I change all the layouts into one column so the content will look more consistent through each step.</p>
+                            <img class="marginTop28 imageWidthInsideContainer imgBeforeLoaded" onload="preLoadImage(this)" src="image/project_cm_dash/cmx_prototype_detail_iteration_3.jpg" alt="">
+                            <p class="pSub marginTop8">Layout iteration</p>
+                                <div class="vSpace56"></div>
+                            <h3 class="pMedium">Contract Page: Reminder v.s. Mandatory</h3>
+                            <p class="marginTop28">To allow clients to start the page on their own, there are two things clients have to do on the contract page: sign the contract and initiate the protocol of collaboration. We considered two types of design, making it mandatory for the client to complete both of them to start the project, or simply make it a reminder which they do not need to complete before starting the projects. We finally decided to go with the “Reminder” because we reckoned that making it mandatory might be too pushy.</p>
+                                <div class="vSpace28"></div>
+                            <img class="imageWidthInsideContainer imgBeforeLoaded" onload="preLoadImage(this)" src="image/project_cm_dash/cmx_contract_1.jpg" alt="">
+                            <p class="pSub marginTop8">Sign contract</p>
+                                <div class="vSpace28"></div>
+                            <img class="imageWidthInsideContainer imgBeforeLoaded" onload="preLoadImage(this)" src="image/project_cm_dash/cmx_contract_2.jpg" alt="">
+                            <p class="pSub marginTop8">Collaboration protocol</p>
+                                <div class="vSpace56"></div>
+                            <h3 class="pMedium">The Team Feature</h3>
+                            <p class="marginTop28">The team management page here is quite standard and simple. Clients (the owner, i.e. the person who made contact with us at the first place) can invite or remove people to/from the team. The owner can transfer the ownership in case the account “owner” is not the actual lead of the project.</p>
+                                <div class="vSpace28"></div>
+                            <img class="imageWidthInsideContainer imgBeforeLoaded" onload="preLoadImage(this)" src="image/project_cm_dash/cmx_team.jpg" alt="">
+                            <p class="pSub marginTop8">Team management page</p>
+                        </div>
+
+                        <div id="results" class="target">
+                                <div class="vSpace120"></div>
+                            <h2 class="pMedium pUppercase">Final Results</h2>
+                                <div class="vSpace80"></div>
+                            <p>Here’s the final design! If you go play with the prototype, there are some screens that you may not find in the design process, such as the “shortlist page”. This is because first, they are not in the scope of this revamp project; and second, if I include the process of all the features, this project will become too messy and hard to read. Enjoy the prototype!</p>
+                                <div class="vSpace28"></div>
+                            <a class="aExternal aBlack contentBlockHLayoutStretchLeft marginTop8" href="https://projects.invisionapp.com/share/CXV02KVF9PB#/screens" target="blank_">
+                                <img src="icon/icon_arrow_right_black.svg" alt="">
+                                <div style="width: 28px;"></div>
+                                <h3 class="pUppercase pHighlightRegular">Go to prototype</h3>
+                            </a>
+                                <div class="vSpace28"></div>
+                            <video class="imageWidthInsideContainer" onload="preLoadImage(this)" autoplay muted loop controls>
+                                <source src="image/project_cm_dash/cmx_results.mp4" type="video/mp4"/>
+                            </video>
+                        </div>
+
+                        <div id="spec" class="target">
+                                <div class="vSpace120"></div>
+                            <h2 class="pMedium pUppercase">Design spec</h2>
+                                <div class="vSpace80"></div>
+                            <h3 class="pMedium">Final step toward success</h3>
+                            <p class="marginTop28">Making the design spec that is easy for developers to read is always the best practice at the end of a project. At Codementor, I will always create an interaction/layout instruction like this for developers, uploading them to Zeplin along with the design of each screen. In addition, I will also write up a comprehensive spec in a Github issue.</p>
+                                <div class="vSpace40"></div>
+                            <img onload="preLoadImage(this)" class="imageWidthInsideContainer imgBeforeLoaded" src="image/project_cm_dash/cmx_spec.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="vSpace120 contentBlockWidth_12_12"></div>
             </section>
         </main>
+
+        <footer id="footerBottom" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+            <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
+                <p>© Shih-Yu Chu 2021</p>
+                <p>|</p>
+                <p><a class="aWhite aInternalNormal" href="index.html" id="navMenuProject">Work</a></p>
+                <p><a class="aWhite aInternalNormal" href="about.html" id="navMenuAbout">Meee</a></p>
+                <p><a class="aWhite aInternalNormal" href="random_work.html">Pppp</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="mailto:sychuu@umich.edu" target="blank_">Email</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://linkedin.com/in/shiyuchuu" target="blank_">LinkedIn</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://drive.google.com/file/d/16LKEUGu0CgxXOrWYTA1Jtj-HCgP9r48e/view" target="blank_">Resume</a></p>
+            </div>
+        </footer>
+
     </div>
-    <script src="js/menu_mobile_project_scroll_ative_item.js"></script>
-    <script src="js/menu_mobile_project_position_adjust.js"></script>
-    <script src="js/menu_open_close.js"></script>
-    <script src="js/image_modal.js"></script>
-    <script src="js/project_menu_fixed.js"></script>
-    <script src="js/project_hero_image_content_scroll_speed.js"></script>
+
+    <script src="js/project_menu.js"></script>
+
 </body>
 </html>

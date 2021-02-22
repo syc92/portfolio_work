@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shi-Yu Chuuuuuuuuu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="icon/favicon.png"/> 
+    <link rel="stylesheet" type="text/css" href="style/html5reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/main.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <!-- need review -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151944711-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-151944711-2');
+    </script>
+    <script>
+        function preLoadImage (e) {
+            let classes = e.className.replace('imgBeforeLoaded', '')
+            e.setAttribute('class', classes + " imgAnimation")
+        };
+    </script>
+</head>
+<body>
+    <div id="contentContainer" class="contentBlockHLayoutStretchSevenly">
+        
+        <nav id="navTop" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+            <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
+                <p class="pUppercase"><a class="aWhite" href="index.html">Shih-Yu Chu</a></p>
+                <p>|</p>
+                <p><a class="aWhite aInternalNormal" href="index.html">Work</a></p>
+                <p><a class="aWhite aInternalNormal" href="about.html">Meee</a></p>
+                <p><a class="aWhite aInternalNormal" href="random_work.html">Pppp</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="mailto:sychuu@umich.edu" target="blank_">Email</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://linkedin.com/in/shiyuchuu" target="blank_">LinkedIn</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://drive.google.com/file/d/16LKEUGu0CgxXOrWYTA1Jtj-HCgP9r48e/view" target="blank_">Resume</a></p>
+            </div>
+        </nav>
+
+        <main id="mainContent" class="contentBlockWidth_1">
+            <section class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+                <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
+                    <div class="contentBlockWidth_12_12">
+                        <h1>Diary Study App</h1>
+                        <h2 class="pLight marginTop16">Making Diary Study More Efficient and Effortless</h2>
+                    </div>
+
+                    <div id="virtual_garden1_video_container">
+                        <div class="vSpace80"></div>
+                        <img onload="preLoadImage(this)" class="contentBlockWidth_12_12 imgBeforeLoaded" src="image/img_hero/hero_diary.png" alt="">
+                    </div>
+                </div>
+                <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">                    
+                    <div class="contentBlockWidth_3_12">
+                        <div class="vSpace56"></div>
+                        <p>Team: <span class="pGray pLight">personal project</span></p>
+                        <p>Expertise: <span class="pGray pLight">dev, React Native</span></p>
+                        <p>Period: <span class="pGray pLight">2020</span></p>
+                    </div>
+
+                    <div class="contentBlockWidth_8_12">
+                        <div class="vSpace56"></div>
+                        <h3>Project Overview</h3>
+                        <p class="pLight pGray marginTop28">This is a project for a mobile app development course. The main part of this project is developing a working mobile application, hence the design portion of it is not complete due to the limited time. In the following I will share how I come up with the project, how I design (roughly) and develop the app, and what is the next step of the project.</p>
+                    </div>
+
+                    <div class="contentBlockWidth_12_12 vSpace80"></div>
+                </div>
+            </section>
+
+            <section id="menu" class="contentBlockWidth_1 displayNone whiteBackground contentBlockFixed contentBlockFixedTopLeft0">
+                <div class="contentBlockWidth_12_12 contentBlockVLayoutLeftTop">
+                    <img id="close" class="marginTopFixedEdge" src="icon/icon_close_black.svg" alt="">
+                    <div id="menuList" class="contentBlockWidth_12_12 menuFadeIn">
+                        <h2 id="menuTitle" class="marginTop28">Diary Study App</h2>
+                        <div class="contentBlockWidth_12_12 lineBlack marginTop28"></div>
+                        <h2 id="tag-intro" class="tag marginTop28 aInternalSelected">Introduction</h2>
+                        <h2 id="tag-research" class="tag marginTop8 aInternalNormal">Design Research</h2>
+                        <h2 id="tag-features" class="tag marginTop8 aInternalNormal">Key Features</h2>
+                        <h2 id="tag-wireframe" class="tag marginTop8 aInternalNormal">Wireframe</h2>
+                        <h2 id="tag-dev" class="tag marginTop8 aInternalNormal">Development (Demo)</h2>
+                        <h2 id="tag-future" class="tag menuLastItem marginTop8 aInternalNormal">Future Work</h2>
+                        <div class="contentBlockWidth_12_12 vSpaceFixedEdge"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contentBlockWidth_1 contentBlockHLayoutCenterSaround whiteBackground">
+                <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
+                    <div class="contentBlockWidth_4_12">
+                        <div class="vSpace120 whiteBackground"></div>
+                        <div id="menuIcon"></div>
+                        <div class="vSpace80"></div>
+                    </div>
+
+                    <div class="contentBlockWidth_8_12">
+
+                        <div id="intro" class="target">
+                                <div class="vSpace120"></div>
+                            <h2 class="pMedium pUppercase">Introduction</h2>
+                                <div class="vSpace80"></div>
+                            <h3 class="pMedium">Motivation</h3>
+                            <p class="marginTop28">While conducting a diary study for another project of mine, Talkie, I realized that there’s not too many tools available for researchers and participants to use. In our case, we created a Google spreadsheet for participants to log their observations, and asked them to upload photos to a separate Google drive folder.</p>
+                                <div class="vSpace56"></div>
+                            <h3 class="pMedium">Problems</h3>
+                            <p class="marginTop28">It is inconvenient to use tools like Google sheet for several reasons. First, it’s easy for participants to forget to log a diary during the day. Second, the logging behavior has a greater chance of happening on mobile, e.g. participants notice something worth logging, they will use their phone to take a picture, and probably add some note to it. This app is built to make the activity of diary study more efficient and effortless.</p>
+                        </div>
+
+                        <div id="research" class="target">
+                                <div class="vSpace120"></div>
+                            <h2 class="pMedium pUppercase">Design Research</h2>
+                                <div class="vSpace80"></div>
+                            <h3 class="pMedium">Competitive analysis</h3>
+                            <p class="marginTop28">Before starting building the app, I conducted a brief competitive analysis. Since there’s not too many competitors in the market, I looked at some indirect competitors such as Indeemo and FocusVision. Key findings from the analysis: </p>
+                                <div class="vSpace28"></div>
+                            <div class="contentBlockHLayoutStretchSbetween marginTop28">
+                                <h3 class="contentBlockWidth_1_20 pHighlightRegular">1.</h3>
+                                <div class="contentBlockWidth_19_20">
+                                    <h3 class="pHighlightRegular">Participants can share the diary in a social-media-like settings, which is most users are used to</h3>
+                                </div>
+                            </div>
+                            <div class="contentBlockHLayoutStretchSbetween marginTop28">
+                                <h3 class="contentBlockWidth_1_20 pHighlightRegular">2.</h3>
+                                <div class="contentBlockWidth_19_20">
+                                    <h3 class="pHighlightRegular">Researcher can communicate with the participants in real time</h3>
+                                </div>
+                            </div>
+                                <div class="vSpace80"></div>
+                            <h3 class="pMedium">Guerilla Interview</h3>
+                            <p class="marginTop28">Besides competitive analysis, I also talked with a few researchers about their experience of conducting diary study. The findings are as follows:</p>
+                                <div class="vSpace28"></div>
+                            <div class="contentBlockHLayoutStretchSbetween marginTop28">
+                                <h3 class="contentBlockWidth_1_20 pHighlightRegular">1.</h3>
+                                <div class="contentBlockWidth_19_20">
+                                    <h3 class="pHighlightRegular">It’d be critical for the app to remind participants to log a diary, and have a intuitive interface that allows users to quickly enter key information when an event happens</h3>
+                                </div>
+                            </div>
+                            <div class="contentBlockHLayoutStretchSbetween marginTop28">
+                                <h3 class="contentBlockWidth_1_20 pHighlightRegular">2.</h3>
+                                <div class="contentBlockWidth_19_20">
+                                    <h3 class="pHighlightRegular">It’d be helpful if the products provides an interface for researchers to customize the diary template and analyze the results after the study</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="features" class="target">
+                                <div class="vSpace120"></div>
+                            <h2 class="pMedium pUppercase">Key Features</h2>
+                                <div class="vSpace80"></div>
+                            <p>Based on the research results, the app should have two parts – participants side and researcher side. The participants side is for participants to accept a project from a researcher. The researcher side is a dashboard where researchers can create a (diary study) project and invite participants to join. In addition, the logged data from participants should also be shown in the dashboard so researchers can analyze them easily.</p>
+                            <div class="contentBlockHLayoutStretchSbetween">
+                                <div class="contentBlockWidth_4_12 marginTop28">
+                                    <img class="imageWidthInsideContainer imgBeforeLoaded" onload="preLoadImage(this)" src="image/project_diary/diary_feature_participant.png" alt="">
+                                    <p class="pSub marginTop8">Participants side</p>
+                                </div>
+                                <div class="contentBlockWidth_4_12 marginTop28">
+                                    <img class="imageWidthInsideContainer imgBeforeLoaded" onload="preLoadImage(this)" src="image/project_diary/diary_feature_researcher.png" alt="">
+                                    <p class="pSub marginTop8">Researcher side</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="wireframe" class="target">
+                                <div class="vSpace120"></div>
+                            <h2 class="pMedium pUppercase">Wireframe</h2>
+                                <div class="vSpace80"></div>
+                            <p>I created a wireframe to follow while developing. For the sake of the project scope and time limitation, I only design the wireframe for the participant side, and only include the “Diary Entry” and “Calendar View” features.</p>
+                            <div class="imageWidthInsideContainer marginTop28">
+                                <img class="imageWidthInsideContainer imgBeforeLoaded" onload="preLoadImage(this)" src="image/project_diary/diary_wireframe.png" alt="">
+                                <p class="pSub marginTop8">Wireframe</p>
+                            </div>
+                        </div>
+
+                        <div id="dev" class="target">
+                                <div class="vSpace120"></div>
+                            <h2 class="pMedium pUppercase">Development (Demo)</h2>
+                                <div class="vSpace80"></div>
+                            <p>The development focuses on the participants side. The demo here shows how participants can log a diary in the app. Technology used for building this app includes React Native + Expo (front-end), and Firebase / Firestore (back-end). While trying to utilize existing iOS modules as much as possible for the matter of efficiency, there’s no module for certain elements such as the “calendar entry interface” which I built by myself.</p>
+                            <div class="diary_demo_container marginTop28">
+                                <img class="imageWidthInsideContainer imgBeforeLoaded" onload="preLoadImage(this)" src="image/project_diary/diary_demo.png" alt="">
+                                <video class="diary_demo_video" onload="preLoadImage(this)" autoplay muted loop controls>
+                                    <source src="image/project_diary/RPReplay_Final1608409644.mp4" type="video/mp4"/>
+                                </video>
+                                <p class="pSub marginTop8">Demo</p>
+                            </div>
+                        </div>
+
+                        <div id="future" class="target">
+                                <div class="vSpace120"></div>
+                            <h2 class="pMedium pUppercase">Future Work</h2>
+                                <div class="vSpace80"></div>
+                            <div class="contentBlockHLayoutStretchSbetween">
+                                <img class="contentBlockWidth_4_12 imgBeforeLoaded" onload="preLoadImage(this)" src="image/project_diary/typing_meme.gif" alt="">
+                                <p class="contentBlockWidth_4_12">I’m currently working on the design of the rest of the product, and planning to build and roll out the whole product in the near future. If you’re interested and would like to work on this project with me, hit me up and let’s work together!</p>
+                            </div>                            
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="vSpace120 contentBlockWidth_12_12"></div>
+            </section>
+        </main>
+
+        <footer id="footerBottom" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+            <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
+                <p>© Shih-Yu Chu 2021</p>
+                <p>|</p>
+                <p><a class="aWhite aInternalNormal" href="index.html" id="navMenuProject">Work</a></p>
+                <p><a class="aWhite aInternalNormal" href="about.html" id="navMenuAbout">Meee</a></p>
+                <p><a class="aWhite aInternalNormal" href="random_work.html">Pppp</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="mailto:sychuu@umich.edu" target="blank_">Email</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://linkedin.com/in/shiyuchuu" target="blank_">LinkedIn</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://drive.google.com/file/d/16LKEUGu0CgxXOrWYTA1Jtj-HCgP9r48e/view" target="blank_">Resume</a></p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="js/project_menu.js"></script>
+
+</body>
+</html>

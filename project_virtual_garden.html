@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shi-Yu Chuuuuuuuuu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="icon/favicon.png"/> 
+    <link rel="stylesheet" type="text/css" href="style/html5reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/main.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <!-- need review -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151944711-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-151944711-2');
+    </script>
+    <script>
+        function preLoadImage (e) {
+            let classes = e.className.replace('imgBeforeLoaded', '')
+            e.setAttribute('class', classes + " imgAnimation")
+        };
+    </script>
+</head>
+<body>
+    <div id="contentContainer" class="contentBlockHLayoutStretchSevenly">
+        
+        <nav id="navTop" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+            <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
+                <p class="pUppercase"><a class="aWhite" href="index.html">Shih-Yu Chu</a></p>
+                <p>|</p>
+                <p><a class="aWhite aInternalNormal" href="index.html">Work</a></p>
+                <p><a class="aWhite aInternalNormal" href="about.html">Meee</a></p>
+                <p><a class="aWhite aInternalNormal" href="random_work.html">Pppp</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="mailto:sychuu@umich.edu" target="blank_">Email</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://linkedin.com/in/shiyuchuu" target="blank_">LinkedIn</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://drive.google.com/file/d/16LKEUGu0CgxXOrWYTA1Jtj-HCgP9r48e/view" target="blank_">Resume</a></p>
+            </div>
+        </nav>
+
+        <main id="mainContent" class="contentBlockWidth_1">
+            <section class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+                <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
+                    <div class="contentBlockWidth_12_12">
+                        <h1>AR Gardening</h1>
+                        <h2 class="pLight marginTop16">Developing an AR Gardening App</h2>
+                    </div>
+
+                    <div class="contentBlockWidth_12_12">
+                        <div class="vSpace80"></div>
+                        <div id="virtual_garden1_video_container" >
+                            <video onload="preLoadImage(this)" id="virtual_garden1_video" autoplay muted loop controls>
+                                <source src="image/project_virtual_garden/Own_SI 659_Final_Shih-Yu Chu.MP4" type="video/mp4"/>
+                            </video>
+                            <img onload="preLoadImage(this)" class="contentBlockWidth_12_12 imgBeforeLoaded" src="image/img_hero/hero_garden.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">                    
+                    <div class="contentBlockWidth_3_12">
+                        <div class="vSpace56"></div>
+                        <p>Team: <span class="pGray pLight">personal project</span></p>
+                        <p>Expertise: <span class="pGray pLight">dev, AR, Unity, C#</span></p>
+                        <p>Period: <span class="pGray pLight">2020</span></p>
+                    </div>
+
+                    <div class="contentBlockWidth_8_12">
+                        <div class="vSpace56"></div>
+                        <h3>Project Overview</h3>
+                        <p class="pLight pGray marginTop28">This AR Gardening app is a project for an AR/VR development course, and it allows users to plant plants/flowers and water them to grow. The motivation of this project is simple. When we just entered the COVID era, many of us were stuck at home, had nowhere to go and nothing to do. With this app users are able to distract themselves from stressful life by growing some plants and decorating their apartment in the virtual space. This project is still at an early stage and the demo is only a prototype of basic interactions. With this foundation, the app could be further developed into more robust applications.</p>
+                    </div>
+
+                    <div class="contentBlockWidth_12_12 vSpace80"></div>
+                </div>
+            </section>
+
+            <section id="menu" class="contentBlockWidth_1 displayNone whiteBackground contentBlockFixed contentBlockFixedTopLeft0">
+                <div class="contentBlockWidth_12_12 contentBlockVLayoutLeftTop">
+                    <img id="close" class="marginTopFixedEdge" src="icon/icon_close_black.svg" alt="">
+                    <div id="menuList" class="contentBlockWidth_12_12 menuFadeIn">
+                        <h2 id="menuTitle" class="marginTop28">AR Gardening</h2>
+                        <div class="contentBlockWidth_12_12 lineBlack marginTop28"></div>
+                        <h2 id="tag-interaction" class="tag marginTop28 aInternalSelected">Interaction</h2>
+                        <h2 id="tag-tech" class="tag marginTop8 aInternalNormal">Technology</h2>
+                        <h2 id="tag-future" class="tag menuLastItem marginTop8 aInternalNormal">Future Work</h2>
+                        <div class="contentBlockWidth_12_12 vSpaceFixedEdge"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contentBlockWidth_1 contentBlockHLayoutCenterSaround whiteBackground">
+                <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
+                    <div class="contentBlockWidth_4_12">
+                        <div class="vSpace120 whiteBackground"></div>
+                        <div id="menuIcon"></div>
+                        <div class="vSpace80"></div>
+                    </div>
+
+                    <div class="contentBlockWidth_8_12">
+
+                        <div id="interaction" class="target">
+                                <div class="vSpace120"></div>
+                            <h2 class="pMedium pUppercase">Interaction</h2>
+                                <div class="vSpace80"></div>     
+                            <img onload="preLoadImage(this)" class="imageWidthInsideContainer imgBeforeLoaded" src="image/project_virtual_garden/virtual_garden_1.png" alt="">
+                            <h3 class="marginTop16 pMedium">Interaction I</h3>
+                            <p class="marginTop8">Move device to find a plane. When the flower mark appears, click screen to place plants</p>
+                                <div class="vSpace28"></div>
+                            <img onload="preLoadImage(this)" class="imageWidthInsideContainer imgBeforeLoaded" src="image/project_virtual_garden/virtual_garden_2.png" alt="">
+                            <h3 class="marginTop16 pMedium">Interaction II</h3>
+                            <p class="marginTop8">Open watering can; open plants menu</p>
+                                <div class="vSpace28"></div>
+                            <img onload="preLoadImage(this)" class="imageWidthInsideContainer imgBeforeLoaded" src="image/project_virtual_garden/virtual_garden_3.png" alt="">
+                            <h3 class="marginTop16 pMedium">Interaction III</h3>
+                            <p class="marginTop8">Tilt device to pour water</p>
+                                <div class="vSpace28"></div>
+                            <img onload="preLoadImage(this)" class="imageWidthInsideContainer imgBeforeLoaded" src="image/project_virtual_garden/virtual_garden_4.png" alt="">
+                            <h3 class="marginTop16 pMedium">Interaction IV</h3>
+                            <p class="marginTop8">Click the plant to select a plant; once selected, use two fingers to rotate it, and hold and drag with one finger to move plants</p>    
+                        </div>
+
+                        <div id="tech" class="target">
+                                <div class="vSpace120"></div>
+                            <h2 class="pMedium pUppercase">Technology</h2>
+                                <div class="vSpace80"></div>
+                            <p>The prototype is a marker-less AR scene developed with AR Foundation (Unity) and ARKit (iOS). With those, the program detects planes in the environment. Once a plane is detected, the objects (plants) will be planted on the intersection of Raycast and the plane. The “water” effect is created by Unity’s particle system. When the particle system collides with an object (plant), the object is enlarged. The objects inserted into the scene can also be selected by casting a raycast at the touch point on the screen, and manipulated (position and rotation) by hand gestures.</p>
+                        </div>
+
+                        <div id="future" class="target">
+                                <div class="vSpace120"></div>
+                            <h2 class="pMedium pUppercase">Future Work</h2>
+                                <div class="vSpace80"></div>
+                            <p>For the future work, there are two possible directions:</p>
+                                <div class="vSpace28"></div>
+                            <div class="contentBlockHLayoutStretchSbetween marginTop28">
+                                <h3 class="contentBlockWidth_1_20 pHighlightRegular">1.</h3>
+                                <div class="contentBlockWidth_19_20">
+                                    <h3 class="pHighlightRegular">Gaming</h3>
+                                    <p class="marginTop8">It could be developed into a more sophisticated gardening game. We can introduce a reward system, e.g. users can earn medals if they hit a certain goal. In addition, the time aspect can also be introduced in the game and the status of the plants will change in the background, meaning, users have to check their plants frequently. This way users will be more engaged with the app and get more sense of achievement.</p>
+                                </div>
+                            </div>
+                            <div class="contentBlockHLayoutStretchSbetween marginTop28">
+                                <h3 class="contentBlockWidth_1_20 pHighlightRegular">2.</h3>
+                                <div class="contentBlockWidth_19_20">
+                                    <h3 class="pHighlightRegular">Garden planning</h3>
+                                    <p class="marginTop8">The other way is to make this app a garden planning tool. Having plants indoors has been a trend lately, such an app could be helpful for the users how the plant scene should look like in their apartment. To optimize the simulation, the 3D model of plants should be replaced with life-like plant images, and being able to be put on not only the horizontal plane, but also walls. Furthermore, the app can also include the social factor, introducing botanical artists to normal users for advice.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="vSpace120 contentBlockWidth_12_12"></div>
+            </section>
+        </main>
+
+        <footer id="footerBottom" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+            <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
+                <p>© Shih-Yu Chu 2021</p>
+                <p>|</p>
+                <p><a class="aWhite aInternalNormal" href="index.html" id="navMenuProject">Work</a></p>
+                <p><a class="aWhite aInternalNormal" href="about.html" id="navMenuAbout">Meee</a></p>
+                <p><a class="aWhite aInternalNormal" href="random_work.html">Pppp</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="mailto:sychuu@umich.edu" target="blank_">Email</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://linkedin.com/in/shiyuchuu" target="blank_">LinkedIn</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://drive.google.com/file/d/16LKEUGu0CgxXOrWYTA1Jtj-HCgP9r48e/view" target="blank_">Resume</a></p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="js/project_menu.js"></script>
+
+</body>
+</html>

@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Shi-Yu Chuuuuuuuuu</title>
     <meta charset="utf-8">
-    <title>Shiyu Chuu: Product Design &amp; UX Research</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="icon/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="icon/favicon.png"/> 
     <link rel="stylesheet" type="text/css" href="style/html5reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="style/main.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="style/index.css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap" rel="stylesheet"> -->
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    
+    <!-- need review -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151944711-2"></script>
     <script>
@@ -19,101 +21,275 @@
 
         gtag('config', 'UA-151944711-2');
     </script>
+    <script>
+        let count = 0;
+        function preLoadImage (e) {
+            e.parentElement.setAttribute('class', e.parentElement.className + " imgLoaded");
+            count += 1;
+            if (count === 11) {
+                loadImage();
+            }
+        };
+
+        function loadImage () {
+            let imageSectionsToShow = document.querySelectorAll('.imgLoaded');
+            imageSectionsToShow.forEach((e)=>{
+                let classes = e.className.replace('imgBeforeLoaded', '');
+                e.setAttribute('class', classes + " imgAnimation");
+            })
+        }
+    </script>
 </head>
 <body>
-    <div id="meta_content"> 
-        <div id="jump">
-            <a href="#main_content">Skip to main content</a>
-        </div>
-
-        <nav id="nav_top">
-            <div id="my_name">
-                <a href="index.html"><img src="icon/logo.svg" id="sc_logo"><h1>Shiyu Chuu</h1></a>
-                <img id="menu_icon" src="icon/hamburger.png" alt="menu_icon">
-            </div>
-            <div id="menu">
-                <div id="menu_divider"></div>
-                <ul>
-                    <li id="work"><a href="index.html">Product Design &amp; UX Research</a></li>
-                    <li id="code"><a href="code.html">AR/VR &amp; Front-end</a></li>
-                    <li id="visual"><a href="visual.html">Graphic Design</a></li>
-                    <li id="about"><a href="about.html">About</a></li>
-                </ul>
-                <div id="extra_for_mobile_scroll_project_list"></div>
+    <div id="contentContainer" class="contentBlockHLayoutStretchSevenly">
+        
+        <nav id="navTop" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+            <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
+                <p class="pUppercase"><a class="aWhite" href="index.html">Shih-Yu Chu</a></p>
+                <p>|</p>
+                <p><a class="aWhite aInternalSelected" href="index.html">Work</a></p>
+                <p><a class="aWhite aInternalNormal" href="about.html">Meee</a></p>
+                <p><a class="aWhite aInternalNormal" href="random_work.html">Pppp</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="mailto:sychuu@umich.edu" target="blank_">Email</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://linkedin.com/in/shiyuchuu" target="blank_">LinkedIn</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://drive.google.com/file/d/16LKEUGu0CgxXOrWYTA1Jtj-HCgP9r48e/view" target="blank_">Resume</a></p>
             </div>
         </nav>
-    
-        <main id="main_content" class="content_grid project_list">
-            <h2 class="project_cat">Product Design &amp; UX Research</h2>
-            <article class="project">
-                <a href="project_ideapot.html">
-                    <section class="thumbnail">
-                        <div class="thumbnail_img ideapot"></div>
-                    </section>
-                    <section class="info">
-                        <p class="project_title">Ideapot</p>
-                        <p>End-to-end mobile app design</p>
-                    </section>
-                </a>
-            </article>
-            <article class="project">
-                <a href="project_patient.html">
-                    <section class="thumbnail">
-                        <div class="thumbnail_img patient_interface"></div>
-                    </section>
-                    <section class="info">
-                        <p class="project_title">Patient Interface</p>
-                        <p>UX consultancy</p>
-                    </section>
-                </a>
-            </article>
-            <article class="project">
-                <a href="project_cm_dash.html">
-                    <section class="thumbnail">
-                        <div class="thumbnail_img cm"></div>
-                    </section>
-                    <section class="info">
-                        <p class="project_title">CodementorX Dashboard</p>
-                        <p>Web app</p>
-                    </section>
-                </a>
-            </article>
-            <article class="project">
-                <a href="project_cm_landing.html">
-                    <section class="thumbnail">
-                        <div class="thumbnail_img cm_landing"></div>
-                    </section>
-                    <section class="info">
-                        <p class="project_title">CodementorX Landing Page</p>
-                        <p>Website</p>
-                    </section>
-                </a>
-            </article>
-            <article class="project">
-                <a href="project_cm_guide.html">
-                    <section class="thumbnail">
-                        <div class="thumbnail_img cm_guide"></div>
-                    </section>
-                    <section class="info">
-                        <p class="project_title">Codementor Design Guideline</p>
-                        <p>Design Guideline</p>
-                    </section>
-                </a>
-            </article>
-            <article class="project">
-                <a href="project_dailyui_collection.html">
-                    <section class="thumbnail">
-                        <div class="thumbnail_img daily"></div>
-                    </section>
-                    <section class="info">
-                        <p class="project_title">Daily UI</p>
-                        <p>UI experiment</p>
-                    </section>
-                </a>
-            </article>
+
+        <main id="mainContent" class="contentBlockWidth_1">
+            <section class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+                <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
+                    <div class="contentBlockWidth_6_12">
+                        <h1>Work</h1>
+                    </div>
+                    <div class="contentBlockWidth_6_12">
+                        <h2 class="pLight marginTop28">I discover problems with empathy and solve them for users and business with crafted products and user experiences</h2>
+                    </div>
+                </div>
+                <div class="vSpace120 contentBlockWidth_12_12"></div>
+            </section>
+
+            <section class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+
+                <section id="product" class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
+                    <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
+                        <h3>Product Design at Work</h3>
+                        <div class="vSpace80"></div>
+                    </div>
+                    <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
+                        <a href="project_cm_dash.html" class="contentBlockWidth_3_12 contentBlockVLayoutCenterTopReverse projectCard aWhite">
+                            <div class="contentBlockWidth_3_12 marginTop8">
+                                <p>CodementorX</p>
+                                <p class="pSub pGray pLight">product design</p>
+                                <div class="vSpace28"></div>
+                            </div>
+                            <div class="contentBlockWidth_3_12 contentBlockVLayoutCenterCenter projectThumbnail">
+                                <div class="contentBlockWidth_3_12 projectBlackFilter"></div>
+                                <div class="imgBeforeLoaded contentBlockVLayoutCenterCenter">
+                                    <img onload="preLoadImage(this)" src="image/img_thumbnail/thumbnail_cm_dash.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="project_cm_guide.html" class="contentBlockWidth_3_12 contentBlockVLayoutCenterTopReverse projectCard aWhite">
+                            <div class="contentBlockWidth_3_12 marginTop8">
+                                <p>Codementor Style Guide</p>
+                                <p class="pSub pGray pLight">design system</p>
+                                <div class="vSpace28"></div>
+                            </div>
+                            <div class="contentBlockWidth_3_12 contentBlockVLayoutCenterCenter projectThumbnail">
+                                <div class="contentBlockWidth_3_12 projectBlackFilter"></div>
+                                <div class="imgBeforeLoaded contentBlockVLayoutCenterCenter">
+                                    <img onload="preLoadImage(this)" src="image/img_thumbnail/thumbnail_cm_guideline.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                        <div class="contentBlockWidth_3_12 coming_soon_container">
+                            <p class="coming_soon_text">Coming soon!</p>
+                            <div class="contentBlockWidth_3_12 coming_soon_back"></div>
+
+                            <a href="project_chime.html" class="contentBlockWidth_3_12 contentBlockVLayoutCenterTopReverse projectCard aWhite" style="pointer-events: none;">
+                                <div class="contentBlockWidth_3_12 marginTop8">
+                                    <p>Chime</p>
+                                    <p class="pSub pGray pLight">product design</p>
+                                    <div class="vSpace28"></div>
+                                </div>
+                                <div class="contentBlockWidth_3_12 contentBlockVLayoutCenterCenter projectThumbnail">
+                                    <div class="contentBlockWidth_3_12 projectBlackFilter"></div>
+                                    <div class="imgBeforeLoaded contentBlockVLayoutCenterCenter">
+                                        <img onload="preLoadImage(this)" src="image/img_thumbnail/thumbnail_chime.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="contentBlockWidth_3_12 coming_soon_container">
+                            <p class="coming_soon_text">Coming soon!</p>
+                            <div class="contentBlockWidth_3_12 coming_soon_back"></div>
+
+                            <a href="project_fulcrum.html" class="contentBlockWidth_3_12 contentBlockVLayoutCenterTopReverse projectCard aWhite" style="pointer-events: none;">
+                                <div class="contentBlockWidth_3_12 marginTop8">
+                                    <p>Fulcrum</p>
+                                    <p class="pSub pGray pLight">product design</p>
+                                    <div class="vSpace28"></div>
+                                </div>
+                                <div class="contentBlockWidth_3_12 contentBlockVLayoutCenterCenter projectThumbnail">
+                                    <div class="contentBlockWidth_3_12 projectBlackFilter"></div>
+                                    <div class="imgBeforeLoaded contentBlockVLayoutCenterCenter">
+                                        <img onload="preLoadImage(this)" src="image/img_thumbnail/thumbnail_fulcrum.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="vSpace80 contentBlockWidth_12_12"></div>
+                </section>
+
+                <section id="coding" class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
+                    <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
+                        <h3>Personal Projects</h3>
+                        <div class="vSpace80"></div>
+                    </div>
+                    <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
+                        <a href="project_talkie.html" class="contentBlockWidth_3_12 contentBlockVLayoutCenterTopReverse projectCard aWhite">
+                            <div class="contentBlockWidth_3_12 marginTop8">
+                                <p>Talkie</p>
+                                <p class="pSub pGray pLight">product design, IoT, UX research</p>
+                                <div class="vSpace28"></div>
+                            </div>
+                            <div class="contentBlockWidth_3_12 contentBlockVLayoutCenterCenter projectThumbnail">
+                                <div class="contentBlockWidth_3_12 projectBlackFilter"></div>
+                                <div class="imgBeforeLoaded contentBlockVLayoutCenterCenter">
+                                    <img onload="preLoadImage(this)" src="image/img_thumbnail/thumbnail_talkie.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="project_diary.html" class="contentBlockWidth_3_12 contentBlockVLayoutCenterTopReverse projectCard aWhite">
+                            <div class="contentBlockWidth_3_12 marginTop8">
+                                <p>Diary Study App</p>
+                                <p class="pSub pGray pLight">dev, React Native</p>
+                                <div class="vSpace28"></div>
+                            </div>
+                            <div class="contentBlockWidth_3_12 contentBlockVLayoutCenterCenter projectThumbnail">
+                                <div class="contentBlockWidth_3_12 projectBlackFilter"></div>
+                                <div class="imgBeforeLoaded contentBlockVLayoutCenterCenter">
+                                    <img onload="preLoadImage(this)" src="image/img_thumbnail/thumbnail_diary_study_app.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="project_virtual_garden.html" class="contentBlockWidth_3_12 contentBlockVLayoutCenterTopReverse projectCard aWhite">
+                            <div class="contentBlockWidth_3_12 marginTop8">
+                                <p>AR Gardening</p>
+                                <p class="pSub pGray pLight">dev, AR, Unity, C#</p>
+                                <div class="vSpace28"></div>
+                            </div>
+                            <div class="contentBlockWidth_3_12 contentBlockVLayoutCenterCenter projectThumbnail">
+                                <div class="contentBlockWidth_3_12 projectBlackFilter"></div>
+                                <div class="imgBeforeLoaded contentBlockVLayoutCenterCenter">
+                                    <img onload="preLoadImage(this)" src="image/img_thumbnail/thumbnail_virtual_garden.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="project_data_clickstream.html" class="contentBlockWidth_3_12 contentBlockVLayoutCenterTopReverse projectCard aWhite">
+                            <div class="contentBlockWidth_3_12 marginTop8">
+                                <p>User Clustering</p>
+                                <p class="pSub pGray pLight">data mining, UX research</p>
+                                <div class="vSpace28"></div>
+                            </div>
+                            <div class="contentBlockWidth_3_12 contentBlockVLayoutCenterCenter projectThumbnail">
+                                <div class="contentBlockWidth_3_12 projectBlackFilter"></div>
+                                <div class="imgBeforeLoaded contentBlockVLayoutCenterCenter">
+                                    <img onload="preLoadImage(this)" src="image/img_thumbnail/thumbnail_data_clickstream.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="vSpace80 contentBlockWidth_12_12"></div>
+                </section>
+
+                <section id="visual" class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
+                    <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
+                        <h3>Graphic Design</h3>
+                        <div class="vSpace80"></div>
+                    </div>
+                    <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
+                        <a href="project_taipei_map.html" class="contentBlockWidth_3_12 contentBlockVLayoutCenterTopReverse projectCard aWhite">
+                            <div class="contentBlockWidth_3_12 marginTop8">
+                                <p>Taipei Map</p>
+                                <p class="pSub pGray pLight">infographic, illustration</p>
+                                <div class="vSpace28"></div>
+                            </div>
+                            <div class="contentBlockWidth_3_12 contentBlockVLayoutCenterCenter projectThumbnail">
+                                <div class="contentBlockWidth_3_12 projectBlackFilter"></div>
+                                <div class="imgBeforeLoaded contentBlockVLayoutCenterCenter">
+                                    <img onload="preLoadImage(this)" src="image/img_thumbnail/thumbnail_taipei_map.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="project_print.html" class="contentBlockWidth_3_12 contentBlockVLayoutCenterTopReverse projectCard aWhite">
+                            <div class="contentBlockWidth_3_12 marginTop8">
+                                <p>Print</p>
+                                <p class="pSub pGray pLight">CD cover, poster</p>
+                                <div class="vSpace28"></div>
+                            </div>
+                            <div class="contentBlockWidth_3_12 contentBlockVLayoutCenterCenter projectThumbnail">
+                                <div class="contentBlockWidth_3_12 projectBlackFilter"></div>
+                                <div class="imgBeforeLoaded contentBlockVLayoutCenterCenter">
+                                    <img onload="preLoadImage(this)" src="image/img_thumbnail/thumbnail_collection_print.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="project_logo.html" class="contentBlockWidth_3_12 contentBlockVLayoutCenterTopReverse projectCard aWhite">
+                            <div class="contentBlockWidth_3_12 marginTop8">
+                                <p>Logotype</p>
+                                <p class="pSub pGray pLight">logotype, visual identity</p>
+                                <div class="vSpace28"></div>
+                            </div>
+                            <div class="contentBlockWidth_3_12 contentBlockVLayoutCenterCenter projectThumbnail">
+                                <div class="contentBlockWidth_3_12 projectBlackFilter"></div>
+                                <div class="imgBeforeLoaded contentBlockVLayoutCenterCenter">
+                                    <img onload="preLoadImage(this)" src="image/img_thumbnail/thumbnail_collection_logo.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                        <div class="contentBlockWidth_3_12 contentBlockVLayoutCenterTopReverse"></div>
+                    </div>
+                    <div class="vSpace120 contentBlockWidth_12_12"></div>
+                </section>
+            </section>
         </main>
+
+        <footer id="footerBottom" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+            <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
+                <p>© Shih-Yu Chu 2021</p>
+                <p>|</p>
+                <p><a class="aWhite aInternalNormal" href="index.html" id="navMenuProject">Work</a></p>
+                <p><a class="aWhite aInternalNormal" href="about.html" id="navMenuAbout">Meee</a></p>
+                <p><a class="aWhite aInternalNormal" href="random_work.html">Pppp</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="mailto:sychuu@umich.edu" target="blank_">Email</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://linkedin.com/in/shiyuchuu" target="blank_">LinkedIn</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://drive.google.com/file/d/16LKEUGu0CgxXOrWYTA1Jtj-HCgP9r48e/view" target="blank_">Resume</a></p>
+            </div>
+        </footer>
+
     </div>
-    <script src="js/menu_open_close.js"></script>
-    <script src="js/load_image.js"></script>
+
+    <script>
+        let cards = document.querySelectorAll('#product a, #coding a, #visual a');
+        cards.forEach((c)=>{
+            c.setAttribute('onmouseover', 'cardMouseOverEffect(this)')
+            c.setAttribute('onmouseout', 'cardMouseOutEffect(this)')
+        })
+        function cardMouseOverEffect (c) {
+            let projectBlackFilter = c.querySelectorAll('.projectBlackFilter');
+            projectBlackFilter.forEach((e)=>{
+                e.style.opacity = 0.6;
+            })
+        }
+        function cardMouseOutEffect (c) {
+            let projectBlackFilter = c.querySelectorAll('.projectBlackFilter');
+            projectBlackFilter.forEach((e)=>{
+                e.style.opacity = 0;
+            })
+        }
+    </script>
 </body>
 </html>

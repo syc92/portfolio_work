@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Shi-Yu Chuuuuuuuuu</title>
     <meta charset="utf-8">
-    <title>Shiyu Chuu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="icon/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="icon/favicon.png"/> 
     <link rel="stylesheet" type="text/css" href="style/html5reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="style/main.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="style/project_common.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="style/project_cm_guide.css">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <!-- need review -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151944711-2"></script>
     <script>
@@ -19,159 +20,293 @@
 
         gtag('config', 'UA-151944711-2');
     </script>
+    <script>
+        function preLoadImage (e) {
+            let classes = e.className.replace('imgBeforeLoaded', '')
+            e.setAttribute('class', classes + " imgAnimation")
+        };
+    </script>
 </head>
 <body>
-    <div id="jump">
-        <a href="#main_content">Skip to main content</a>
-    </div>
-    
-    <div id="hero_img_over"></div>
-    <div id="hero_img"></div>
-    <img src="image/project_cm_guide/0_hero/hero_cm_guide.png" class="hero_img_content" alt="hero_img_content" data-scroll-speed="-2">
-
-    <div id="meta_content">
-        <nav id="nav_top">
-            <div id="back">
-                <a id="detail_page_name" href="index.html">
-                    <img src="icon/back_arrow.png" alt="back_arrow"><h2>Shiyu Chuu</h2>
-                </a>
-                <img id="menu_icon" src="icon/hamburger.png" alt="menu_icon">
-            </div>
-            <div id="menu">
-                <ul>
-                    <li class="hash_introduction">Introduction</li>
-                    <li class="hash_overview">Overview</li>
-                    <li class="hash_start">Start from the basics</li>
-                    <li class="hash_principles">Principles</li>
-                    <li class="hash_analyze">Use case analysis</li>
-                    <li class="hash_final">Final outcome</li>
-                    <li class="hash_how_to_use">How to use</li>
-                    <li id="last_on_menu" class="hash_conclusion">Conclusion</li>
-                </ul>
-                <div id="extra_for_mobile_scroll_project_detail"></div>
+    <div id="contentContainer" class="contentBlockHLayoutStretchSevenly">
+        
+        <nav id="navTop" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+            <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
+                <p class="pUppercase"><a class="aWhite" href="index.html">Shih-Yu Chu</a></p>
+                <p>|</p>
+                <p><a class="aWhite aInternalNormal" href="index.html">Work</a></p>
+                <p><a class="aWhite aInternalNormal" href="about.html">Meee</a></p>
+                <p><a class="aWhite aInternalNormal" href="random_work.html">Pppp</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="mailto:sychuu@umich.edu" target="blank_">Email</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://linkedin.com/in/shiyuchuu" target="blank_">LinkedIn</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://drive.google.com/file/d/16LKEUGu0CgxXOrWYTA1Jtj-HCgP9r48e/view" target="blank_">Resume</a></p>
             </div>
         </nav>
-    
-        <main class="content_grid" id="main_content">
-            <section class="gallery" id="introduction">
-                <h1>Codementor Design Guideline</h1>
-            </section>
-            <section class="gallery">
-                <p>During my time working as a product designer at Codementor, the company has two major products: Codementor and CodementorX. Codementor is the software engineering mentorship platform, while CodementorX is a freelance platform for software engineers. Other than that, we also rolled out some side projects or sub products from time to time. Each of these products is handled by different designers. Therefore, this project aims to create a guideline to designer to follow, trying to maintain the consistency across products in sake of branding, but still allowing designers to create the unique design for each product based on this guideline.</p>
-                <p>(Sadly, CodementorX is now rebranded as <a href="https://arc.dev/">Arc.dev</a>, so you can’t see my work in production:( But go check their new look and branding. It’s awesome!) </p>
-            </section>
-            <section class="gallery">
-                <p>
-                    <span class="info_point">Year:</span> 2018<br>
-                    <span class="info_point">Project type:</span> Work project<br>
-                    <span class="info_point">Duration:</span> 1 month (first version)<br>
-                    <span class="info_point">Role:</span> Product designer<br>
-                    <span class="info_point">Teammates:</span> Vita Tseng, Yvon Hung, Peiyin Lin, Viki Huang<br>
-                </p>
-            </section>
-            <section class="gallery devider">
+
+        <main id="mainContent" class="contentBlockWidth_1">
+            <section class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+                <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
+                    <div class="contentBlockWidth_12_12">
+                        <h1>Codementor Style Guide</h1>
+                        <h2 class="pLight marginTop16">Cross Products Design System</h2>
+                    </div>
+
+                    <div class="contentBlockWidth_12_12">
+                        <div class="vSpace80"></div>
+                        <img onload="preLoadImage(this)" class="contentBlockWidth_12_12 imgBeforeLoaded" src="image/img_hero/hero_cm_guide.png" alt="">
+                    </div>
+                </div>
+                <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
+                    <div class="contentBlockWidth_3_12">
+                        <div class="vSpace56"></div>
+                        <p>Team: <span class="pGray pLight">Vita Tseng, Yvon Huang, Sunny Lin, Viki Hunag, Shih-Yu Chu</span></p>
+                        <p>Expertise: <span class="pGray pLight">design system</span></p>
+                        <p>Period: <span class="pGray pLight">2018 - 2019</span></p>
+                    </div>
+
+                    <div class="contentBlockWidth_8_12">
+                        <div class="vSpace56"></div>
+                        <h3>Project Overview</h3>
+                        <p class="pLight pGray marginTop28">During my time working as a product designer at Codementor, the company has two major products: Codementor and CodementorX. Codementor is the software engineering mentorship platform, while CodementorX is a freelance platform for software engineers. Other than that, we also rolled out some side projects or sub products from time to time. Each of these products is handled by different designers. Therefore, this project aims to create a guideline for designers to follow, trying to maintain the consistency across products in sake of branding, but still allowing designers to create the unique design for each product based on this guideline.</p>
+                    </div>
+
+                    <div class="contentBlockWidth_12_12 vSpace80"></div>
+                </div>
             </section>
 
-            <section class="gallery" id="overview">
-                <h2>Overview</h2>
-                <div class="img_item"><img src="image/project_cm_guide/overview.jpg" alt="style guide overview"></div>
+            <section id="menu" class="contentBlockWidth_1 displayNone whiteBackground contentBlockFixed contentBlockFixedTopLeft0">
+                <div class="contentBlockWidth_12_12 contentBlockVLayoutLeftTop">
+                    <img id="close" class="marginTopFixedEdge" src="icon/icon_close_black.svg" alt="">
+                    <div id="menuList" class="contentBlockWidth_12_12 menuFadeIn">
+                        <h2 id="menuTitle" class="marginTop28">Codementor Style Guide</h2>
+                        <div class="contentBlockWidth_12_12 lineBlack marginTop28"></div>
+                        <h2 id="tag-basic" class="tag marginTop28 aInternalSelected">The Basics</h2>
+                        <h2 id="tag-principles" class="tag marginTop8 aInternalNormal">Principles</h2>
+                        <h2 id="tag-case" class="tag marginTop8 aInternalNormal">Use Case Analysis</h2>
+                        <h2 id="tag-component" class="tag marginTop8 aInternalNormal">Key Components</h2>
+                        <h2 id="tag-library" class="tag menuLastItem marginTop8 aInternalNormal">Library</h2>
+                        <div class="contentBlockWidth_12_12 vSpaceFixedEdge"></div>
+                    </div>
+                </div>
             </section>
 
-            <section class="gallery" id="start">
-                <h2>Start from the basics</h2>
-                <p>We start from unifying our color palette and font choice. For the color palette, each product has its own unique color theme for branding, but all of them share the same color theme for common elements. Therefore, our main color theme comprises both the branding color theme and the common color theme. For the typeface, we choose Raleway for title and open sans for body text. </p>
-                <div class="img_item"><img src="image/project_cm_guide/start1.jpg" alt="Colors"></div>
-                <div class="img_item"><img src="image/project_cm_guide/start2.jpg" alt="Typography"></div>
-            </section>
-            <section class="gallery devider_no_line">
-            </section>
-            
-            <section class="gallery" id="principles">
-                <h2>Principles</h2>
-                <p>Afterwards, we outline the principles for designing our shared design element and guideline, including dimension, element size, round corner, and element status. The goal of this stage is to minimize the options so we can have a more consistent interface across platforms, but allow designers to be able to have enough options to accommodate different situations. In case you’re interested why we’re using the 4px grid system, <a href="https://builttoadapt.io/intro-to-the-8-point-grid-system-d2573cde8632">[this article by Elliot Dahl]</a> well explained our reasoning.</p>
-                <div class="img_item"><img src="image/project_cm_guide/principles.jpg" alt="Design principles"></div>
-            </section>
-            <section class="gallery devider_no_line">
-            </section>
+            <section class="contentBlockWidth_1 contentBlockHLayoutCenterSaround whiteBackground">
+                <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
+                    <div class="contentBlockWidth_4_12">
+                        <div class="vSpace120 whiteBackground"></div>
+                        <div id="menuIcon"></div>
+                        <div class="vSpace80"></div>
+                    </div>
 
-            <section class="gallery" id="analyze">
-                <h2>Use case analysis</h2>
-                <p>While we continue to build our shared design elements, we found the behavior of some elements are also inconsistent across platforms. Therefore we also look into and unify the use cases and the behavior of certain elements. Here’s one example I’ve done. We have a component called “tag picker”, which behaves differently across platforms. I make this chart to analyze its behavior, and discuss with my team about what is the best way to unify its behavior.</p>
-                <div class="img_item"><img src="image/project_cm_guide/analyze.jpg" alt="analyze"></div>
-            </section>
-            <section class="gallery devider_no_line">
-            </section>
+                    <div class="contentBlockWidth_8_12">
 
-            <section class="gallery" id="final">
-                <h2>Final outcome</h2>
-                <p>Here is the final outcome. There are a lot of them, and I am only showing part of them so you can have a basic understanding of what they look like. We also upload the final outcome to Zeplin, and document our result in Notion, so both design team and development team can refer to them if needed.</p>
-            </section>
-            <section class="gallery_left">
-                <h3>Tag picker</h3>
-                <div class="img_item image_final"><img src="image/project_cm_guide/tag_picker.jpg" alt="Tag picker"></div>
-            </section>
-            <section class="gallery_right">
-                <h3>Input</h3>
-                <div class="img_item image_final"><img src="image/project_cm_guide/input.jpg" alt="Input"></div>
-            </section>
-            <section class="gallery_left">
-                <h3>Button-solid</h3>
-                <div class="img_item image_final"><img src="image/project_cm_guide/button_solid.jpg" alt="Button – solid"></div>
-            </section>
-            <section class="gallery_right">
-                <h3>Button-outline</h3>
-                <div class="img_item image_final"><img src="image/project_cm_guide/button_outline.jpg" alt="Button – outline"></div>
-            </section>
-            <section class="gallery_left">
-                <h3>Notification</h3>
-                <div class="img_item image_final"><img src="image/project_cm_guide/notification.jpg" alt="Notification"></div>
-            </section>
-            <section class="gallery_right">
-                <h3>Dropdown</h3>
-                <div class="img_item image_final"><img src="image/project_cm_guide/dropdown.jpg" alt="Dropdown"></div>
-            </section>
-            <section class="gallery_left">
-                <h3>Checkbox/radio/toggle</h3>
-                <div class="img_item image_final"><img src="image/project_cm_guide/checkbox_radio_toggle.jpg" alt="Checkbox/radio/toggle"></div>
-            </section>
-            <section class="gallery_right">
-                <h3>Tooltips</h3>
-                <div class="img_item image_final"><img src="image/project_cm_guide/tooltips.jpg" alt="Tooltips"></div>
-            </section>
-            <section class="gallery_left">
-                <h3>Icons</h3>
-                <div class="img_item image_final"><img src="image/project_cm_guide/icons.jpg" alt="Icons"></div>
-            </section>
-            <section class="gallery_right">
-                <h3>Tech stack</h3>
-                <div class="img_item image_final"><img src="image/project_cm_guide/tech_stack.jpg" alt="Tech stack"></div>
-            </section>
-            </section>
+                        <div id="basic" class="target">
+                                <div class="vSpace120"></div>
+                            <h2 class="pMedium pUppercase">The Basics</h2>
+                                <div class="vSpace80"></div>
+                            <h3 class="pMedium">Colors and Typography</h3>
+                            <p class="marginTop28">We start from unifying our color palette and font choice. For the color palette, each product has its own unique color theme for branding, but all of them share the same color theme for common elements. Therefore, our main color theme comprises both the branding color theme and the common color theme. For the typeface, we choose Raleway for title and open sans for body text.</p>
+                            <div class="contentBlockHLayoutStretchSbetween">
+                                <div class="contentBlockWidth_4_12 marginTop28">
+                                    <img class="imageWidthInsideContainer imgBeforeLoaded" onload="preLoadImage(this)" src="image/project_cm_guide/start1.jpg" alt="">
+                                    <p class="pSub marginTop8">Color palette</p>
+                                </div>
+                                <div class="contentBlockWidth_4_12 marginTop28">
+                                    <img class="imageWidthInsideContainer imgBeforeLoaded" onload="preLoadImage(this)" src="image/project_cm_guide/start2.jpg" alt="">
+                                    <p class="pSub marginTop8">Typography</p>
+                                </div>
+                            </div>
+                        </div>
 
-            <section class="gallery" id="how_to_use">
-                <h2>How to use</h2>
-                <p>After we created our guideline, how can it really help the design team to work more efficiently? One of our senior product designers, Vita, comes up with a brilliant way to do that. Our team uses Sketch as our main tool, and its powerful “nested symbol” feature allows us to select all the components from the menu with different status and colors.</p>
-                <div class="img_item"><img src="image/project_cm_guide/how_to_use1.png" alt="How to use – 1"></div>
-                <div class="img_item"><img src="image/project_cm_guide/how_to_use2.png" alt="How to use – 2"></div>
-                <div class="img_item"><img src="image/project_cm_guide/how_to_use3.png" alt="How to use – 3"></div>
-            </section>
-            <section class="gallery devider_no_line">
-            </section>
+                        <div id="principles" class="target">
+                                <div class="vSpace120"></div>
+                            <h2 class="pMedium pUppercase">Principles</h2>
+                                <div class="vSpace80"></div>
+                            <h3 class="pMedium">Creating rules to comply with</h3>
+                            <p class="marginTop28">Afterwards, we outline the principles for designing our shared design element and guideline, including dimension, element size, round corner, and element status. The goal of this stage is to minimize the options so we can have a more consistent interface across platforms, but allow designers to be able to have enough options to accommodate different situations. In case you’re interested why we’re using the 4px grid system, <span><a class="aExternal" href="https://medium.com/swlh/the-comprehensive-8pt-grid-guide-aa16ff402179">this article</a></span> well explained our reasoning.</p>
+                            <img onload="preLoadImage(this)" class="imageWidthInsideContainer imgBeforeLoaded marginTop28" src="image/project_cm_guide/principles.jpg" alt="">
+                            <p class="pSub marginTop8">Key principles</p>
+                        </div>
 
-            <section class="gallery" id="conclusion">
-                <h2>Conclusion</h2>
-                <h3>What I learned</h3>
-                <p>Creating a design guideline is a continuing process. As we were creating this guideline, we kept finding that there were some edge cases that we didn’t consider. Sometimes there were also new demands emerging as our products grew. So we have to revisit the principles we outlined at the very beginning and make adjustments to them. Also, the guideline also needs iteration from time to time, so we can make sure the look of our products is always refreshing, and our users have consistent experience all the time.</p>
-                <h3>What could have be done better</h3>
-                <p>One thing I think we could have done better is accessibility. When we outlined our principles and guidelines, we did not consider the accessibility thoroughly. In fact, some of our colors might pass the web accessibility test. It didn’t cause any negative effect to our product performance immediately, but it definitely should be included into our consideration and become a part of the guideline.</p>
+                        <div id="case" class="target">
+                                <div class="vSpace120"></div>
+                            <h2 class="pMedium pUppercase">Use case analysis</h2>
+                                <div class="vSpace80"></div>
+                            <h3 class="pMedium">Analyze and simplify use cases</h3>
+                            <p class="marginTop28">While we continue to build our shared design elements, we found the behavior of some elements are also inconsistent across platforms. Therefore we also look into and unify the use cases and the behavior of certain elements. Here’s one example I’ve done. We have a component called “tag picker”, which behaves differently across platforms. I make this chart to analyze its behavior, and discuss with my team about what is the best way to unify its behavior.</p>
+                            <img onload="preLoadImage(this)" class="imageWidthInsideContainer imgBeforeLoaded marginTop28" src="image/project_cm_guide/analyze.jpg" alt="">
+                            <p class="pSub marginTop8">Interation analysis for "tag picker"</p>
+                        </div>
+
+                        <div id="component" class="target">
+                            <div class="vSpace120"></div>
+                            <h2 class="pMedium pUppercase">Key Components</h2>
+                                <div class="vSpace80"></div>
+                            <div class="contentBlockHLayoutStretchSbetween">
+                                <div class="contentBlockWidth_4_12 marginTop28">
+                                    <div class="cm_guide_components_container">
+                                        <video class="imageWidthInsideContainer cm_guide_components" onload="preLoadImage(this)" autoplay muted loop>
+                                            <source src="image/project_cm_guide/cm_input.mp4" type="video/mp4"/>
+                                        </video>
+                                        <img src="icon/icon_play.png" class="cm_guide_components_playIcon" alt="">
+                                    </div>
+                                    <p class="pSub marginTop8">Input</p>
+                                </div>
+                                <div class="contentBlockWidth_4_12 marginTop28">
+                                    <div class="cm_guide_components_container">
+                                        <video class="imageWidthInsideContainer cm_guide_components" onload="preLoadImage(this)" autoplay muted loop>
+                                            <source src="image/project_cm_guide/cm_tag_picker.mp4" type="video/mp4"/>
+                                        </video>
+                                        <img src="icon/icon_play.png" class="cm_guide_components_playIcon" alt="">
+                                    </div>
+                                    <p class="pSub marginTop8">Tag picker</p>
+                                </div>
+                                <div class="contentBlockWidth_4_12 marginTop28">
+                                    <div class="cm_guide_components_container">
+                                        <video class="imageWidthInsideContainer cm_guide_components" onload="preLoadImage(this)" autoplay muted loop>
+                                            <source src="image/project_cm_guide/cm_button.mp4" type="video/mp4"/>
+                                        </video>
+                                        <img src="icon/icon_play.png" class="cm_guide_components_playIcon" alt="">
+                                    </div>
+                                    <p class="pSub marginTop8">Button – solid</p>
+                                </div>
+                                <div class="contentBlockWidth_4_12 marginTop28">
+                                    <div class="cm_guide_components_container">
+                                        <video class="imageWidthInsideContainer cm_guide_components" onload="preLoadImage(this)" autoplay muted loop>
+                                            <source src="image/project_cm_guide/cm_button_outline.mp4" type="video/mp4"/>
+                                        </video>
+                                        <img src="icon/icon_play.png" class="cm_guide_components_playIcon" alt="">
+                                    </div>
+                                    <p class="pSub marginTop8">Button – outline</p>
+                                </div>
+                                <div class="contentBlockWidth_4_12 marginTop28">
+                                    <div class="cm_guide_components_container">
+                                        <video class="imageWidthInsideContainer cm_guide_components" onload="preLoadImage(this)" autoplay muted loop>
+                                            <source src="image/project_cm_guide/cm_status_switch.mp4" type="video/mp4"/>
+                                        </video>
+                                        <img src="icon/icon_play.png" class="cm_guide_components_playIcon" alt="">
+                                    </div>
+                                    <p class="pSub marginTop8">Radio, check, and toggle</p>
+                                </div>
+                                <div class="contentBlockWidth_4_12 marginTop28">
+                                    <div class="cm_guide_components_container">
+                                        <video class="imageWidthInsideContainer cm_guide_components" onload="preLoadImage(this)" autoplay muted loop>
+                                            <source src="image/project_cm_guide/cm_tooltips.mp4" type="video/mp4"/>
+                                        </video>
+                                        <img src="icon/icon_play.png" class="cm_guide_components_playIcon" alt="">
+                                    </div>
+                                    <p class="pSub marginTop8">Tooltips</p>
+                                </div>
+                                <div class="contentBlockWidth_4_12 marginTop28">
+                                    <div class="cm_guide_components_container">
+                                        <video class="imageWidthInsideContainer cm_guide_components" onload="preLoadImage(this)" autoplay muted loop>
+                                            <source src="image/project_cm_guide/cm_dropdown.mp4" type="video/mp4"/>
+                                        </video>
+                                        <img src="icon/icon_play.png" class="cm_guide_components_playIcon" alt="">
+                                    </div>
+                                    <p class="pSub marginTop8">Dropdown</p>
+                                </div>
+                                <div class="contentBlockWidth_4_12 marginTop28">
+                                    <div class="cm_guide_components_container">
+                                        <video class="imageWidthInsideContainer cm_guide_components" onload="preLoadImage(this)" autoplay muted loop>
+                                            <source src="image/project_cm_guide/cm_notification.mp4" type="video/mp4"/>
+                                        </video>
+                                        <img src="icon/icon_play.png" class="cm_guide_components_playIcon" alt="">
+                                    </div>
+                                    <p class="pSub marginTop8">Notification</p>
+                                </div>
+                                <div class="contentBlockWidth_4_12 marginTop28">
+                                    <div class="cm_guide_components_container">
+                                        <video class="imageWidthInsideContainer cm_guide_components" onload="preLoadImage(this)" autoplay muted loop>
+                                            <source src="image/project_cm_guide/cm_icon.mp4" type="video/mp4"/>
+                                        </video>
+                                        <img src="icon/icon_play.png" class="cm_guide_components_playIcon" alt="">
+                                    </div>
+                                    <p class="pSub marginTop8">Icon</p>
+                                </div>
+                                <div class="contentBlockWidth_4_12 marginTop28">
+                                    <div class="cm_guide_components_container">
+                                        <video class="imageWidthInsideContainer cm_guide_components" onload="preLoadImage(this)" autoplay muted loop>
+                                            <source src="image/project_cm_guide/cm_tech.mp4" type="video/mp4"/>
+                                        </video>
+                                        <img src="icon/icon_play.png" class="cm_guide_components_playIcon" alt="">
+                                    </div>
+                                    <p class="pSub marginTop8">Tech stack icon</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="library" class="target">
+                                <div class="vSpace120"></div>
+                            <h2 class="pMedium pUppercase">Library</h2>
+                                <div class="vSpace80"></div>
+                            <h3 class="pMedium">Make the Guideline Easy to Follow</h3>
+                            <p class="marginTop28">After we created our guideline, how can it really help the design team to work more efficiently? One of our senior product designers, Vita, comes up with a brilliant way to do that. Our team uses Sketch as our main tool, and its powerful “nested symbol” feature allows us to select all the components from the menu with different status and colors.</p>
+                            <div class="contentBlockHLayoutStretchSbetween">
+                                <div class="contentBlockWidth_4_12 marginTop28">
+                                    <img onload="preLoadImage(this)" class="imageWidthInsideContainer imgBeforeLoaded" src="image/project_cm_guide/0_how_to_use1.png" alt="">
+                                    <p class="pSub marginTop8">Insert button with different color and status</p>
+                                </div>
+                                <div class="contentBlockWidth_4_12 marginTop28">
+                                    <img onload="preLoadImage(this)" class="imageWidthInsideContainer imgBeforeLoaded" src="image/project_cm_guide/0_how_to_use2.png" alt="">
+                                    <p class="pSub marginTop8">Icon library</p>
+                                </div>
+                                <div class="contentBlockWidth_8_12 marginTop28">
+                                    <img onload="preLoadImage(this)" class="imageWidthInsideContainer imgBeforeLoaded" src="image/project_cm_guide/0_how_to_use3.png" alt="">
+                                    <p class="pSub marginTop8">With nested component, the content and color of it can be easily changed</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="vSpace120 contentBlockWidth_12_12"></div>
             </section>
         </main>
+
+        <footer id="footerBottom" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+            <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
+                <p>© Shih-Yu Chu 2021</p>
+                <p>|</p>
+                <p><a class="aWhite aInternalNormal" href="index.html" id="navMenuProject">Work</a></p>
+                <p><a class="aWhite aInternalNormal" href="about.html" id="navMenuAbout">Meee</a></p>
+                <p><a class="aWhite aInternalNormal" href="random_work.html">Pppp</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="mailto:sychuu@umich.edu" target="blank_">Email</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://linkedin.com/in/shiyuchuu" target="blank_">LinkedIn</a></p>
+                <p><a class="aWhite aInternalNormal aExternalCursor" href="https://drive.google.com/file/d/16LKEUGu0CgxXOrWYTA1Jtj-HCgP9r48e/view" target="blank_">Resume</a></p>
+            </div>
+        </footer>
+
     </div>
-    <script src="js/menu_mobile_project_scroll_ative_item.js"></script>
-    <script src="js/menu_mobile_project_position_adjust.js"></script>
-    <script src="js/menu_open_close.js"></script>
-    <script src="js/image_modal.js"></script>
-    <script src="js/project_menu_fixed.js"></script>
-    <script src="js/project_hero_image_content_scroll_speed.js"></script>
+
+    <script src="js/project_menu.js"></script>
+    <script>
+        let video = document.querySelectorAll('.cm_guide_components');
+        let play = document.querySelectorAll('.cm_guide_components_playIcon');
+        video.forEach((e)=>{
+            e.addEventListener('click', ()=>{
+                if (e.paused === false) {
+                    e.pause();
+                    e.parentElement.querySelector('.cm_guide_components_playIcon').setAttribute('style', 'display: block')
+                } else {
+                    e.play();
+                    e.parentElement.querySelector('.cm_guide_components_playIcon').setAttribute('style', 'display: none')
+                }
+            })
+        })
+        play.forEach((e)=>{
+            e.addEventListener('click', ()=>{
+                if (e.parentElement.querySelector('.cm_guide_components').paused === false) {
+                    e.parentElement.querySelector('.cm_guide_components').pause();
+                    e.setAttribute('style', 'display: block')
+                } else {
+                    e.parentElement.querySelector('.cm_guide_components').play();
+                    e.setAttribute('style', 'display: none')
+                }
+            })
+        })
+    </script>
+
 </body>
 </html>
