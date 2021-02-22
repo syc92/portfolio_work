@@ -254,10 +254,7 @@ a:visited {
 .grayBackground {
     background-color: var(--ColorGrayBackground);
 }
-/* project color background */
-    .cmxDashBackground {
-        background-color: var(--ColorCmxDash);
-    }
+
 
 /* 28px */
 .vSpace28 {
@@ -314,14 +311,13 @@ a:visited {
 }
 
 
+/* display */
 .displayNone {
     display: none;
 }
 .displayFlex {
     display: flex;
 }
-
-
 
 
 
@@ -348,43 +344,7 @@ a:visited {
     --block9_12: calc(var(--block1_12) * 9 + var(--guter) * 8);
     --block10_12: calc(var(--block1_12) * 10 + var(--guter) * 9);
     --block11_12: calc(var(--block1_12) * 11 + var(--guter) * 10);
-    /* --blockOneEighth: calc(calc(var(--blockEightEighth) - 16px * 7) / 8);
-    --blockTwoEighth: calc(var(--blockOneEighth) * 2 + 16px * 1);
-    --blockThreeEighth: calc(var(--blockOneEighth) * 3 + 16px * 2);
-    --blockFourEighth: calc(var(--blockOneEighth) * 4 + 16px * 3);
-    --blockFiveEighth: calc(var(--blockOneEighth) * 5 + 16px * 4);
-    --blockSixEighth: calc(var(--blockOneEighth) * 6 + 16px * 5);
-    --blockSevenEighth: calc(var(--blockOneEighth) * 7 + 16px * 6);
-    --blockElevenSixteenth: calc(var(--blockSixEighth) + calc(var(--blockOneEighth) / 2));
-    --blockThreeSixteenth: calc(calc(var(--blockElevenSixteenth) - 16px * 1) / 2); */
-
-    /* --blockOneEighthText: calc(calc(calc(var(--contentWidth) - 16px * 2) - 16px * 7) / 8); */
-    /* --blockFourEighthText: calc(calc(calc(calc(var(--contentWidth) - 16px * 2) - 16px * 7) / 8) * 4 + 16px * 3);
-    --blockFiveEighthText: calc(calc(calc(calc(var(--contentWidth) - 16px * 2) - 16px * 7) / 8) * 5 + 16px * 4);
-    --blockTwoEighthText: calc(calc(calc(calc(var(--contentWidth) - 16px * 2) - 16px * 7) / 8) * 2 + 16px * 1); */
     
-    /* this can also be used for img in paragraph */
-    /* --paragraphOneFourthWidth: calc(var(--blockOneFourth) - calc(16px * 2));
-    --paragraphTwoFourthWidth: calc(var(--blockTwoFourth) - calc(16px * 2));
-    --paragraphThreeFourthWidth: calc(var(--blockThreeFourth) - calc(16px * 2));
-    --paragraphOneWidth: calc(var(--blockOne) - calc(16px * 2)); */
-    
-    /* --paragraphOneWidth: calc(var(--blockOne) - calc(16px * 2));
-    --paragraphOneEighthWidth: calc(var(--blockOneEighth) - calc(0px * 2));
-    --paragraphTwoEighthWidth: calc(var(--blockTwoEighth) - calc(0px * 2));
-    --paragraphThreeEighthWidth: calc(var(--blockThreeEighth) - calc(0px * 2));
-    --paragraphFourEighthWidth: calc(var(--blockFourEighth) - calc(0px * 2));
-    --paragraphFiveEighthWidth: calc(var(--blockFiveEighth) - calc(0px * 2));
-    --paragraphSixEighthWidth: calc(var(--blockSixEighth) - calc(0px * 2)); */
-
-    /* --h1FiveEighthWidth: calc(var(--blockFiveEighth) - calc(12px * 2));
-    --h1ThreeFourthWidth: calc(var(--blockThreeFourth) - calc(12px * 2));
-    --h1OneWidth: calc(var(--blockOne) - calc(12px * 2)); */
-
-    /* --imgThreeEighthWidth: var(--blockThreeEighth);
-    --imgOneFourthWidth: calc(calc(var(--blockOne) - calc(16px * 5)) / 4);
-    --imgTwoFourthWidth: calc(calc(var(--blockOne) - calc(16px * 3)) / 2);
-    --imgOneWidth: calc(var(--blockOne) - calc(16px * 2)); */
 
     /* fix edge distance */
     --fixedEdge: calc(calc(100vw - var(--contentWidth)) / 2);
@@ -537,25 +497,18 @@ a:visited {
     align-items: flex-start;
     justify-content: space-between;
 }
-            /* content fixed */
-            .contentBlockFixed {
-                position: fixed;
-            }                
-            .contentBlockFixedTopLeft {
-                top: var(--fixedEdge);
-                left: var(--fixedEdge);
-            }
-            .contentBlockFixedTopLeft0 {
-                top: 0;
-                left: 0;
-            }
-            /* .contentBlockFixedNav {
-                left: calc(calc(100vw - var(--blockEightEighth)) / 2);
-            } */
-            /* .contentBlockFixedTopRight {
-                top: 0;
-                right: 16px;
-            } */
+        /* content fixed */
+        .contentBlockFixed {
+            position: fixed;
+        }                
+        .contentBlockFixedTopLeft {
+            top: var(--fixedEdge);
+            left: var(--fixedEdge);
+        }
+        .contentBlockFixedTopLeft0 {
+            top: 0;
+            left: 0;
+        }
 
             
 
@@ -627,126 +580,6 @@ a:visited {
     width: 64%;
 }
 
-/* .contentBlockWidthTwoEighth {
-    width: var(--blockTwoEighth);
-}
-    .contentBlockWidthTwoEighthText {
-        width: var(--blockTwoEighthText);
-    }
-.contentBlockWidthThreeEighth {
-    width: var(--blockThreeEighth);
-}
-.contentBlockWidthFourEighth {
-    width: var(--blockFourEighth);
-}
-    .contentBlockWidthFourEighthText {
-        width: var(--blockFourEighthText);
-    }
-.contentBlockWidthFiveEighth {
-    width: var(--blockFiveEighth);
-}
-    .contentBlockWidthFiveEighthText {
-        width: var(--blockFiveEighthText);
-    }
-    .contentBlockWidthFiveEighthList {
-        width: calc(var(--blockFiveEighthText) - 24px);
-    }
-.contentBlockWidthSixEighth {
-    width: var(--blockSixEighth);
-}
-.contentBlockWidthSevenEighth {
-    width: var(--blockSevenEighth);
-}
-.contentBlockWidthEightEighth {
-    width: var(--blockEightEighth);
-}
-
-.contentBlockWidthThreeSixteenth {
-    width: var(--blockThreeSixteenth);
-}
-.contentBlockWidthElevenSixteenth {
-    width: var(--blockElevenSixteenth);
-} */
-
-
-/* paragraph container */
-/* .h1PageTopPaddingTop {
-    padding-top: 8px;
-    margin-bottom: 16px;
-} */
-
-/* for myInfo */
-/* .vLineSeparator {
-    padding: 0px 8px;
-}  */
-
-/* .paragraphWidthOneFourth {
-    width: var(--paragraphOneFourthWidth);
-}    
-.paragraphWidthTwoFourth {
-    width: var(--paragraphTwoFourthWidth);
-}
-    .paragraphWidthTwoFourthList {
-        width: calc(var(--paragraphTwoFourthWidth) - 24px);
-    }
-.paragraphWidthThreeFourth {
-    width: var(--paragraphThreeFourthWidth);
-}
-.paragraphWidthOne {
-    width: var(--paragraphOneWidth);
-}
-.paragraphWidthThreeEighth {
-    width: var(--paragraphThreeEighthWidth);
-}
-.paragraphWidthFiveEighth {
-    width: var(--paragraphFiveEighthWidth);
-} */
-
-/* .h1WidthFiveEighth {
-    width: var(--h1FiveEighthWidth);
-}
-.h1WidthThreeFourth {
-    width: var(--h1ThreeFourthWidth);
-} */
-    
-    /* .paragraphBelowH1PaddingTopAdjust {
-        padding-top: 16px;
-    } */
-/* .h1WidthOne {
-    width: var(--h1OneWidth);
-} */
-
-
-
-
-
-/* image container */
-/* .imageWidthThreeEighth {
-    width: var(--imgThreeEighthWidth);
-    overflow: hidden;
-}
-.imageWidthOneFourth {
-    width: var(--imgOneFourthWidth);
-    overflow: hidden;
-}
-.imageWidthTwoFourth {
-    width: var(--imgTwoFourthWidth);
-    overflow: hidden;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-}
-    .imageHeightTwoFourth {
-        height: calc(var(--imgTwoFourthWidth) * 0.72);
-        overflow: hidden;
-    }
-.imageWidthOne {
-    width: var(--imgOneWidth);
-    overflow: hidden;
-}
-    .paragraphImgPadding {
-        padding: 0px 8px;
-    } */
-
 
 /* image load */
 .imgBeforeLoaded {
@@ -755,8 +588,6 @@ a:visited {
 .imgAnimation {
     animation: imageFadeIn 0.8s 1 ease-out;
 }
-
-
 
 
 /* nav, footer */
@@ -810,6 +641,7 @@ a:visited {
         width: var(--block3_12);
     }
 
+
 .coming_soon_container {
     position: relative;
 }
@@ -830,8 +662,6 @@ a:visited {
     text-align: center;
     z-index: 60;
 }
-
-
 
 
 
@@ -946,58 +776,9 @@ a:visited {
 
 
 
-/* top section fade in */
-/* #projectTop > div:nth-child(2) > div,
-#aboutContainer > div:nth-child(2) > div:nth-child(1),
-#projectDescription > div:nth-child(2) {
-    animation: pageTopSectionFadeIn 0.6s 1 ease-out;
-} */
 
-/* .navMenuFadeOut {
-    opacity: 0;
-    
-    animation: navMenuFadeOut 0.2s 1 ease-out;
-} */
-/* .navMenuFadeIn {
-    opacity: 1;
-    
-    animation: navMenuFadeIn 0.2s 1 ease-out;
-} */
-
-/* .navMenuProductFadeIn {
-    opacity: 1;
-    transform: translateY(0px);
-    
-
-    transition: opacity .4s ease-out, transform .4s ease-out;
-    -o-transition: opacity .4s ease-out, transform .4s ease-out;
-    -ms-transition: opacity .4s ease-out, transform .4s ease-out;
-    -moz-transition: opacity .4s ease-out, transform .4s ease-out;
-    -webkit-transition: opacity .4s ease-out, transform .4s ease-out;
-    transition-delay: 0.6s;
-}
-.navMenuProductFadeOut {
-    
-    opacity: 0;
-    transform: translateY(10px);
-
-    transition: opacity .4s ease-out, transform .4s ease-out;
-    -o-transition: opacity .4s ease-out, transform .4s ease-out;
-    -ms-transition: opacity .4s ease-out, transform .4s ease-out;
-    -moz-transition: opacity .4s ease-out, transform .4s ease-out;
-    -webkit-transition: opacity .4s ease-out, transform .4s ease-out;
-} */
 
 /* animation */
-/* .mainContentFadeOut {
-    opacity: 0;
-    
-    transition: opacity .4s ease-out;
-    -o-transition: opacity .4s ease-out;
-    -ms-transition: opacity .4s ease-out;
-    -moz-transition: opacity .4s ease-out;
-    -webkit-transition: opacity .4s ease-out;
-} */
 
 @keyframes imageFadeIn {
     from {
@@ -1039,50 +820,10 @@ a:visited {
     }
 }
 
-/* @keyframes navMenuProductFadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    } 
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-} */
-
-/* @keyframes navMenuProductFadeOut {
-    from {
-        opacity: 1;
-        transform: translateY(0px);
-    } 
-    to {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-} */
-
-/* @keyframes pageTopSectionFadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(24px);
-    } 
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-} */
 
 
 
 
-
-
-
-@media (min-width: 1281px) {
-    /* #contentContainer {
-        --contentWidth: calc(1280px * 0.84);
-    } */
-}
 @media (max-width: 760px) {
     body {
         --pSize: calc(1280px / 80);
