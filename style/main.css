@@ -101,7 +101,7 @@ body {
     --ColorLogo: #000;
 
 
-    font-family: roboto_slab_regular;
+    font-family: "Roboto Slab";
     word-spacing: 2px;
 
     color: var(--ColorBlack);
