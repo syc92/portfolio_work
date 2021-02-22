@@ -3,7 +3,7 @@
 @font-face {
     font-family: "roboto_slab_regular";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 200;
     src: url('../font/roboto_slab/roboto-slab-v13-latin-regular.eot'); /* IE9 Compat Modes */
     src: local(''),
          url('../font/roboto_slab/roboto-slab-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
