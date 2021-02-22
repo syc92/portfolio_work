@@ -2,9 +2,9 @@
 
 @font-face {
     font-family: "roboto_slab_regular";
-    src: url('../font/roboto_slab/roboto-slab-v13-latin-regular.eot'); /* IE9 Compat Modes */
     font-style: normal;
-    font: 300;
+    font-weight: 400;
+    src: url('../font/roboto_slab/roboto-slab-v13-latin-regular.eot'); /* IE9 Compat Modes */
     src: local(''),
          url('../font/roboto_slab/roboto-slab-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
          url('../font/roboto_slab/roboto-slab-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
