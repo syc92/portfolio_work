@@ -3,6 +3,8 @@
 @font-face {
     font-family: "roboto_slab_regular";
     src: url('../fonts/roboto-slab-v13-latin-regular.eot'); /* IE9 Compat Modes */
+    font-style: normal;
+    font: 300;
     src: local(''),
          url('../fonts/roboto-slab-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
          url('../fonts/roboto-slab-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
