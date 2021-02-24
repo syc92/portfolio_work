@@ -21,12 +21,7 @@
 
         gtag('config', 'UA-151944711-2');
     </script>
-    <script>
-        function preLoadImage (e) {
-            let classes = e.className.replace('imgBeforeLoaded', '')
-            e.setAttribute('class', classes + " imgAnimation")
-        };
-    </script>
+    <script src="js/preloadImage_common.js"></script>
 </head>
 <body>
     <div id="contentContainer" class="contentBlockHLayoutStretchSevenly">
@@ -107,9 +102,12 @@
                                 <div class="vSpace120"></div>
                             <h2 class="pMedium pUppercase">Introduction</h2>
                                 <div class="vSpace80"></div>
-                            <video class="imageWidthInsideContainer imgBeforeLoaded" autoplay muted loop controls>
-                                <source src="image/project_cm_dash/cmx_hiw1.mp4" type="video/mp4"/>
-                            </video>
+                            <figure class="imageWidthInsideContainer imgBufferingContainer video_play_container">
+                                <video class="imageWidthInsideContainer imgBeforeLoaded video_play imgBuffering" autoplay muted loop>
+                                    <source src="image/project_cm_dash/cmx_hiw1.mp4" type="video/mp4"/>
+                                </video>
+                                <img src="icon/icon_pause.png" class="video_play_playIcon" alt="">
+                            </figure>
                             <p class="pSub marginTop8">How CMX works and problem</p>
                                 <div class="vSpace40"></div>
                             <h3 class="pMedium">How CodementorX Works</h3>
@@ -365,9 +363,12 @@
                                 <h3 class="pUppercase pHighlightRegular">Go to prototype</h3>
                             </a>
                                 <div class="vSpace28"></div>
-                            <video class="imageWidthInsideContainer imgBeforeLoaded" autoplay muted loop controls>
-                                <source src="image/project_cm_dash/cmx_results.mp4" type="video/mp4"/>
-                            </video>
+                            <figure class="imageWidthInsideContainer imgBufferingContainer video_play_container">
+                                <video class="imageWidthInsideContainer imgBeforeLoaded imgBuffering video_play" autoplay muted loop>
+                                    <source src="image/project_cm_dash/cmx_results.mp4" type="video/mp4"/>
+                                </video>
+                                <img src="icon/icon_pause.png" class="video_play_playIcon" alt="">
+                            </figure>
                         </div>
 
                         <div id="spec" class="target">
@@ -403,16 +404,8 @@
     </div>
 
     <script src="js/project_menu.js"></script>
-    <script>
-        let videos = document.querySelectorAll('video');
-        videos.forEach((e)=>{
-            e.addEventListener('loadeddata', ()=>{
-                if (e.readyState == 4) {
-                    let classes = e.className.replace('imgBeforeLoaded', '');
-                    e.setAttribute('class', classes + " imgAnimation");
-                }
-            })
-        })
-    </script>
+    <script src="js/video_play.js"></script>
+    <script src="js/video_onload.js"></script>
+    <script src="js/loading_icon.js"></script>
 </body>
 </html>

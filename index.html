@@ -22,24 +22,7 @@
 
         gtag('config', 'UA-151944711-2');
     </script>
-    <script>
-        let count = 0;
-        function preLoadImage (e) {
-            e.parentElement.setAttribute('class', e.parentElement.className + " imgLoaded");
-            count += 1;
-            if (count === 11) {
-                loadImage();
-            }
-        };
-
-        function loadImage () {
-            let imageSectionsToShow = document.querySelectorAll('.imgLoaded');
-            imageSectionsToShow.forEach((e)=>{
-                let classes = e.className.replace('imgBeforeLoaded', '');
-                e.setAttribute('class', classes + " imgAnimation");
-            })
-        }
-    </script>
+    <script src="js/preloadImage_project_index.js"></script>
 </head>
 <body>
     <div id="contentContainer" class="contentBlockHLayoutStretchSevenly">
@@ -276,8 +259,9 @@
     <script>
         let cards = document.querySelectorAll('#product a, #coding a, #visual a');
         cards.forEach((c)=>{
-            c.setAttribute('onmouseover', 'cardMouseOverEffect(this)')
-            c.setAttribute('onmouseout', 'cardMouseOutEffect(this)')
+            c.setAttribute('onmouseover', 'cardMouseOverEffect(this)');
+            c.setAttribute('onmouseout', 'cardMouseOutEffect(this)');
+            c.setAttribute('onmouseup', 'cardMouseOutEffect(this)');
         })
         function cardMouseOverEffect (c) {
             let projectBlackFilter = c.querySelectorAll('.projectBlackFilter');

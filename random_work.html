@@ -22,14 +22,7 @@
 
         gtag('config', 'UA-151944711-2');
     </script>
-    <script>
-        function preLoadImage (e) {
-            let classes = e.className.replace('imgBeforeLoaded', '');
-            e.setAttribute('class', classes + " imgAnimation");
-            // hide loading icon
-            e.parentElement.querySelector('.loadingIcon').remove();
-        };
-    </script>
+    <script src="js/preloadImage_common.js"></script>
 </head>
 <body>
     <div id="contentContainer" class="contentBlockHLayoutStretchSevenly">
@@ -125,31 +118,8 @@
             </div>
         </footer>
     </div>
-
-    <script>
-        let videos = document.querySelectorAll('video');
-        videos.forEach((e)=>{
-            // when loaded, show media
-            e.addEventListener('loadeddata', ()=>{
-                if (e.readyState == 4) {
-                    let classes = e.className.replace('imgBeforeLoaded', '');
-                    e.setAttribute('class', classes + " imgAnimation");
-                    // hide loading icon
-                    e.parentElement.querySelector('.loadingIcon').remove();
-                }
-            })
-        })
-    </script>
-    <script>
-        let buffering = document.querySelectorAll('.imgBuffering');
-        buffering.forEach((e)=>{
-           if (e.className.includes('imgBeforeLoaded')) {
-               let loadingIcon = document.createElement('img');
-               loadingIcon.setAttribute('src', "icon/icon_loading.png");
-               loadingIcon.setAttribute('class', "loadingIcon");
-               e.parentElement.appendChild(loadingIcon);
-           }
-        });
-    </script>
+        
+    <script src="js/video_onload.js"></script>
+    <script src="js/loading_icon.js"></script>
 </body>
 </html>

@@ -21,12 +21,7 @@
 
         gtag('config', 'UA-151944711-2');
     </script>
-    <script>
-        function preLoadImage (e) {
-            let classes = e.className.replace('imgBeforeLoaded', '')
-            e.setAttribute('class', classes + " imgAnimation")
-        };
-    </script>
+    <script src="js/preloadImage_common.js"></script>
 </head>
 <body>
     <div id="contentContainer" class="contentBlockHLayoutStretchSevenly">
@@ -147,6 +142,8 @@
     </div>
 
     <script src="js/project_menu.js"></script>
-
+    <script src="js/video_play.js"></script>
+    <script src="js/video_onload.js"></script>
+    <script src="js/loading_icon.js"></script>
 </body>
 </html>
