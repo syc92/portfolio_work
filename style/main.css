@@ -668,7 +668,8 @@ a:visited {
     -moz-transition: background-color .1s ease-out;
     -webkit-transition: background-color .1s ease-out;
 }
-    .projectThumbnail div img {
+    /* :nth-child(1) cuz prevent from applying to other images, e.g. loading icon */
+    .projectThumbnail div img:nth-child(1) {
         width: var(--block3_12);
     }
 
