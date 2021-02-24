@@ -737,22 +737,12 @@ a:visited {
         .menuFadeOut {
             animation: menuFadeOut .22s 1 ease-out;
         }
-        /* .menuBottomFilter {
-            height: calc(var(--fixedEdge) * 2);
-            width: 100%;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            background-image: linear-gradient(rgb(255, 255, 255, 0), rgb(255, 255, 255, 1));
-        } */
     #menuTitle {
         cursor: pointer;
     }
     #menuIcon {
         width: calc(var(--pLineHeight) * 2);
         height: calc(var(--pLineHeight) * 2);
-        /* width: var(--h1Size);
-        height: var(--h1Size); */
         border-radius: 100px;
         background-color: var(--ColorBlack);
         cursor: pointer;
