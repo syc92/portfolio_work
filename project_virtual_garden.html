@@ -55,7 +55,7 @@
                     <div class="contentBlockWidth_12_12 vSpace80"></div>
                     <div class="hero contentBlockHLayoutCenterSaround">
                         <div id="virtual_garden1_video_container" >
-                            <video onload="preLoadImage(this)" id="virtual_garden1_video" autoplay muted loop controls>
+                            <video id="virtual_garden1_video" class="imgBeforeLoaded" autoplay muted loop controls>
                                 <source src="image/project_virtual_garden/Own_SI 659_Final_Shih-Yu Chu.MP4" type="video/mp4"/>
                             </video>
                             <img onload="preLoadImage(this)" class="contentBlockWidth_12_12 imgBeforeLoaded" src="image/img_hero/hero_garden.png" alt="">
@@ -81,10 +81,10 @@
             </section>
 
             <section id="menu" class="contentBlockWidth_1 displayNone whiteBackground contentBlockFixed contentBlockFixedTopLeft0">
-                <div class="contentBlockWidth_12_12 contentBlockVLayoutLeftTop">
+                <div id="menuList" class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween menuFadeIn">
                     <img id="close" class="marginTopFixedEdge" src="icon/icon_close_black.svg" alt="">
-                    <div id="menuList" class="contentBlockWidth_12_12 menuFadeIn">
-                        <h2 id="menuTitle" class="marginTop28">AR Gardening</h2>
+                    <div class="contentBlockWidth_10_12 contentBlockVLayoutLeftTop marginTopFixedEdge">
+                        <h1 id="menuTitle">AR Gardening</h1>
                         <div class="contentBlockWidth_12_12 lineBlack marginTop28"></div>
                         <h2 id="tag-interaction" class="tag marginTop28 aInternalSelected">Interaction</h2>
                         <h2 id="tag-tech" class="tag marginTop8 aInternalNormal">Technology</h2>
@@ -177,6 +177,16 @@
     </div>
 
     <script src="js/project_menu.js"></script>
-
+    <script>
+        let videos = document.querySelectorAll('video');
+        videos.forEach((e)=>{
+            e.addEventListener('loadeddata', ()=>{
+                if (e.readyState == 4) {
+                    let classes = e.className.replace('imgBeforeLoaded', '');
+                    e.setAttribute('class', classes + " imgAnimation");
+                }
+            })
+        })
+    </script>
 </body>
 </html>

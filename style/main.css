@@ -497,6 +497,12 @@ a:visited {
     align-items: flex-start;
     justify-content: space-between;
 }
+.contentBlockVLayoutLeftTop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
         /* content fixed */
         .contentBlockFixed {
             position: fixed;
@@ -587,6 +593,20 @@ a:visited {
 }
 .imgAnimation {
     animation: imageFadeIn 0.8s 1 ease-out;
+}
+
+.imgBufferingContainer {
+    position: relative;
+}
+.loadingIcon {
+    --loadingIconSize: var(--pLineHeight);
+    position: absolute;
+    width: var(--loadingIconSize);
+    height: var(--loadingIconSize);
+    top: calc(50% - var(--loadingIconSize) / 2);
+    left: calc(50% - var(--loadingIconSize) / 2);
+
+    animation: loadingRotate 1s infinite linear;
 }
 
 
@@ -682,17 +702,29 @@ a:visited {
 #menu {
     height: 100vh;
     z-index: 100;
+
+    overflow-y: scroll;
+
+    transition: background-color .3s ease-out;
+    -o-transition: background-color .3s ease-out;
+    -ms-transition: background-color .3s ease-out;
+    -moz-transition: background-color .3s ease-out;
+    -webkit-transition: background-color .3s ease-out;
 }
+    #close {
+        width: var(--h1Size);
+        height: var(--h1Size);
+        padding-top: calc(calc(var(--h1LineHeight) - var(--h1Size)) / 2); 
+        cursor: pointer;
+    }
     #menuList {
-        height: 82vh;
-        overflow-y: scroll;
         position: relative;
     }
         .menuFadeIn {
-            animation: menuFadeIn .35s 1 ease-in;
+            animation: menuFadeIn .22s 1 ease-in;
         }
         .menuFadeOut {
-            animation: menuFadeOut .35s 1 ease-out;
+            animation: menuFadeOut .22s 1 ease-out;
         }
         /* .menuBottomFilter {
             height: calc(var(--fixedEdge) * 2);
@@ -708,15 +740,12 @@ a:visited {
     #menuIcon {
         width: calc(var(--pLineHeight) * 2);
         height: calc(var(--pLineHeight) * 2);
+        /* width: var(--h1Size);
+        height: var(--h1Size); */
         border-radius: 100px;
         background-color: var(--ColorBlackText);
         cursor: pointer;
         z-index: 50;
-    }
-    #close {
-        width: calc(var(--pLineHeight) * 2);
-        height: calc(var(--pLineHeight) * 2);
-        cursor: pointer;
     }
 
 
@@ -780,6 +809,18 @@ a:visited {
 
 /* animation */
 
+.closeFadeIn {
+    animation: closeFadeIn .22s 1 ease-in;
+    transform-origin: 0 0;
+}
+
+.closeFadeOut {
+    animation: closeFadeOut .22s 1 ease-out;
+    transform-origin: 0 0;
+}
+
+
+
 @keyframes imageFadeIn {
     from {
         opacity: 0;
@@ -800,23 +841,54 @@ a:visited {
 
 @keyframes menuFadeIn {
     from {
-        transform: translateX(calc(var(--fixedEdge) / 2));
+        transform: translateY(calc(var(--fixedEdge) / 2));
         opacity: 0;
     } 
     to {
-        transform: translateX(0);
+        transform: translateY(0);
         opacity: 1;
     }
 }
 
 @keyframes menuFadeOut {
     from {
-        transform: translateX(0);
+        transform: translateY(0);
         opacity: 1;
     } 
     to {
-        transform: translateX(calc(var(--fixedEdge) / 2));
+        transform: translateY(calc(var(--fixedEdge) / 2));
         opacity: 0;
+    }
+}
+
+@keyframes closeFadeIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    } 
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes closeFadeOut {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    } 
+    to {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+}
+
+@keyframes loadingRotate {
+    from {
+        transform: rotate(0deg);
+    } 
+    to {
+        transform: rotate(360deg);
     }
 }
 

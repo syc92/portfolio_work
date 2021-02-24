@@ -39,9 +39,13 @@ menuIcon.addEventListener('click', ()=>{
 closeIcon.addEventListener('click', ()=>{
     setTimeout(() => {
         menu.setAttribute('class', menu.className.replace('contentBlockHLayoutStretchSaround', 'displayNone'))
-    }, 300);
+        // set background color back to normal after actual closed
+        menu.setAttribute('style', 'background-color: white');
+    }, 219);
     menu.querySelector('#menuList').setAttribute('class', menu.querySelector('#menuList').className.replace('menuFadeIn', 'menuFadeOut'))
     document.querySelector('body').setAttribute('style', 'overflow: unset');
+    // background color fade out when close
+    menu.setAttribute('style', 'background-color: rgb(255, 255, 255, 0)');
 })
 
 // jump to top
@@ -67,6 +71,7 @@ function scrollToTarget (tag, target) {
         // close menu directly
         menu.setAttribute('class', menu.className.replace('contentBlockHLayoutStretchSaround', 'displayNone'))
         document.querySelector('body').setAttribute('style', 'overflow: unset');
+
 
         // scroll to target
         window.scrollTo({

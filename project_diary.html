@@ -76,11 +76,10 @@
             </section>
 
             <section id="menu" class="contentBlockWidth_1 displayNone whiteBackground contentBlockFixed contentBlockFixedTopLeft0">
-                <div class="contentBlockWidth_12_12 contentBlockVLayoutLeftTop">
+                <div id="menuList" class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween menuFadeIn">
                     <img id="close" class="marginTopFixedEdge" src="icon/icon_close_black.svg" alt="">
-                    <div id="menuList" class="contentBlockWidth_12_12 menuFadeIn">
-                        <h2 id="menuTitle" class="marginTop28">Diary Study App</h2>
-                        <div class="contentBlockWidth_12_12 lineBlack marginTop28"></div>
+                    <div class="contentBlockWidth_10_12 contentBlockVLayoutLeftTop marginTopFixedEdge">
+                        <h1 id="menuTitle">Diary Study App</h1>
                         <h2 id="tag-intro" class="tag marginTop28 aInternalSelected">Introduction</h2>
                         <h2 id="tag-research" class="tag marginTop8 aInternalNormal">Design Research</h2>
                         <h2 id="tag-features" class="tag marginTop8 aInternalNormal">Key Features</h2>
@@ -185,7 +184,7 @@
                             <p>The development focuses on the participants side. The demo here shows how participants can log a diary in the app. Technology used for building this app includes React Native + Expo (front-end), and Firebase / Firestore (back-end). While trying to utilize existing iOS modules as much as possible for the matter of efficiency, there’s no module for certain elements such as the “calendar entry interface” which I built by myself.</p>
                             <div class="diary_demo_container marginTop28">
                                 <img class="imageWidthInsideContainer imgBeforeLoaded" onload="preLoadImage(this)" src="image/project_diary/diary_demo.png" alt="">
-                                <video class="diary_demo_video" onload="preLoadImage(this)" autoplay muted loop controls>
+                                <video class="diary_demo_video imgBeforeLoaded" autoplay muted loop controls>
                                     <source src="image/project_diary/RPReplay_Final1608409644.mp4" type="video/mp4"/>
                                 </video>
                                 <p class="pSub marginTop8">Demo</p>
@@ -225,6 +224,16 @@
     </div>
 
     <script src="js/project_menu.js"></script>
-
+    <script>
+        let videos = document.querySelectorAll('video');
+        videos.forEach((e)=>{
+            e.addEventListener('loadeddata', ()=>{
+                if (e.readyState == 4) {
+                    let classes = e.className.replace('imgBeforeLoaded', '');
+                    e.setAttribute('class', classes + " imgAnimation");
+                }
+            })
+        })
+    </script>
 </body>
 </html>

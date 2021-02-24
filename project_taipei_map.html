@@ -54,7 +54,7 @@
 
                     <div class="contentBlockWidth_12_12 vSpace80"></div>
                     <div class="hero contentBlockHLayoutCenterSaround">
-                        <video class="contentBlockWidth_12_12" onload="preLoadImage(this)" autoplay muted loop>
+                        <video class="contentBlockWidth_12_12 imgBeforeLoaded" autoplay muted loop>
                             <source src="image/project_taipei_map/map.mp4" type="video/mp4"/>
                         </video>
                     </div>
@@ -78,11 +78,10 @@
             </section>
 
             <section id="menu" class="contentBlockWidth_1 displayNone whiteBackground contentBlockFixed contentBlockFixedTopLeft0">
-                <div class="contentBlockWidth_12_12 contentBlockVLayoutLeftTop">
+                <div id="menuList" class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween menuFadeIn">
                     <img id="close" class="marginTopFixedEdge" src="icon/icon_close_black.svg" alt="">
-                    <div id="menuList" class="contentBlockWidth_12_12 menuFadeIn">
-                        <h2 id="menuTitle" class="marginTop28">Taipei Map</h2>
-                        <div class="contentBlockWidth_12_12 lineBlack marginTop28"></div>
+                    <div class="contentBlockWidth_10_12 contentBlockVLayoutLeftTop marginTopFixedEdge">
+                        <h1 id="menuTitle">Taipei Map</h1>
                         <h2 id="tag-results" class="tag marginTop28 aInternalSelected">Results</h2>
                         <h2 id="tag-process" class="tag marginTop8 aInternalNormal">Concept & Process</h2>
                         <h2 id="tag-dimension" class="tag menuLastItem marginTop8 aInternalNormal">Dimension</h2>
@@ -163,6 +162,16 @@
     </div>
 
     <script src="js/project_menu.js"></script>
-
+    <script>
+        let videos = document.querySelectorAll('video');
+        videos.forEach((e)=>{
+            e.addEventListener('loadeddata', ()=>{
+                if (e.readyState == 4) {
+                    let classes = e.className.replace('imgBeforeLoaded', '');
+                    e.setAttribute('class', classes + " imgAnimation");
+                }
+            })
+        })
+    </script>
 </body>
 </html>
