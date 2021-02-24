@@ -42,9 +42,7 @@ body {
 
     /* project color: */
     --ColorBlack: #000;
-    /* --ColorBlackText: rgb(11, 13, 14); */
-    /* --ColorBlackText: rgb(17, 19, 21); */
-    --ColorBlackText: #000;
+    --ColorBlackText: #2b2b2b;
     --ColorWhite: #fff;
     --ColorWhiteText: #fff;
     --ColorGrayText: #999;
@@ -64,10 +62,10 @@ body {
 
     font-family: "Roboto Slab";
     font-weight: 400;
-    word-spacing: 2px;
+    word-spacing: 1px;
 
-    color: var(--ColorBlack);
-    background-color: var(--ColorBlackText);
+    color: var(--ColorBlackText);
+    background-color: var(--ColorBlack);
 
     display: flex;
     justify-content: center;
@@ -90,6 +88,11 @@ h3 {
     font-size: var(--h3Size);
     line-height: var(--h3LineHeight);
     font-weight: 400;
+}
+.whiteBackground h1,
+.whiteBackground h2,
+.whiteBackground h3 {
+    color: var(--ColorBlack);
 }
 
 p {
@@ -246,7 +249,7 @@ a:visited {
     color: var(--ColorWhiteText);
 }
 .blackBackground {
-    background-color: var(--ColorBlackText);
+    background-color: var(--ColorBlack);
 }
 .whiteBackground {
     background-color: var(--ColorWhite);
@@ -306,6 +309,7 @@ a:visited {
     margin-top: calc(var(--pLineHeight) * 1);
 }
 /* padding - page edge */
+/* only used for menu list */
 .marginTopFixedEdge {
     margin-top: var(--fixedEdge);
 }
@@ -405,6 +409,13 @@ a:visited {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+}
+.contentBlockHLayoutCenterScenter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 .contentBlockHLayoutStretchLeft {
     display: flex;
@@ -510,7 +521,7 @@ a:visited {
         .contentBlockFixedTopLeft {
             top: var(--fixedEdge);
             left: var(--fixedEdge);
-        }
+        } /* only used for menuIcon */
         .contentBlockFixedTopLeft0 {
             top: 0;
             left: 0;
@@ -743,7 +754,7 @@ a:visited {
         /* width: var(--h1Size);
         height: var(--h1Size); */
         border-radius: 100px;
-        background-color: var(--ColorBlackText);
+        background-color: var(--ColorBlack);
         cursor: pointer;
         z-index: 50;
     }
@@ -921,7 +932,22 @@ a:visited {
     }
 }
 
-
+@media (min-width: 1920px) {
+    #contentContainer {
+        --contentWidth: calc(1920px * 0.9);
+    }
+    body {
+        --pSize: calc(1920px / 80);
+    }
+    .contentBlockFixedTopLeft {
+        /* set to vSpace120 */
+        top: calc(var(--pLineHeight) * 4.5);
+    }
+    .marginTopFixedEdge {
+        /* set to vSpace120 */
+        margin-top: calc(var(--pLineHeight) * 4.5);
+    }
+}
 
 
 
