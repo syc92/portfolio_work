@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="icon/favicon.png"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Slab:regular,light,medium|Roboto Mono:regular,light">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Slab:regular,light,medium|Roboto Mono:regular,light|Roboto:regular,light,medium">
     <link rel="stylesheet" type="text/css" href="style/html5reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="style/main.css">
     
@@ -28,7 +28,7 @@
         
         <nav id="navTop" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
             <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
-                <p class="pUppercase"><a class="aWhite" href="index.html">Shih-Yu Chu</a></p>
+                <p class="pUppercase pSlab"><a class="aWhite" href="index.html">Shih-Yu Chu</a></p>
                 <p>|</p>
                 <p><a class="aWhite aInternalNormal" href="index.html">Work</a></p>
                 <p><a class="aWhite aInternalNormal" href="about.html">Meee</a></p>
@@ -71,10 +71,10 @@
             </section>
 
             <section id="menu" class="contentBlockWidth_1 displayNone whiteBackground contentBlockFixed contentBlockFixedTopLeft0">
-                <div id="menuList" class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween menuFadeIn">
+                <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
                     <img id="close" class="marginTopFixedEdge" src="icon/icon_close_black.svg" alt="">
-                    <div class="contentBlockWidth_10_12 contentBlockVLayoutLeftTop marginTopFixedEdge">
-                        <h1 id="menuTitle">CodementorX</h1>
+                    <div id="menuList" class="contentBlockWidth_10_12 contentBlockVLayoutLeftTop marginTopFixedEdge menuFadeIn">
+                        <p id="menuTitle" class="marginTop16">CodementorX:</p>
                         <h2 id="tag-intro" class="tag marginTop28 aInternalSelected">Introduction</h2>
                         <h2 id="tag-research" class="tag marginTop8 aInternalNormal">Design Research</h2>
                         <h2 id="tag-strategy" class="tag marginTop8 aInternalNormal">Design Strategy</h2>
@@ -100,7 +100,7 @@
 
                         <div id="intro" class="target">
                                 <div class="vSpace120"></div>
-                            <h2 class="pMedium pUppercase">Introduction</h2>
+                            <h2 class="pMedium">Introduction</h2>
                                 <div class="vSpace80"></div>
                             <figure class="imageWidthInsideContainer imgBufferingContainer video_play_container">
                                 <video class="imageWidthInsideContainer imgBeforeLoaded video_play imgBuffering" autoplay muted loop>
@@ -130,7 +130,7 @@
 
                         <div id="research" class="target">
                             <div class="vSpace120"></div>
-                            <h2 class="pMedium pUppercase">Design Research</h2>
+                            <h2 class="pMedium">Design Research</h2>
                                 <div class="vSpace80"></div>
                             <div class="contentBlockHLayoutStretchSbetween">
                                 <div class="contentBlockWidth_1_4">
@@ -170,7 +170,7 @@
                         
                         <div id="strategy" class="target">
                                 <div class="vSpace120"></div>
-                            <h2 class="pMedium pUppercase">Design Strategy</h2>
+                            <h2 class="pMedium">Design Strategy</h2>
                                 <div class="vSpace80"></div>
                             <img onload="preLoadImage(this)" class="imageWidthInsideContainer imgBeforeLoaded" src="image/project_cm_dash/cmx_sync.jpg" alt="">
                             <p class="pSub marginTop8">Discussion with PM and dev team</p>
@@ -209,7 +209,7 @@
 
                         <div id="journey" class="target">
                                 <div class="vSpace120"></div>
-                            <h2 class="pMedium pUppercase">User Journey</h2>
+                            <h2 class="pMedium">User Journey</h2>
                                 <div class="vSpace80"></div>
                             <h3 class="pMedium">Old v.s. Refactored User Journey</h3>
                             <p class="marginTop28">I charted an user journey map for the old design to make sure that I took every scenario and interaction into consideration. Based on the user research and competitive analysis, I refactored the user journey, making it more aligned with our strategy.</p>
@@ -227,7 +227,7 @@
 
                         <div id="design-1" class="target">
                                 <div class="vSpace120"></div>
-                            <h2 class="pMedium pUppercase">Design - I</h2>
+                            <h2 class="pMedium">Design - I</h2>
                                 <div class="vSpace80"></div>
                             <h3 class="pMedium">The New Layout</h3>
                             <p class="marginTop28">Our first goal is to remove the chat room and replace it with a new design to display hiring and contract information clearly. I came up with four different mockups based on competitive analysis and what information we want to show in the dashboard. I evaluated which one to go with by two major following criteria:</p>
@@ -289,7 +289,7 @@
 
                         <div id="design-2" class="target">
                                 <div class="vSpace120"></div>
-                            <h2 class="pMedium pUppercase">Design - II</h2>
+                            <h2 class="pMedium">Design - II</h2>
                                 <div class="vSpace80"></div>
                             <h3 class="pMedium">Internal User Testing</h3>
                             <p class="marginTop28">I asked some colleagues to play with the prototype of the hiring request page, and have the following results:</p>
@@ -353,14 +353,14 @@
 
                         <div id="results" class="target">
                                 <div class="vSpace120"></div>
-                            <h2 class="pMedium pUppercase">Final Results</h2>
+                            <h2 class="pMedium">Final Results</h2>
                                 <div class="vSpace80"></div>
                             <p>Here’s the final design! If you go play with the prototype, there are some screens that you may not find in the design process, such as the “shortlist page”. This is because first, they are not in the scope of this revamp project; and second, if I include the process of all the features, this project will become too messy and hard to read. Enjoy the prototype!</p>
                                 <div class="vSpace28"></div>
                             <a class="aExternal aBlack contentBlockHLayoutStretchLeft marginTop8" href="https://projects.invisionapp.com/share/CXV02KVF9PB#/screens" target="blank_">
                                 <img src="icon/icon_arrow_right_black.svg" alt="">
                                 <div style="width: 28px;"></div>
-                                <h3 class="pUppercase pHighlightRegular">Go to prototype</h3>
+                                <h3 class= pHighlightRegular">Go to prototype</h3>
                             </a>
                                 <div class="vSpace28"></div>
                             <figure class="imageWidthInsideContainer imgBufferingContainer video_play_container">
@@ -373,7 +373,7 @@
 
                         <div id="spec" class="target">
                                 <div class="vSpace120"></div>
-                            <h2 class="pMedium pUppercase">Design spec</h2>
+                            <h2 class="pMedium">Design spec</h2>
                                 <div class="vSpace80"></div>
                             <h3 class="pMedium">Final step toward success</h3>
                             <p class="marginTop28">Making the design spec that is easy for developers to read is always the best practice at the end of a project. At Codementor, I will always create an interaction/layout instruction like this for developers, uploading them to Zeplin along with the design of each screen. In addition, I will also write up a comprehensive spec in a Github issue.</p>
@@ -392,7 +392,7 @@
 
         <footer id="footerBottom" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
             <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
-                <p>© Shih-Yu Chu 2021</p>
+                <p class="pSlab">© Shih-Yu Chu 2021</p>
                 <p>|</p>
                 <p><a class="aWhite aInternalNormal" href="index.html" id="navMenuProject">Work</a></p>
                 <p><a class="aWhite aInternalNormal" href="about.html" id="navMenuAbout">Meee</a></p>

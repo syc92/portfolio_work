@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="icon/favicon.png"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Slab:regular,light,medium|Roboto Mono:regular,light">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Slab:regular,light,medium|Roboto Mono:regular,light|Roboto:regular,light,medium">
     <link rel="stylesheet" type="text/css" href="style/html5reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="style/main.css">
     
@@ -28,7 +28,7 @@
         
         <nav id="navTop" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
             <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
-                <p class="pUppercase"><a class="aWhite" href="index.html">Shih-Yu Chu</a></p>
+                <p class="pUppercase pSlab"><a class="aWhite" href="index.html">Shih-Yu Chu</a></p>
                 <p>|</p>
                 <p><a class="aWhite aInternalNormal" href="index.html">Work</a></p>
                 <p><a class="aWhite aInternalNormal" href="about.html">Meee</a></p>
@@ -47,7 +47,7 @@
                         <h2 class="pLight marginTop16">Clustering Online Store Users with Clickstream Data</h2>
                     </div>
 
-                    <div class="contentBlockWidth_12_12 vSpace80"></div>
+                    <div class="contentBlockWidth_12_12 vSpace56"></div>
                     <div class="hero contentBlockHLayoutCenterSaround">
                         <img onload="preLoadImage(this)" class="contentBlockWidth_12_12 imgBeforeLoaded" src="image/img_hero/hero_data.png" alt="">
                     </div>
@@ -71,10 +71,10 @@
             </section>
 
             <section id="menu" class="contentBlockWidth_1 displayNone whiteBackground contentBlockFixed contentBlockFixedTopLeft0">
-                <div id="menuList" class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween menuFadeIn">
+                <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
                     <img id="close" class="marginTopFixedEdge" src="icon/icon_close_black.svg" alt="">
-                    <div class="contentBlockWidth_10_12 contentBlockVLayoutLeftTop marginTopFixedEdge">
-                        <h1 id="menuTitle">User Clustering</h1>
+                    <div id="menuList" class="contentBlockWidth_10_12 contentBlockVLayoutLeftTop marginTopFixedEdge menuFadeIn">
+                        <p id="menuTitle" class="marginTop16">User Clustering:</p>
                         <h2 id="tag-goal" class="tag marginTop28 aInternalSelected">Research Goal and Dataset</h2>
                         <h2 id="tag-process" class="tag marginTop8 aInternalNormal">Process</h2>
                         <h2 id="tag-preprocessing" class="tag marginTop8 aInternalNormal">Data Preprocessing</h2>
@@ -98,14 +98,14 @@
 
                         <div id="goal" class="target">
                                 <div class="vSpace120"></div>
-                            <h2 class="pMedium pUppercase">Research Goal and Dataset</h2>
+                            <h2 class="pMedium">Research Goal and Dataset</h2>
                                 <div class="vSpace80"></div>
                             <p>The dataset used in this report is an eCommerce Events History in Cosmetics Shop. Since the size of this dataset is extremely large, for the analysis process efficiency, in this paper we only use one month's data, which contains 4,102,283 events, 873,960 unique sessions, from 399,664 unique users. Given that the dataset is from an eCommerce platform, our goal is to learn the browsing patterns in each group, which can help UX designer and researcher to identify high level UX issues, and also serve as a guideline for them to conduct further research.</p>
                         </div>
 
                         <div id="process" class="target">
                                 <div class="vSpace120"></div>
-                            <h2 class="pMedium pUppercase">Process</h2>
+                            <h2 class="pMedium">Process</h2>
                                 <div class="vSpace80"></div>
                             <div class="contentBlockHLayoutStretchSbetween marginTop28">
                                 <h3 class="contentBlockWidth_1_20 pHighlightRegular">1.</h3>
@@ -132,7 +132,7 @@
 
                         <div id="preprocessing" class="target">
                                 <div class="vSpace120"></div>
-                            <h2 class="pMedium pUppercase">Data Preprocessing</h2>
+                            <h2 class="pMedium">Data Preprocessing</h2>
                                 <div class="vSpace80"></div>
                             <p>In our dataset, there are 9 columns, including event_time, event_type, product_id, category_id, category_code, brand, price, user_id, user_session. The definitions of important variables are:</p>
                             <img onload="preLoadImage(this)" class="imageWidthInsideContainer imgBeforeLoaded marginTop28" src="image/project_data_clickstream/data_clickstream_table1.png" alt="">
@@ -153,7 +153,7 @@
                         
                         <div id="experiment" class="target">
                                 <div class="vSpace120"></div>
-                            <h2 class="pMedium pUppercase">Experiments</h2>
+                            <h2 class="pMedium">Experiments</h2>
                                 <div class="vSpace80"></div>
                             <p>Based on some relevant previous studies, we decided to tune our model with the following hyperparameters: vector_size and window, where vector_size is the dimensionality of the feature vectors, and window is the maximum distance between the current and predicted word within a sentence. Also based on previous studies, the values we chose for each parameter are:</p>
                                 <div class="vSpace28"></div>
@@ -175,7 +175,7 @@
                         
                         <div id="interpretation" class="target">
                                 <div class="vSpace120"></div>
-                            <h2 class="pMedium pUppercase">Interpretation</h2>
+                            <h2 class="pMedium">Interpretation</h2>
                                 <div class="vSpace80"></div>
                             <p>After clustering the data into 3 groups (groups are labeled as G1, G2, and G3), we then extracted the pattern from each and analyzed their patterns. We first computed the average sequence length of each group (Table 5). We can see that G1 and G3 have similar sequence length, which is longer than G2.</p>
                             <img onload="preLoadImage(this)" class="imageWidthInsideContainer imgBeforeLoaded marginTop28" src="image/project_data_clickstream/data_clickstream_table5.png" alt="">
@@ -222,7 +222,7 @@
 
                         <div id="discussion" class="target">
                                 <div class="vSpace120"></div>
-                            <h2 class="pMedium pUppercase">Discussion</h2>
+                            <h2 class="pMedium">Discussion</h2>
                                 <div class="vSpace80"></div>
                             <p>Although we got some patterns from the analysis, we have to say there are some limitations of this study. The major issue is that the pattern might not be representative enough. For example, the amount of C_noV, gap, and V_G is way more than purchase, which excluded the P event from the top frequent patterns and made it hard to interpret. Issues like this are challenging to tackle because of two reasons.</p>
                                 <div class="vSpace28"></div>
@@ -242,7 +242,7 @@
 
         <footer id="footerBottom" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
             <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
-                <p>© Shih-Yu Chu 2021</p>
+                <p class="pSlab">© Shih-Yu Chu 2021</p>
                 <p>|</p>
                 <p><a class="aWhite aInternalNormal" href="index.html" id="navMenuProject">Work</a></p>
                 <p><a class="aWhite aInternalNormal" href="about.html" id="navMenuAbout">Meee</a></p>

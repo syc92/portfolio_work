@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="icon/favicon.png"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Slab:regular,light,medium|Roboto Mono:regular,light">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Slab:regular,light,medium|Roboto Mono:regular,light|Roboto:regular,light,medium">
     <link rel="stylesheet" type="text/css" href="style/html5reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="style/main.css">
     
@@ -28,7 +28,7 @@
         
         <nav id="navTop" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
             <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
-                <p class="pUppercase"><a class="aWhite" href="index.html">Shih-Yu Chu</a></p>
+                <p class="pUppercase pSlab"><a class="aWhite" href="index.html">Shih-Yu Chu</a></p>
                 <p>|</p>
                 <p><a class="aWhite aInternalNormal" href="index.html">Work</a></p>
                 <p><a class="aWhite aInternalNormal" href="about.html">Meee</a></p>
@@ -47,7 +47,7 @@
                         <h2 class="pLight marginTop16">Making Diary Study More Efficient and Effortless</h2>
                     </div>
 
-                    <div class="contentBlockWidth_12_12 vSpace80"></div>
+                    <div class="contentBlockWidth_12_12 vSpace56"></div>
                     <div class="hero contentBlockHLayoutCenterSaround">
                         <img onload="preLoadImage(this)" class="contentBlockWidth_12_12 imgBeforeLoaded" src="image/img_hero/hero_diary.png" alt="">
                     </div>
@@ -71,10 +71,10 @@
             </section>
 
             <section id="menu" class="contentBlockWidth_1 displayNone whiteBackground contentBlockFixed contentBlockFixedTopLeft0">
-                <div id="menuList" class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween menuFadeIn">
+                <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
                     <img id="close" class="marginTopFixedEdge" src="icon/icon_close_black.svg" alt="">
-                    <div class="contentBlockWidth_10_12 contentBlockVLayoutLeftTop marginTopFixedEdge">
-                        <h1 id="menuTitle">Diary Study App</h1>
+                    <div id="menuList" class="contentBlockWidth_10_12 contentBlockVLayoutLeftTop marginTopFixedEdge menuFadeIn">
+                        <p id="menuTitle" class="marginTop16">Diary Study App:</p>
                         <h2 id="tag-intro" class="tag marginTop28 aInternalSelected">Introduction</h2>
                         <h2 id="tag-research" class="tag marginTop8 aInternalNormal">Design Research</h2>
                         <h2 id="tag-features" class="tag marginTop8 aInternalNormal">Key Features</h2>
@@ -98,7 +98,7 @@
 
                         <div id="intro" class="target">
                                 <div class="vSpace120"></div>
-                            <h2 class="pMedium pUppercase">Introduction</h2>
+                            <h2 class="pMedium">Introduction</h2>
                                 <div class="vSpace80"></div>
                             <h3 class="pMedium">Motivation</h3>
                             <p class="marginTop28">While conducting a diary study for another project of mine, Talkie, I realized that there’s not too many tools available for researchers and participants to use. In our case, we created a Google spreadsheet for participants to log their observations, and asked them to upload photos to a separate Google drive folder.</p>
@@ -109,7 +109,7 @@
 
                         <div id="research" class="target">
                                 <div class="vSpace120"></div>
-                            <h2 class="pMedium pUppercase">Design Research</h2>
+                            <h2 class="pMedium">Design Research</h2>
                                 <div class="vSpace80"></div>
                             <h3 class="pMedium">Competitive analysis</h3>
                             <p class="marginTop28">Before starting building the app, I conducted a brief competitive analysis. Since there’s not too many competitors in the market, I looked at some indirect competitors such as Indeemo and FocusVision. Key findings from the analysis: </p>
@@ -146,7 +146,7 @@
 
                         <div id="features" class="target">
                                 <div class="vSpace120"></div>
-                            <h2 class="pMedium pUppercase">Key Features</h2>
+                            <h2 class="pMedium">Key Features</h2>
                                 <div class="vSpace80"></div>
                             <p>Based on the research results, the app should have two parts – participants side and researcher side. The participants side is for participants to accept a project from a researcher. The researcher side is a dashboard where researchers can create a (diary study) project and invite participants to join. In addition, the logged data from participants should also be shown in the dashboard so researchers can analyze them easily.</p>
                             <div class="contentBlockHLayoutStretchSbetween">
@@ -163,7 +163,7 @@
 
                         <div id="wireframe" class="target">
                                 <div class="vSpace120"></div>
-                            <h2 class="pMedium pUppercase">Wireframe</h2>
+                            <h2 class="pMedium">Wireframe</h2>
                                 <div class="vSpace80"></div>
                             <p>I created a wireframe to follow while developing. For the sake of the project scope and time limitation, I only design the wireframe for the participant side, and only include the “Diary Entry” and “Calendar View” features.</p>
                             <div class="imageWidthInsideContainer marginTop28">
@@ -174,7 +174,7 @@
 
                         <div id="dev" class="target">
                                 <div class="vSpace120"></div>
-                            <h2 class="pMedium pUppercase">Development (Demo)</h2>
+                            <h2 class="pMedium">Development (Demo)</h2>
                                 <div class="vSpace80"></div>
                             <p>The development focuses on the participants side. The demo here shows how participants can log a diary in the app. Technology used for building this app includes React Native + Expo (front-end), and Firebase / Firestore (back-end). While trying to utilize existing iOS modules as much as possible for the matter of efficiency, there’s no module for certain elements such as the “calendar entry interface” which I built by myself.</p>
                             <div class="diary_demo_container marginTop28">
@@ -188,7 +188,7 @@
 
                         <div id="future" class="target">
                                 <div class="vSpace120"></div>
-                            <h2 class="pMedium pUppercase">Future Work</h2>
+                            <h2 class="pMedium">Future Work</h2>
                                 <div class="vSpace80"></div>
                             <div class="contentBlockHLayoutStretchSbetween">
                                 <img class="contentBlockWidth_4_12 imgBeforeLoaded" onload="preLoadImage(this)" src="image/project_diary/typing_meme.gif" alt="">
@@ -207,7 +207,7 @@
 
         <footer id="footerBottom" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
             <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
-                <p>© Shih-Yu Chu 2021</p>
+                <p class="pSlab">© Shih-Yu Chu 2021</p>
                 <p>|</p>
                 <p><a class="aWhite aInternalNormal" href="index.html" id="navMenuProject">Work</a></p>
                 <p><a class="aWhite aInternalNormal" href="about.html" id="navMenuAbout">Meee</a></p>

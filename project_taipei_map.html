@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="icon/favicon.png"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Slab:regular,light,medium|Roboto Mono:regular,light">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Slab:regular,light,medium|Roboto Mono:regular,light|Roboto:regular,light,medium">
     <link rel="stylesheet" type="text/css" href="style/html5reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="style/main.css">
     
@@ -28,7 +28,7 @@
         
         <nav id="navTop" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
             <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
-                <p class="pUppercase"><a class="aWhite" href="index.html">Shih-Yu Chu</a></p>
+                <p class="pUppercase pSlab"><a class="aWhite" href="index.html">Shih-Yu Chu</a></p>
                 <p>|</p>
                 <p><a class="aWhite aInternalNormal" href="index.html">Work</a></p>
                 <p><a class="aWhite aInternalNormal" href="about.html">Meee</a></p>
@@ -47,9 +47,9 @@
                         <h2 class="pLight marginTop16">A Tourist Map Made for Foreign Travelers</h2>
                     </div>
 
-                    <div class="contentBlockWidth_12_12 vSpace80"></div>
-                    <div class="hero contentBlockHLayoutCenterSaround">
-                        <video class="contentBlockWidth_12_12 imgBeforeLoaded" autoplay muted loop>
+                    <div class="contentBlockWidth_12_12 vSpace56"></div>
+                    <div class="hero contentBlockHLayoutCenterSaround imgBufferingContainer">
+                        <video class="contentBlockWidth_12_12 imgBeforeLoaded imgBuffering" autoplay muted loop>
                             <source src="image/project_taipei_map/map.mp4" type="video/mp4"/>
                         </video>
                     </div>
@@ -73,10 +73,10 @@
             </section>
 
             <section id="menu" class="contentBlockWidth_1 displayNone whiteBackground contentBlockFixed contentBlockFixedTopLeft0">
-                <div id="menuList" class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween menuFadeIn">
+                <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
                     <img id="close" class="marginTopFixedEdge" src="icon/icon_close_black.svg" alt="">
-                    <div class="contentBlockWidth_10_12 contentBlockVLayoutLeftTop marginTopFixedEdge">
-                        <h1 id="menuTitle">Taipei Map</h1>
+                    <div id="menuList" class="contentBlockWidth_10_12 contentBlockVLayoutLeftTop marginTopFixedEdge menuFadeIn">
+                        <p id="menuTitle" class="marginTop16">Taipei Map:</p>
                         <h2 id="tag-results" class="tag marginTop28 aInternalSelected">Results</h2>
                         <h2 id="tag-process" class="tag marginTop8 aInternalNormal">Concept & Process</h2>
                         <h2 id="tag-dimension" class="tag menuLastItem marginTop8 aInternalNormal">Dimension</h2>
@@ -97,7 +97,7 @@
 
                         <div id="results" class="target">
                                 <div class="vSpace120"></div>
-                            <h2 class="pMedium pUppercase">Results</h2>
+                            <h2 class="pMedium">Results</h2>
                                 <div class="vSpace80"></div>
                             <img onload="preLoadImage(this)" class="imageWidthInsideContainer imgBeforeLoaded" src="image/project_taipei_map/map_whole_1.jpg" alt="">
                             <p class="marginTop8 pSub">On the front page, we shows the daily life information that the travelers would like to know.</p>
@@ -111,7 +111,7 @@
 
                         <div id="process" class="target">
                                 <div class="vSpace120"></div>
-                            <h2 class="pMedium pUppercase">Concept & Process</h2>
+                            <h2 class="pMedium">Concept & Process</h2>
                                 <div class="vSpace80"></div>
                             <p>We wanted to create a map that is playful and not only contains information but also shows what Taipei is like. Therefore, we decided to embed the information in the cartoon style illustration of Taipei. I first put all the information in the map, roughly gauged dimensions of the map, and iterated on how to combine information and illustration and how to group them into different sections. After figuring out the layout, I sketched the Taipei street scenery, and finished the illustration on the computer.</p>
                                 <div class="vSpace28"></div>
@@ -125,7 +125,7 @@
 
                         <div id="dimensions" class="target">
                                 <div class="vSpace120"></div>
-                            <h2 class="pMedium pUppercase">Dimensions</h2>
+                            <h2 class="pMedium">Dimensions</h2>
                                 <div class="vSpace80"></div>
                             <p>To make sure that the map is easy to be carried by the travelers, I made the folded size of the map small enough that it can be fitted into a pocket.</p>
                             <div class="contentBlockHLayoutStretchSbetween">
@@ -145,7 +145,7 @@
 
         <footer id="footerBottom" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
             <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
-                <p>© Shih-Yu Chu 2021</p>
+                <p class="pSlab">© Shih-Yu Chu 2021</p>
                 <p>|</p>
                 <p><a class="aWhite aInternalNormal" href="index.html" id="navMenuProject">Work</a></p>
                 <p><a class="aWhite aInternalNormal" href="about.html" id="navMenuAbout">Meee</a></p>

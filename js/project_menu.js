@@ -3,31 +3,52 @@ let closeIcon = document.querySelector('#close');
 let menu = document.querySelector('#menu');
 
 // fixed when scroll to position
-let menuIconPosition = menuIcon.offsetTop;
+// let menuIconPosition = menuIcon.offsetTop;
+let menuIconPosition = document.querySelector('#mainContent section:nth-child(1)').offsetHeight; // use black bg section instead
 let pageEdge = window.innerWidth * 0.05;
 let pLineHeight = window.innerWidth / 80 * 1.75;
 
     // only fixed in screens width larger than 760
     if (window.innerWidth > 760) {
         // for reload
-        if (pageYOffset > (menuIconPosition - pageEdge)) {
+        if (pageYOffset > (menuIconPosition + pageEdge)) {
             if (menuIcon.className.includes(" contentBlockFixed contentBlockFixedTopLeft")==false) {
                 menuIcon.setAttribute('class', menuIcon.className + " contentBlockFixed contentBlockFixedTopLeft")
             }
         } else {
             menuIcon.setAttribute('class', menuIcon.className.replace(" contentBlockFixed contentBlockFixedTopLeft", ''))
         }
-        // for scroll
-        document.addEventListener('scroll', ()=>{
-            if (pageYOffset > (menuIconPosition - pageEdge)) {
+    }
+    // for scroll
+    document.addEventListener('scroll', ()=>{
+        if (window.innerWidth > 760) {
+            if (pageYOffset > (menuIconPosition + pageEdge)) {
                 if (menuIcon.className.includes("contentBlockFixed contentBlockFixedTopLeft")==false) {
                     menuIcon.setAttribute('class', menuIcon.className + " contentBlockFixed contentBlockFixedTopLeft")
                 }
             } else {
                 menuIcon.setAttribute('class', menuIcon.className.replace(" contentBlockFixed contentBlockFixedTopLeft", ''))
             }
-        })
-    };
+        }
+    })
+    // for resize, update the variable
+    window.addEventListener('resize', ()=>{
+        if (window.innerWidth > 760) {
+            menuIconPosition = document.querySelector('#mainContent section:nth-child(1)').offsetHeight;
+            pageEdge = window.innerWidth * 0.05;
+            if (pageYOffset > (menuIconPosition + pageEdge)) {
+                if (menuIcon.className.includes(" contentBlockFixed contentBlockFixedTopLeft")==false) {
+                    menuIcon.setAttribute('class', menuIcon.className + " contentBlockFixed contentBlockFixedTopLeft")
+                }
+            } else {
+                menuIcon.setAttribute('class', menuIcon.className.replace(" contentBlockFixed contentBlockFixedTopLeft", ''))
+            }
+        } else {
+            if (menuIcon.className.includes(" contentBlockFixed contentBlockFixedTopLeft")) {
+                menuIcon.setAttribute('class', menuIcon.className.replace(" contentBlockFixed contentBlockFixedTopLeft", ""))
+            }
+        }
+    })
 
 // show menu
 menuIcon.addEventListener('click', ()=>{

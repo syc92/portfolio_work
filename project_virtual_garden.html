@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="icon/favicon.png"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Slab:regular,light,medium|Roboto Mono:regular,light">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Slab:regular,light,medium|Roboto Mono:regular,light|Roboto:regular,light,medium">
     <link rel="stylesheet" type="text/css" href="style/html5reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="style/main.css">
     
@@ -28,7 +28,7 @@
         
         <nav id="navTop" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
             <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
-                <p class="pUppercase"><a class="aWhite" href="index.html">Shih-Yu Chu</a></p>
+                <p class="pUppercase pSlab"><a class="aWhite" href="index.html">Shih-Yu Chu</a></p>
                 <p>|</p>
                 <p><a class="aWhite aInternalNormal" href="index.html">Work</a></p>
                 <p><a class="aWhite aInternalNormal" href="about.html">Meee</a></p>
@@ -47,7 +47,7 @@
                         <h2 class="pLight marginTop16">Developing an AR Gardening App</h2>
                     </div>
 
-                    <div class="contentBlockWidth_12_12 vSpace80"></div>
+                    <div class="contentBlockWidth_12_12 vSpace56"></div>
                     <div class="hero contentBlockHLayoutCenterSaround">
                         <div id="virtual_garden1_video_container" >
                             <video id="virtual_garden1_video" class="imgBeforeLoaded" autoplay muted loop controls>
@@ -76,11 +76,10 @@
             </section>
 
             <section id="menu" class="contentBlockWidth_1 displayNone whiteBackground contentBlockFixed contentBlockFixedTopLeft0">
-                <div id="menuList" class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween menuFadeIn">
+                <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
                     <img id="close" class="marginTopFixedEdge" src="icon/icon_close_black.svg" alt="">
-                    <div class="contentBlockWidth_10_12 contentBlockVLayoutLeftTop marginTopFixedEdge">
-                        <h1 id="menuTitle">AR Gardening</h1>
-                        <div class="contentBlockWidth_12_12 lineBlack marginTop28"></div>
+                    <div id="menuList" class="contentBlockWidth_10_12 contentBlockVLayoutLeftTop marginTopFixedEdge menuFadeIn">
+                        <p id="menuTitle" class="marginTop16">AR Gardening:</p>
                         <h2 id="tag-interaction" class="tag marginTop28 aInternalSelected">Interaction</h2>
                         <h2 id="tag-tech" class="tag marginTop8 aInternalNormal">Technology</h2>
                         <h2 id="tag-future" class="tag menuLastItem marginTop8 aInternalNormal">Future Work</h2>
@@ -101,7 +100,7 @@
 
                         <div id="interaction" class="target">
                                 <div class="vSpace120"></div>
-                            <h2 class="pMedium pUppercase">Interaction</h2>
+                            <h2 class="pMedium">Interaction</h2>
                                 <div class="vSpace80"></div>     
                             <img onload="preLoadImage(this)" class="imageWidthInsideContainer imgBeforeLoaded" src="image/project_virtual_garden/virtual_garden_1.png" alt="">
                             <h3 class="marginTop16 pMedium">Interaction I</h3>
@@ -122,14 +121,14 @@
 
                         <div id="tech" class="target">
                                 <div class="vSpace120"></div>
-                            <h2 class="pMedium pUppercase">Technology</h2>
+                            <h2 class="pMedium">Technology</h2>
                                 <div class="vSpace80"></div>
                             <p>The prototype is a marker-less AR scene developed with AR Foundation (Unity) and ARKit (iOS). With those, the program detects planes in the environment. Once a plane is detected, the objects (plants) will be planted on the intersection of Raycast and the plane. The “water” effect is created by Unity’s particle system. When the particle system collides with an object (plant), the object is enlarged. The objects inserted into the scene can also be selected by casting a raycast at the touch point on the screen, and manipulated (position and rotation) by hand gestures.</p>
                         </div>
 
                         <div id="future" class="target">
                                 <div class="vSpace120"></div>
-                            <h2 class="pMedium pUppercase">Future Work</h2>
+                            <h2 class="pMedium">Future Work</h2>
                                 <div class="vSpace80"></div>
                             <p>For the future work, there are two possible directions:</p>
                                 <div class="vSpace28"></div>
@@ -160,7 +159,7 @@
 
         <footer id="footerBottom" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
             <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
-                <p>© Shih-Yu Chu 2021</p>
+                <p class="pSlab">© Shih-Yu Chu 2021</p>
                 <p>|</p>
                 <p><a class="aWhite aInternalNormal" href="index.html" id="navMenuProject">Work</a></p>
                 <p><a class="aWhite aInternalNormal" href="about.html" id="navMenuAbout">Meee</a></p>
