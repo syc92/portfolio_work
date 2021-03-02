@@ -681,8 +681,24 @@ a:visited {
 }
 #navTop p,
 #footerBottom p {
-    padding: 0 var(--pLineHeight) 0 0;
+    /* padding: 0 var(--pLineHeight) 0 0; */
+    padding: 0 calc(var(--pLineHeight) * 0.8) 0 0;
 }
+#footerCopy {
+    color: var(--ColorWhite);
+    opacity: 0.4;
+}
+/* #navTop p,
+#footerBottom div:nth-child(1) div:nth-child(2) p {
+    padding: 0 calc(var(--pLineHeight) * 0.8) 0 0;
+}
+#footerBottom div:nth-child(1) div:nth-child(2) p:last-child {
+    padding: 0;
+}
+#footerCopy {
+    color: var(--ColorWhite);
+    opacity: 0.4;
+} */
 
 
 
