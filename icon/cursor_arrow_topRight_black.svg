@@ -3,18 +3,7 @@
     <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
     <title>cursor_arrow_topRight_black</title>
     <desc>Created with Sketch.</desc>
-    <defs>
-        <path d="M17.5147186,3 C19.1123995,3 20.4183795,4.24891996 20.5096259,5.82372721 L20.5147186,6 L20.5147186,19 L16.5147186,19 L16.514,9.728 L5.82842712,20.4142136 L3,17.5857864 L13.586,6.999 L4.51471863,7 L4.51471863,3 L17.5147186,3 Z" id="path-1"></path>
-        <filter x="-10.9%" y="-8.6%" width="119.5%" height="119.6%" filterUnits="objectBoundingBox" id="filter-2">
-            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
-            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
-            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
-        </filter>
-    </defs>
     <g id="cursor_arrow_topRight_black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Combined-Shape" fill-rule="nonzero">
-            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-            <use fill="#000000" xlink:href="#path-1"></use>
-        </g>
+        <path d="M19,2.5 C20.3254834,2.5 21.4100387,3.53153594 21.4946823,4.83562431 L21.5,5 L21.5,22 L18.5,22 L18.4993398,7.621 L4.06066017,22.0606602 L1.93933983,19.9393398 L16.3773398,5.5 L2,5.5 L2,2.5 L19,2.5 Z" id="Rectangle-Copy-32" fill="#2B2B2B" fill-rule="nonzero" transform="translate(11.719670, 12.280330) rotate(-360.000000) translate(-11.719670, -12.280330) "></path>
     </g>
 </svg>
