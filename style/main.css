@@ -7,9 +7,9 @@ body {
     /* 12px 20px */
     --pSubSize: calc(var(--pSize) * 0.875);
     --pSubLineHeight: calc(var(--pSubSize) * 24 / 14);
-    /* 16px 28px */
+    /* 16px 28px */  /* 1.75 */
     --pSize: calc(100vw / 80);
-    --pLineHeight: calc(var(--pSize) * 1.75);
+    --pLineHeight: calc(var(--pSize) * 1.6);
     /* 1.5, 24px 32px */
     /* 1.25, 20px 32px */
     --h3Size: calc(var(--pSize) * 1.25);
@@ -18,8 +18,9 @@ body {
     --h2Size: calc(var(--pSize) * 2.5);
     --h2LineHeight: calc(var(--h2Size) * 48 / 40);
     /* 120px 128px */
-    --h1Size: calc(var(--pSize) * 7.5);
-    --h1LineHeight: calc(var(--h1Size) * 128 / 120);
+    /* 56px 64px */
+    --h1Size: calc(var(--pSize) * 3.5);
+    --h1LineHeight: calc(var(--h1Size) * 64 / 56);
 
     --gutter: calc(var(--pLineHeight) * 1.5);
 
@@ -62,24 +63,29 @@ body {
 h1 {
     font-size: var(--h1Size);
     line-height: var(--h1LineHeight);
-    font-weight: 400;
+    font-weight: 500;
 }
 .h1Project {
     font-size: var(--h2Size);
     line-height: var(--h2LineHeight);
     font-weight: 400;
 }
+.h2MainPage {
+    font-size: var(--h1Size);
+    line-height: var(--h1LineHeight);
+    font-weight: 400;
+}
 
 h2 {
     font-size: var(--h2Size);
     line-height: var(--h2LineHeight);
-    font-weight: 400;
+    font-weight: 500;
 }
 
 h3 {
     font-size: var(--h3Size);
     line-height: var(--h3LineHeight);
-    font-weight: 400;
+    font-weight: 500;
 }
 
 h1, h2, h3 {
@@ -109,15 +115,12 @@ p {
 }
 
 .pRegular {
-    /* font-family: "Roboto Slab"; */
     font-weight: 400;
 }
 .pLight {
-    /* font-family: "Roboto Slab"; */
     font-weight: 300;
 }
 .pMedium {
-    /* font-family: "Roboto Slab"; */
     font-weight: 500;
 }
 
@@ -214,7 +217,7 @@ a:visited {
 .aInternalSelected:hover {
     cursor: pointer;
 }
-.aExternal {
+/* .aExternal {
     opacity: 1;
 
     transition: opacity .1s ease-out;
@@ -222,8 +225,8 @@ a:visited {
     -ms-transition: opacity .1s ease-out;
     -moz-transition: opacity .1s ease-out;
     -webkit-transition: opacity .1s ease-out;
-}
-.aExternal:hover {
+} */
+/* .aExternal:hover {
     opacity: 0.5;
     
     transition: opacity .1s ease-out;
@@ -231,16 +234,21 @@ a:visited {
     -ms-transition: opacity .1s ease-out;
     -moz-transition: opacity .1s ease-out;
     -webkit-transition: opacity .1s ease-out;
-}
-.aExternal:visited {
+} */
+/* .aExternal:visited {
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-color: var(--ColorBlack);
-}
+} */
 .aExternalTextWhite {
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-color: var(--ColorWhiteText);
+}
+.aExternalTextBlack {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: var(--ColorBlackText);
 }
 
 /* #navTop .aExternalCursor,
@@ -356,7 +364,8 @@ a:visited {
     --block1: var(--contentContainerWidth);
 
     /* vvv has max value in media rwd */
-    --contentWidth: 90vw; 
+    /* 90vw */
+    --contentWidth: 92vw; 
     --block12_12: var(--contentWidth);
     --block1_12: calc(calc(var(--block12_12) - var(--gutter) * 11) / 12);
     --block2_12: calc(var(--block1_12) * 2 + var(--gutter) * 1);
@@ -668,7 +677,7 @@ a:visited {
 #navTop p,
 #footerBottom p {
     /* padding: 0 var(--pLineHeight) 0 0; */
-    padding: 0 calc(var(--pLineHeight) * 0.8) 0 0;
+    padding: 0 calc(var(--pLineHeight) * 0.6) 0 0;
 }
 #footerCopy {
     color: var(--ColorWhite);
