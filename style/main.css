@@ -14,9 +14,9 @@ body {
     /* 1.25, 20px 32px */
     --h3Size: calc(var(--pSize) * 1.25);
     --h3LineHeight: calc(var(--h3Size) * 32 / 20);
-    /* 40px 48px */
+    /* 40px 48px */ /* 40px 56px */
     --h2Size: calc(var(--pSize) * 2.5);
-    --h2LineHeight: calc(var(--h2Size) * 48 / 40);
+    --h2LineHeight: calc(var(--h2Size) * 56 / 40);
     /* 120px 128px */
     /* 56px 64px */
     --h1Size: calc(var(--pSize) * 3.5);
