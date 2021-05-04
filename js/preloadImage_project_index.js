@@ -1,8 +1,16 @@
 let count = 0;
+let cardNumber = 0;
+
 function preLoadImage (e) {
+    // tell how many cards
+    let cardNumberCount = document.querySelectorAll('.projectCard');
+    if (cardNumberCount.length > cardNumber) {
+        cardNumber = cardNumberCount.length;
+    }
+
     e.setAttribute('class', e.className + " imgLoaded");
     count += 1;
-    if (count === 11) {
+    if (count === cardNumber) {
         loadImage();
     }
 };

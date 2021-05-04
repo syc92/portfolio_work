@@ -30,43 +30,44 @@
 <body>
     <div id="contentContainer" class="contentBlockHLayoutStretchSevenly">
         
-        <nav id="navTop" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+        <nav id="navTop" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround">
             <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
-                <p><a class="aWhite aInternalNormal" href="index.html">Shih-Yu Chu</a></p>
-                <p>|</p>
-                <p><a class="aWhite aInternalNormal" href="about.html">Info</a></p>
-                <p><a class="aWhite aInternalNormal" href="random_work.html">Fun</a></p>
+                <div id="logo">
+                    <div class="vSpace28"></div>
+                    <a class="aBlack aInternalSelected" href="index.html"><img class="iconSize96" src="icon/logo.svg" alt=""></a>
+                </div>
             </div>
         </nav>
 
         <main id="mainContent" class="contentBlockWidth_1">
-            <section class="contentBlockWidth_1 contentBlockVLayoutCenterTop blackBackground whiteText">
+            <div class="vSpace28"></div>
+            <section class="contentBlockWidth_1 contentBlockVLayoutCenterTop">
                 <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
                     <div class="contentBlockWidth_3_12 contentBlockVLayoutLeftSbetween">
-                        <h1 class="h1Project pLight">Taipei Map</h1>
+                        <h1 class="h1Project pMedium">Taipei Map</h1>
                         <div class="contentBlockWidth_8_12 vSpace40"></div>
                         <div>
-                            <p class="pSub"><span class="whiteText">Period:</span> <span class="pLight">2015</span></p>
-                            <p class="pSub"><span class="whiteText">Expertise:</span> <span class="pLight">infographic, illustration</span></p>
-                            <p class="pSub"><span class="whiteText">Client:</span> <span class="pLight">Like It Formosa</span></p>
+                            <p class="pSub"><span class="blackText pMedium">Period:</span> <span class="blackText">2015</span></p>
+                            <p class="pSub"><span class="blackText pMedium">Expertise:</span> <span class="blackText">infographic, illustration</span></p>
+                            <p class="pSub"><span class="blackText pMedium">Client:</span> <span class="blackText">Like It Formosa</span></p>
                             <div class="vSpace56"></div>
                         </div>
                     </div>
 
                     <div class="contentBlockWidth_8_12 contentBlockHLayoutStretchSbetween">
                         <!-- A Tourist Map of Taipei City Designed for Foreign Travelers -->
-                        <h2 class="pLight">A Tourist Map Made for Foreign Tourists</h2>
+                        <h2 class="pMedium">A Tourist Map Made for Foreign Tourists</h2>
                         <div class="contentBlockWidth_8_12 vSpace40"></div>
                         <div class="contentBlockWidth_4_12">
-                            <h3 class="pLight">Goal</h3>
+                            <h3 class="pMedium">Goal</h3>
                             <div class="vSpace16"></div>
-                            <p class="pLight">Like It Formosa (LIF) is a tourist startup that helps foreign travelers to have a better experience in Taiwan’s major city, e.g. Taipei. LIF wanted to create a map for them to learn about Taiwanese culture and sightseeing information.</p>
+                            <p class="pRegular">Like It Formosa (LIF) is a tourist startup that helps foreign travelers to have a better experience in Taiwan’s major city, e.g. Taipei. LIF wanted to create a map for them to learn about Taiwanese culture and sightseeing information.</p>
                             <div class="vSpace56"></div>
                         </div>
                         <div class="contentBlockWidth_4_12">
-                            <h3 class="pLight">Outcome</h3>
+                            <h3 class="pMedium">Outcome</h3>
                             <div class="vSpace16"></div>
-                            <p class="pLight">Invited by Like It Formosa (LIF), we created and published this map in 2015. They gathered all the information, and I helped them present the information in a delightful and unique style that represented the vibe of Taipei City.</p>
+                            <p class="pRegular">Invited by Like It Formosa (LIF), we created and published this map in 2015. They gathered all the information, and I helped them present the information in a delightful and unique style that represented the vibe of Taipei City.</p>
                             <div class="vSpace56"></div>
                         </div>
                     </div>
@@ -191,21 +192,13 @@
                     </div>
                 </div>
 
-                <div class="contentBlockWidth_12_12 vSpace120"></div>
+                <div class="contentBlockWidth_12_12 vSpace80"></div>
             </section>
         </main>
 
         <footer id="footerBottom" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround whiteBackground">
             <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
                 <p id="footerCopyBlack">Copyright © 2021</p>
-                <p style="opacity: 0.5;">|</p>
-                <p><a class="aBlack aInternalNormal aExternalTextWhite" href="index.html">Home</a></p>
-                <p><a class="aBlack aInternalNormal aExternalTextWhite" href="about.html">Info</a></p>
-                <p><a class="aBlack aInternalNormal aExternalTextWhite" href="random_work.html">Fun</a></p>
-                <p style="opacity: 0.5;">|</p>
-                <p><a class="contentBlockHLayoutCenterScenter aBlack aInternalNormal" href="https://chuushiyu.cc/doc/Shihyu_Chu_Resume_2021.pdf" target="blank_"><img class="iconSize16" src="icon/cursor_arrow_topRight_black.svg" alt="">&nbsp &nbsp <span class="aExternalTextBlack">Resume</span></a></p>
-                <p><a class="contentBlockHLayoutCenterScenter aBlack aInternalNormal" href="mailto:sychuu@umich.edu" target="blank_"><img class="iconSize16" src="icon/cursor_arrow_topRight_black.svg" alt="">&nbsp &nbsp <span class="aExternalTextBlack">Email</span></a></p>
-                <p><a class="contentBlockHLayoutCenterScenter aBlack aInternalNormal" href="https://linkedin.com/in/shiyuchuu" target="blank_"><img class="iconSize16" src="icon/cursor_arrow_topRight_black.svg" alt="">&nbsp &nbsp <span class="aExternalTextBlack">LinkedIn</span></a></p>
             </div>
         </footer>
 
@@ -215,5 +208,6 @@
     <script src="js/video_play.js"></script>
     <script src="js/loading_icon.js"></script>
     <script src="js/video_onload.js"></script>
+    <script src="js/logo.js"></script>
 </body>
 </html>

@@ -30,34 +30,35 @@
 <body>
     <div id="contentContainer" class="contentBlockHLayoutStretchSevenly">
         
-        <nav id="navTop" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+        <nav id="navTop" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround">
             <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
-                <p><a class="aWhite aInternalNormal" href="index.html">Shih-Yu Chu</a></p>
-                <p>|</p>
-                <p><a class="aWhite aInternalNormal" href="about.html">Info</a></p>
-                <p><a class="aWhite aInternalNormal" href="random_work.html">Fun</a></p>
+                <div id="logo">
+                    <div class="vSpace28"></div>
+                    <a class="aBlack aInternalSelected" href="index.html"><img class="iconSize96" src="icon/logo.svg" alt=""></a>
+                </div>
             </div>
         </nav>
 
         <main id="mainContent" class="contentBlockWidth_1">
-            <section class="contentBlockWidth_1 contentBlockVLayoutCenterTop blackBackground whiteText">
+            <div class="vSpace28"></div>
+            <section class="contentBlockWidth_1 contentBlockVLayoutCenterTop">
                 <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
                     <div class="contentBlockWidth_4_12 contentBlockVLayoutLeftSbetween">
-                        <h1 class="h1Project pLight">CM Style Guide</h1>
+                        <h1 class="h1Project pMedium">CM Style Guide</h1>
                         <div class="contentBlockWidth_3_12 vSpace40"></div>
                         <div  class="contentBlockWidth_3_12">
-                            <p class="pSub"><span class="whiteText">Period:</span> <span class="pLight">2018 - 2019</span></p>
-                            <p class="pSub"><span class="whiteText">Expertise:</span> <span class="pLight">design system</span></p>
-                            <p class="pSub"><span class="whiteText">Team:</span> <span class="pLight">Vita Tseng (D), Yvon Huang (D), Pei-Yin Lin (D), Viki Huang (D), Shih-Yu Chu (D)</span></p>
+                            <p class="pSub"><span class="blackText pMedium">Period:</span> <span class="blackText">2018 - 2019</span></p>
+                            <p class="pSub"><span class="blackText pMedium">Expertise:</span> <span class="blackText">design system</span></p>
+                            <p class="pSub"><span class="blackText pMedium">Team:</span> <span class="blackText">Vita Tseng (D), Yvon Huang (D), Pei-Yin Lin (D), Viki Huang (D), Shih-Yu Chu (D)</span></p>
                             <div class="vSpace56"></div>
                         </div>
                     </div>
 
                     <div class="contentBlockWidth_8_12 contentBlockHLayoutStretchSbetween">
-                        <h2 class="pLight">Cross Products Design System</h2>
+                        <h2 class="pMedium">Cross Products Design System</h2>
                         <div class="contentBlockWidth_8_12 vSpace40"></div>
                         <div class="contentBlockWidth_8_12">
-                            <p class="pLight">During my time working as a product designer at Codementor (CM), the company has two major products: Codementor and CodementorX. Codementor is the software engineering mentorship platform, while CodementorX is a freelance platform for software engineers. Other than that, we also rolled out some side projects or sub products from time to time. Each of these products is handled by different designers. Therefore, this project aims to create a guideline for designers to follow, trying to maintain the consistency across products in sake of branding, but still allowing designers to create the unique design for each product based on this guideline.</p>
+                            <p class="pRegular">During my time working as a product designer at Codementor (CM), the company has two major products: Codementor and CodementorX. Codementor is the software engineering mentorship platform, while CodementorX is a freelance platform for software engineers. Other than that, we also rolled out some side projects or sub products from time to time. Each of these products is handled by different designers. Therefore, this project aims to create a guideline for designers to follow, trying to maintain the consistency across products in sake of branding, but still allowing designers to create the unique design for each product based on this guideline.</p>
                             <div class="vSpace56"></div>
                         </div>
                     </div>
@@ -266,21 +267,13 @@
                     </div>
                 </div>
 
-                <div class="vSpace120 contentBlockWidth_12_12"></div>
+                <div class="contentBlockWidth_12_12 vSpace80"></div>
             </section>
         </main>
 
         <footer id="footerBottom" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround whiteBackground">
             <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
                 <p id="footerCopyBlack">Copyright © 2021</p>
-                <p style="opacity: 0.5;">|</p>
-                <p><a class="aBlack aInternalNormal aExternalTextWhite" href="index.html">Home</a></p>
-                <p><a class="aBlack aInternalNormal aExternalTextWhite" href="about.html">Info</a></p>
-                <p><a class="aBlack aInternalNormal aExternalTextWhite" href="random_work.html">Fun</a></p>
-                <p style="opacity: 0.5;">|</p>
-                <p><a class="contentBlockHLayoutCenterScenter aBlack aInternalNormal" href="https://chuushiyu.cc/doc/Shihyu_Chu_Resume_2021.pdf" target="blank_"><img class="iconSize16" src="icon/cursor_arrow_topRight_black.svg" alt="">&nbsp &nbsp <span class="aExternalTextBlack">Resume</span></a></p>
-                <p><a class="contentBlockHLayoutCenterScenter aBlack aInternalNormal" href="mailto:sychuu@umich.edu" target="blank_"><img class="iconSize16" src="icon/cursor_arrow_topRight_black.svg" alt="">&nbsp &nbsp <span class="aExternalTextBlack">Email</span></a></p>
-                <p><a class="contentBlockHLayoutCenterScenter aBlack aInternalNormal" href="https://linkedin.com/in/shiyuchuu" target="blank_"><img class="iconSize16" src="icon/cursor_arrow_topRight_black.svg" alt="">&nbsp &nbsp <span class="aExternalTextBlack">LinkedIn</span></a></p>
             </div>
         </footer>
 
@@ -290,5 +283,6 @@
     <script src="js/video_play.js"></script>
     <script src="js/loading_icon.js"></script>
     <script src="js/video_onload.js"></script>
+    <script src="js/logo.js"></script>
 </body>
 </html>

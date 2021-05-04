@@ -30,34 +30,35 @@
 <body>
     <div id="contentContainer" class="contentBlockHLayoutStretchSevenly">
         
-        <nav id="navTop" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+        <nav id="navTop" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround">
             <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
-                <p><a class="aWhite aInternalNormal" href="index.html">Shih-Yu Chu</a></p>
-                <p>|</p>
-                <p><a class="aWhite aInternalNormal" href="about.html">Info</a></p>
-                <p><a class="aWhite aInternalNormal" href="random_work.html">Fun</a></p>
+                <div id="logo">
+                    <div class="vSpace28"></div>
+                    <a class="aBlack aInternalSelected" href="index.html"><img class="iconSize96" src="icon/logo.svg" alt=""></a>
+                </div>
             </div>
         </nav>
 
         <main id="mainContent" class="contentBlockWidth_1">
-            <section class="contentBlockWidth_1 contentBlockVLayoutCenterTop blackBackground whiteText">
+            <div class="vSpace28"></div>
+            <section class="contentBlockWidth_1 contentBlockVLayoutCenterTop">
                 <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
                     <div class="contentBlockWidth_4_12 contentBlockVLayoutLeftSbetween">
-                        <h1 class="h1Project pLight">Diary Study App</h1>
+                        <h1 class="h1Project pMedium">Diary Study App</h1>
                         <div class="contentBlockWidth_3_12 vSpace40"></div>
                         <div>
-                            <p class="pSub"><span class="whiteText">Period:</span> <span class="pLight">2020</span></p>
-                            <p class="pSub"><span class="whiteText">Expertise:</span> <span class="pLight">dev, React Native</span></p>
-                            <p class="pSub"><span class="whiteText">Team:</span> <span class="pLight">personal project</span></p>
+                            <p class="pSub"><span class="blackText pMedium">Period:</span> <span class="blackText">2020</span></p>
+                            <p class="pSub"><span class="blackText pMedium">Expertise:</span> <span class="blackText">dev, React Native</span></p>
+                            <p class="pSub"><span class="blackText pMedium">Team:</span> <span class="blackText">personal project</span></p>
                             <div class="vSpace56"></div>
                         </div>
                     </div>
 
                     <div class="contentBlockWidth_8_12 contentBlockHLayoutStretchSbetween">
-                        <h2 class="pLight">Making Diary Study More Efficient</h2>
+                        <h2 class="pMedium">Making Diary Study More Efficient</h2>
                         <div class="contentBlockWidth_8_12 vSpace40"></div>
                         <div class="contentBlockWidth_8_12">
-                            <p class="pLight">This project was for a mobile app development course. The main part of this project is developing a working mobile application, hence the design portion of it is not complete due to the limited time. In the following I will share how I come up with the project, how I design (roughly) and develop the app, and what is the next step of the project.</p>
+                            <p class="pRegular">This project was for a mobile app development course. The main part of this project is developing a working mobile application, hence the design portion of it is not complete due to the limited time. In the following I will share how I come up with the project, how I design (roughly) and develop the app, and what is the next step of the project.</p>
                             <div class="vSpace56"></div>
                         </div>
                     </div>
@@ -244,21 +245,13 @@
                     </div>
                 </div>
 
-                <div class="contentBlockWidth_12_12 vSpace120"></div>
+                <div class="contentBlockWidth_12_12 vSpace80"></div>
             </section>
         </main>
 
         <footer id="footerBottom" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround whiteBackground">
             <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
                 <p id="footerCopyBlack">Copyright © 2021</p>
-                <p style="opacity: 0.5;">|</p>
-                <p><a class="aBlack aInternalNormal aExternalTextWhite" href="index.html">Home</a></p>
-                <p><a class="aBlack aInternalNormal aExternalTextWhite" href="about.html">Info</a></p>
-                <p><a class="aBlack aInternalNormal aExternalTextWhite" href="random_work.html">Fun</a></p>
-                <p style="opacity: 0.5;">|</p>
-                <p><a class="contentBlockHLayoutCenterScenter aBlack aInternalNormal" href="https://chuushiyu.cc/doc/Shihyu_Chu_Resume_2021.pdf" target="blank_"><img class="iconSize16" src="icon/cursor_arrow_topRight_black.svg" alt="">&nbsp &nbsp <span class="aExternalTextBlack">Resume</span></a></p>
-                <p><a class="contentBlockHLayoutCenterScenter aBlack aInternalNormal" href="mailto:sychuu@umich.edu" target="blank_"><img class="iconSize16" src="icon/cursor_arrow_topRight_black.svg" alt="">&nbsp &nbsp <span class="aExternalTextBlack">Email</span></a></p>
-                <p><a class="contentBlockHLayoutCenterScenter aBlack aInternalNormal" href="https://linkedin.com/in/shiyuchuu" target="blank_"><img class="iconSize16" src="icon/cursor_arrow_topRight_black.svg" alt="">&nbsp &nbsp <span class="aExternalTextBlack">LinkedIn</span></a></p>
             </div>
         </footer>
 
@@ -268,5 +261,6 @@
     <script src="js/video_play.js"></script>
     <script src="js/loading_icon.js"></script>
     <script src="js/video_onload.js"></script>
+    <script src="js/logo.js"></script>
 </body>
 </html>

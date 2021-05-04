@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>icon_arrow_next</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon_arrow_next" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(1.000000, 1.000000)" fill="#000000" fill-rule="nonzero">
+            <path d="M18.5,7.88172798 C19.8254834,7.88172798 20.9100387,8.91326392 20.9946823,10.2173523 L21,10.381728 L21,19.381728 L18,19.381728 L18,10.881728 L9.5,10.881728 L9.5,7.88172798 L18.5,7.88172798 Z" id="Path" transform="translate(15.250000, 13.631728) rotate(-315.000000) translate(-15.250000, -13.631728) "></path>
+            <path d="M16.0294118,0 L16.0294118,3 L7.5,3 C5.01471863,3 3,5.01471863 3,7.5 C3,9.91427333 4.90123652,11.8844891 7.2881643,11.995102 L7.5,12 L20.5,12 L20.5,15 L7.5,15 C3.35786438,15 0,11.6421356 0,7.5 C0,3.43908272 3.22747441,0.131982483 7.25726894,0.00385356806 L7.5,0 L16.0294118,0 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>

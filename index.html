@@ -27,106 +27,111 @@
         gtag('config', 'UA-151944711-2');
     </script>
     <script src="js/preloadImage_project_index.js"></script>
+
+    <script src="js/preloadImage_common.js"></script>
 </head>
 <body>
     <div id="contentContainer" class="contentBlockHLayoutStretchSevenly">
         
-        <nav id="navTop" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+        <nav id="navTop" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround">
             <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
-                <p><a class="aWhite aInternalSelected" href="index.html">Shih-Yu Chu</a></p>
-                <p>|</p>
-                <!-- <p><a class="aWhite aInternalNormal" href="index.html">Work</a></p> -->
-                <p><a class="aWhite aInternalNormal" href="about.html">Info</a></p>
-                <p><a class="aWhite aInternalNormal" href="random_work.html">Fun</a></p>
+                <div id="logo">
+                    <div class="vSpace28"></div>
+                    <a class="aBlack aInternalSelected" href="index.html"><img class="iconSize96" src="icon/logo.svg" alt=""></a>
+                </div>
+                <!-- <p><a class="aBlack aInternalSelected" href="index.html">Shih-Yu Chu</a></p> -->
+                <!-- <p>|</p>
+                <p><a class="aBlack aInternalNormal" href="about.html">Info</a></p>
+                <p><a class="aBlack aInternalNormal" href="random_work.html">Fun</a></p> -->
             </div>
         </nav>
 
         <main id="mainContent" class="contentBlockWidth_1">
-            <section class="contentBlockWidth_1 contentBlockVLayoutCenterTop blackBackground whiteText">
+            <section class="contentBlockWidth_1 contentBlockVLayoutCenterTop">
                 <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
-                    <!-- <div class="contentBlockWidth_6_12">
-                        <h1 class="h1Project pLight">Shih-Yu Chu discover problems with empathy and solve the problems for users and business with crafted user experiences and products</h1>
+                    <div class="contentBlockWidth_12_12">
+                        <h1 class="pRegular pUppercase">Shih-Yu Chu</h1>
+                        <div class="vSpace28"></div>
+                        <div class="contentBlockWidth_6_12 contentBlockHLayoutStretchLeft info_item">
+                            <p class="pRegular"><a class="aBlack" href="about.html"><img class="iconSize16" src="icon/icon_arrow_next.svg" alt="">&nbsp <span class="aExternal">Info</span></a></p>
+                            <p class="pRegular"><a class="aBlack" href="https://chuushiyu.cc/doc/Shihyu_Chu_Resume_2021.pdf" target="blank_"><img class="iconSize16" src="icon/cursor_arrow_topRight_black.svg" alt="">&nbsp <span class="aExternal">Resume</span></a></p>
+                            <p class="pRegular"><a class="aBlack" href="mailto:sychuu@umich.edu" target="blank_"><img class="iconSize16" src="icon/cursor_arrow_topRight_black.svg" alt="">&nbsp <span class="aExternal">Email</span></a></p>
+                            <p class="pRegular"><a class="aBlack" href="https://linkedin.com/in/shiyuchuu" target="blank_"><img class="iconSize16" src="icon/cursor_arrow_topRight_black.svg" alt="">&nbsp <span class="aExternal">LinkedIn</span></a></p>
+                        </div>
+                        <div class="vSpace28"></div>
+                        <div class="contentBlockWidth_6_12">
+                            <p>A product designer with 4+ years of startups experience, a graphic design background, and front-end development knowledge</p>
+                        </div>
                     </div>
-                    <div class="contentBlockWidth_4_12">
-                    </div> -->
-                    <!-- <div class="contentBlockWidth_6_12">
-                        <h1 class="h1Project pLight">Hello! I'm Chu.</h1>
-                        <div class="vSpace40"></div>
-                        <h2 class="pLight">I discover problems with empathy and solve the problems for users and business with crafted user experiences and products</h2>
-                    </div>
-                    <div class="contentBlockWidth_6_12">
-                    </div> -->
-                    <div class="contentBlockWidth_4_12">
-                        <h1 class="h1Project pLight">Hi! I'm Chu.</h1>
-                    </div>
-                    <div class="contentBlockWidth_8_12">
-                        <h2 class="pLight">I discover problems with empathy and solve the problems for users and business with crafted user experiences and products</h2>
-                    </div>
-                    
                 </div>
                 <div class="vSpace120 contentBlockWidth_12_12"></div>
-                <div class="vSpace40 contentBlockWidth_12_12"></div>
+                <div class="vSpace120 contentBlockWidth_12_12"></div>
+                <!-- <div class="vSpace80 contentBlockWidth_12_12"></div> -->
             </section>
 
-            <section class="contentBlockWidth_1 contentBlockVLayoutCenterTop blackBackground whiteText">
+            <section class="contentBlockWidth_1 contentBlockVLayoutCenterTop">
 
                 <section id="product" class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
                     <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
-                        <!-- Product Design at Work -->
-                        <h3 class="pRegular">Product Design</h3>
+                        <h3 class="">Product Design</h3>
                         <div class="vSpace80"></div>
                     </div>
                     <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
                         <div class="contentBlockWidth_4_12">
-                            <a href="project_chime.html" class="contentBlockWidth_4_12 contentBlockVLayoutCenterTopReverse projectCard aWhite">
-                                <div class="contentBlockWidth_4_12">
+                            <a href="project_chime.html" class="contentBlockWidth_4_12 contentBlockVLayoutCenterTopReverse projectCard aBlack">
+                                <!-- <div class="contentBlockWidth_4_12">
                                     <div class="vSpace16"></div>
                                     <p><span class="pRegular">Chime</span></p>
                                     <p class="pSub pLight">product design</p>
-                                </div>
+                                </div> -->
                                 <div class="contentBlockWidth_4_12 contentBlockVLayoutCenterCenter projectThumbnail">
                                     <div class="contentBlockWidth_4_12 projectBlackFilter"></div>
                                     <div class="contentBlockVLayoutCenterCenter imgBufferingContainer">
                                         <img class="imgBeforeLoaded imgBuffering" onload="preLoadImage(this)" src="image/img_thumbnail/thumbnail_chime.png" alt="">
                                     </div>
+                                    <div class="contentBlockWidth_3_12 contentBlockVLayoutCenterCenter projectInfo">
+                                        <h3><span class="pMedium">Chime</span></h3>
+                                        <div class="vSpace16"></div>
+                                        <p class="pSub pRegular">A Self-Served Ordering System for Dining In during Post COVID Era</p>
+                                    </div>
                                 </div>
                             </a>
                             <div class="vSpace28"></div>
                         </div>
                         <div class="contentBlockWidth_4_12">
-                            <a href="project_cm_dash.html" class="contentBlockWidth_4_12 contentBlockVLayoutCenterTopReverse projectCard aWhite">
-                                <div class="contentBlockWidth_4_12">
-                                    <div class="vSpace16"></div>
-                                    <p><span class="pRegular">CodementorX</span></p>
-                                    <p class="pSub pLight">product design</p>
-                                </div>
+                            <a href="project_cm_dash.html" class="contentBlockWidth_4_12 contentBlockVLayoutCenterTopReverse projectCard aBlack">
                                 <div class="contentBlockWidth_4_12 contentBlockVLayoutCenterCenter projectThumbnail">
                                     <div class="contentBlockWidth_4_12 projectBlackFilter"></div>
                                     <div class="contentBlockVLayoutCenterCenter imgBufferingContainer">
                                         <img class="imgBeforeLoaded imgBuffering" onload="preLoadImage(this)" src="image/img_thumbnail/thumbnail_cm_dash.png" alt="">
                                     </div>
-                                </div>
-                            </a>
-                            <div class="vSpace28"></div>
-                        </div>
-                        <div class="contentBlockWidth_4_12">
-                            <a href="project_cm_guide.html" class="contentBlockWidth_4_12 contentBlockVLayoutCenterTopReverse projectCard aWhite">
-                                <div class="contentBlockWidth_4_12">
-                                    <div class="vSpace16"></div>
-                                    <p><span class="pRegular">CM Style Guide</span></p>
-                                    <p class="pSub pLight">design system</p>
-                                </div>
-                                <div class="contentBlockWidth_4_12 contentBlockVLayoutCenterCenter projectThumbnail">
-                                    <div class="contentBlockWidth_4_12 projectBlackFilter"></div>
-                                    <div class="contentBlockVLayoutCenterCenter imgBufferingContainer">
-                                        <img class="imgBeforeLoaded imgBuffering" onload="preLoadImage(this)" src="image/img_thumbnail/thumbnail_cm_guideline.png" alt="">
+                                    <div class="contentBlockWidth_3_12 contentBlockVLayoutCenterCenter projectInfo">
+                                        <h3><span class="pMedium">CodementorX</span></h3>
+                                        <div class="vSpace16"></div>
+                                        <p class="pSub pRegular">Freelance Software Developers Hiring Platform Redesign</p>
                                     </div>
                                 </div>
                             </a>
                             <div class="vSpace28"></div>
                         </div>
                         <div class="contentBlockWidth_4_12">
-                            <a href="project_talkie.html" class="contentBlockWidth_4_12 contentBlockVLayoutCenterTopReverse projectCard aWhite">
+                            <a href="project_fulcrum.html" class="contentBlockWidth_4_12 contentBlockVLayoutCenterTopReverse projectCard aBlack">
+                                <div class="contentBlockWidth_4_12 contentBlockVLayoutCenterCenter projectThumbnail">
+                                    <div class="contentBlockWidth_4_12 projectBlackFilter"></div>
+                                    <div class="contentBlockVLayoutCenterCenter imgBufferingContainer">
+                                        <img class="imgBeforeLoaded imgBuffering" onload="preLoadImage(this)" src="image/img_thumbnail/thumbnail_fulcrum.png" alt="">
+                                    </div>
+                                    <div class="contentBlockWidth_3_12 contentBlockVLayoutCenterCenter projectInfo">
+                                        <h3><span class="pMedium">Fulcrum</span></h3>
+                                        <div class="vSpace16"></div>
+                                        <p class="pSub pRegular">Help Users Understand the Access Levels and How to Get Access to a Resource in eBook Collections</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="vSpace28"></div>
+                        </div>
+                        <!-- <div class="contentBlockWidth_4_12">
+                            <a href="project_talkie.html" class="contentBlockWidth_4_12 contentBlockVLayoutCenterTopReverse projectCard aBlack">
                                 <div class="contentBlockWidth_4_12">
                                     <div class="vSpace16"></div>
                                     <p><span class="pRegular">Talkie</span></p>
@@ -140,23 +145,34 @@
                                 </div>
                             </a>
                             <div class="vSpace28"></div>
-                        </div>
+                        </div> -->
+                    </div>
+                    <div class="vSpace80 contentBlockWidth_12_12"></div>
+                </section>
+
+                <section id="design_system" class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
+                    <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
+                        <h3 class="">Design System</h3>
+                        <div class="vSpace80"></div>
+                    </div>
+                    <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
                         <div class="contentBlockWidth_4_12">
-                            <a href="project_fulcrum.html" class="contentBlockWidth_4_12 contentBlockVLayoutCenterTopReverse projectCard aWhite">
-                                <div class="contentBlockWidth_4_12">
-                                    <div class="vSpace16"></div>
-                                    <p><span class="pRegular">Fulcrum</span></p>
-                                    <p class="pSub pLight">product design</p>
-                                </div>
+                            <a href="project_cm_guide.html" class="contentBlockWidth_4_12 contentBlockVLayoutCenterTopReverse projectCard aBlack">
                                 <div class="contentBlockWidth_4_12 contentBlockVLayoutCenterCenter projectThumbnail">
                                     <div class="contentBlockWidth_4_12 projectBlackFilter"></div>
                                     <div class="contentBlockVLayoutCenterCenter imgBufferingContainer">
-                                        <img class="imgBeforeLoaded imgBuffering" onload="preLoadImage(this)" src="image/img_thumbnail/thumbnail_fulcrum.png" alt="">
+                                        <img class="imgBeforeLoaded imgBuffering" onload="preLoadImage(this)" src="image/img_thumbnail/thumbnail_cm_guideline.png" alt="">
+                                    </div>
+                                    <div class="contentBlockWidth_3_12 contentBlockVLayoutCenterCenter projectInfo">
+                                        <h3><span class="pMedium">CM Style Guide</span></h3>
+                                        <div class="vSpace16"></div>
+                                        <p class="pSub pRegular">Cross Products Design System</p>
                                     </div>
                                 </div>
                             </a>
                             <div class="vSpace28"></div>
                         </div>
+                        <div class="contentBlockWidth_4_12 contentBlockVLayoutCenterTopReverse"></div>
                         <div class="contentBlockWidth_4_12 contentBlockVLayoutCenterTopReverse"></div>
                     </div>
                     <div class="vSpace80 contentBlockWidth_12_12"></div>
@@ -164,45 +180,45 @@
 
                 <section id="coding" class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
                     <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
-                        <!-- Personal Projects -->
-                        <h3 class="pRegular">Development / Data Analysis</h3>
+                        <h3 class="">Development</h3>
                         <div class="vSpace80"></div>
                     </div>
                     <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
                         <div class="contentBlockWidth_4_12">
-                            <a href="project_diary.html" class="contentBlockWidth_4_12 contentBlockVLayoutCenterTopReverse projectCard aWhite">
-                                <div class="contentBlockWidth_4_12">
-                                    <div class="vSpace16"></div>
-                                    <p><span class="pRegular">Diary Study App</span></p>
-                                    <p class="pSub pLight">dev, react native</p>
-                                </div>
+                            <a href="project_diary.html" class="contentBlockWidth_4_12 contentBlockVLayoutCenterTopReverse projectCard aBlack">
                                 <div class="contentBlockWidth_4_12 contentBlockVLayoutCenterCenter projectThumbnail">
                                     <div class="contentBlockWidth_4_12 projectBlackFilter"></div>
                                     <div class="contentBlockVLayoutCenterCenter imgBufferingContainer">
                                         <img class="imgBeforeLoaded imgBuffering" onload="preLoadImage(this)" src="image/img_thumbnail/thumbnail_diary_study_app.png" alt="">
                                     </div>
-                                </div>
-                            </a>
-                            <div class="vSpace28"></div>
-                        </div>
-                        <div class="contentBlockWidth_4_12">
-                            <a href="project_virtual_garden.html" class="contentBlockWidth_4_12 contentBlockVLayoutCenterTopReverse projectCard aWhite">
-                                <div class="contentBlockWidth_4_12">
-                                    <div class="vSpace16"></div>
-                                    <p><span class="pRegular">AR Gardening</span></p>
-                                    <p class="pSub pLight">dev, AR, unity, C#</p>
-                                </div>
-                                <div class="contentBlockWidth_4_12 contentBlockVLayoutCenterCenter projectThumbnail">
-                                    <div class="contentBlockWidth_4_12 projectBlackFilter"></div>
-                                    <div class="contentBlockVLayoutCenterCenter imgBufferingContainer">
-                                        <img class="imgBeforeLoaded imgBuffering" onload="preLoadImage(this)" src="image/img_thumbnail/thumbnail_virtual_garden.png" alt="">
+                                    <div class="contentBlockWidth_3_12 contentBlockVLayoutCenterCenter projectInfo">
+                                        <h3><span class="pMedium">Diary Study App</span></h3>
+                                        <div class="vSpace16"></div>
+                                        <p class="pSub pRegular">Making Diary Study More Efficient</p>
                                     </div>
                                 </div>
                             </a>
                             <div class="vSpace28"></div>
                         </div>
                         <div class="contentBlockWidth_4_12">
-                            <a href="project_data_clickstream.html" class="contentBlockWidth_4_12 contentBlockVLayoutCenterTopReverse projectCard aWhite">
+                            <a href="project_virtual_garden.html" class="contentBlockWidth_4_12 contentBlockVLayoutCenterTopReverse projectCard aBlack">
+                                <div class="contentBlockWidth_4_12 contentBlockVLayoutCenterCenter projectThumbnail">
+                                    <div class="contentBlockWidth_4_12 projectBlackFilter"></div>
+                                    <div class="contentBlockVLayoutCenterCenter imgBufferingContainer">
+                                        <img class="imgBeforeLoaded imgBuffering" onload="preLoadImage(this)" src="image/img_thumbnail/thumbnail_virtual_garden.png" alt="">
+                                    </div>
+                                    <div class="contentBlockWidth_3_12 contentBlockVLayoutCenterCenter projectInfo">
+                                        <h3><span class="pMedium">AR Gardening</span></h3>
+                                        <div class="vSpace16"></div>
+                                        <p class="pSub pRegular">Developing an AR Gardening App</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="vSpace28"></div>
+                        </div>
+                        <div class="contentBlockWidth_4_12"></div>
+                        <!-- <div class="contentBlockWidth_4_12">
+                            <a href="project_data_clickstream.html" class="contentBlockWidth_4_12 contentBlockVLayoutCenterTopReverse projectCard aBlack">
                                 <div class="contentBlockWidth_4_12">
                                     <div class="vSpace16"></div>
                                     <p><span class="pRegular">User Clustering</span></p>
@@ -216,83 +232,143 @@
                                 </div>
                             </a>
                             <div class="vSpace28"></div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="vSpace80 contentBlockWidth_12_12"></div>
                 </section>
 
                 <section id="visual" class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
                     <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
-                        <h3 class="pRegular">Graphic Design</h3>
+                        <h3 class="">Graphic Design</h3>
                         <div class="vSpace80"></div>
                     </div>
                     <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
                         <div class="contentBlockWidth_4_12">
-                            <a href="project_taipei_map.html" class="contentBlockWidth_4_12 contentBlockVLayoutCenterTopReverse projectCard aWhite">
-                                <div class="contentBlockWidth_4_12">
-                                    <div class="vSpace16"></div>
-                                    <p><span class="pRegular">Taipei Map</span></p>
-                                    <p class="pSub pLight">infographic, illustration</p>
-                                </div>
+                            <a href="project_taipei_map.html" class="contentBlockWidth_4_12 contentBlockVLayoutCenterTopReverse projectCard aBlack">
                                 <div class="contentBlockWidth_4_12 contentBlockVLayoutCenterCenter projectThumbnail">
                                     <div class="contentBlockWidth_4_12 projectBlackFilter"></div>
                                     <div class="contentBlockVLayoutCenterCenter imgBufferingContainer">
                                         <img class="imgBeforeLoaded imgBuffering" onload="preLoadImage(this)" src="image/img_thumbnail/thumbnail_taipei_map.png" alt="">
                                     </div>
-                                </div>
-                            </a>
-                            <div class="vSpace28"></div>
-                        </div>
-                        <div class="contentBlockWidth_4_12">
-                            <a href="project_banana_flour.html" class="contentBlockWidth_4_12 contentBlockVLayoutCenterTopReverse projectCard aWhite">
-                                <div class="contentBlockWidth_4_12">
-                                    <div class="vSpace16"></div>
-                                    <p><span class="pRegular">Banana Flour</span></p>
-                                    <p class="pSub pLight">package design</p>
-                                </div>
-                                <div class="contentBlockWidth_4_12 contentBlockVLayoutCenterCenter projectThumbnail">
-                                    <div class="contentBlockWidth_4_12 projectBlackFilter"></div>
-                                    <div class="contentBlockVLayoutCenterCenter imgBufferingContainer">
-                                        <img class="imgBeforeLoaded imgBuffering" onload="preLoadImage(this)" src="image/img_thumbnail/thumbnail_collection_print.png" alt="">
+                                    <div class="contentBlockWidth_3_12 contentBlockVLayoutCenterCenter projectInfo">
+                                        <h3><span class="pMedium">Taipei Map</span></h3>
+                                        <div class="vSpace16"></div>
+                                        <p class="pSub pRegular">A Tourist Map Made for Foreign Tourists</p>
                                     </div>
                                 </div>
                             </a>
                             <div class="vSpace28"></div>
                         </div>
                         <div class="contentBlockWidth_4_12">
-                            <a href="project_logo.html" class="contentBlockWidth_4_12 contentBlockVLayoutCenterTopReverse projectCard aWhite">
-                                <div class="contentBlockWidth_4_12">
-                                    <div class="vSpace16"></div>
-                                    <p><span class="pRegular">Logotype + VI</span></p>
-                                    <p class="pSub pLight">logotype, visual identity</p>
+                            <a href="project_banana_flour.html" class="contentBlockWidth_4_12 contentBlockVLayoutCenterTopReverse projectCard aBlack">
+                                <div class="contentBlockWidth_4_12 contentBlockVLayoutCenterCenter projectThumbnail">
+                                    <div class="contentBlockWidth_4_12 projectBlackFilter"></div>
+                                    <div class="contentBlockVLayoutCenterCenter imgBufferingContainer">
+                                        <img class="imgBeforeLoaded imgBuffering" onload="preLoadImage(this)" src="image/img_thumbnail/thumbnail_collection_print.png" alt="">
+                                    </div>
+                                    <div class="contentBlockWidth_3_12 contentBlockVLayoutCenterCenter projectInfo">
+                                        <h3><span class="pMedium">Banana Flour</span></h3>
+                                        <div class="vSpace16"></div>
+                                        <p class="pSub pRegular">Package Design for Sun Seed Vitalics Banana Flour</p>
+                                    </div>
                                 </div>
+                            </a>
+                            <div class="vSpace28"></div>
+                        </div>
+                        <div class="contentBlockWidth_4_12">
+                            <a href="project_logo.html" class="contentBlockWidth_4_12 contentBlockVLayoutCenterTopReverse projectCard aBlack">
                                 <div class="contentBlockWidth_4_12 contentBlockVLayoutCenterCenter projectThumbnail">
                                     <div class="contentBlockWidth_4_12 projectBlackFilter"></div>
                                     <div class="contentBlockVLayoutCenterCenter imgBufferingContainer">
                                         <img class="imgBeforeLoaded imgBuffering" onload="preLoadImage(this)" src="image/img_thumbnail/thumbnail_collection_logo.png" alt="">
+                                    </div>
+                                    <div class="contentBlockWidth_3_12 contentBlockVLayoutCenterCenter projectInfo">
+                                        <h3><span class="pMedium">Logotype + VI</span></h3>
+                                        <div class="vSpace16"></div>
+                                        <p class="pSub pRegular">Logotype + Visual Identiy Design Collection from 2015 to 2017</p>
                                     </div>
                                 </div>
                             </a>
                             <div class="vSpace28"></div>
                         </div>
                     </div>
-                    <div class="vSpace120 contentBlockWidth_12_12"></div>
+                    <div class="vSpace80 contentBlockWidth_12_12"></div>
+                </section>
+
+                <section id="visual_gallery" class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
+                    <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchSbetween">
+                        <h3 class="">Visual Design Gallery</h3>
+                        <div class="vSpace80"></div>
+                    </div>
+                    <div class="contentBlockWidth_12_12 contentBlockHLayoutTopSbetween">
+                        <!-- <figure class="contentBlockWidth_3_12 imgBufferingContainer">
+                            <div class="vSpace40"></div>
+                            <video class="imageWidthInsideContainer imgBeforeLoaded imgBuffering" autoplay muted loop>
+                                <source src="image/img_random/switch.mov" type="video/mp4"/>
+                            </video>
+                        </figure> -->
+                        <figure class="contentBlockWidth_3_12_no_gutter contentBlockHLayoutStretchCenter imgBufferingContainer">
+                            <img onload="preLoadImage(this)" class="imageWidthInsideContainer imgBeforeLoaded imgBuffering" src="image/img_random/shoes.png" alt="">
+                        </figure>
+                        <figure class="contentBlockWidth_3_12_no_gutter contentBlockHLayoutStretchCenter imgBufferingContainer">
+                            <img onload="preLoadImage(this)" class="imageWidthInsideContainer imgBeforeLoaded imgBuffering" src="image/img_random/bitchy_annie_2-01.png" alt="">
+                        </figure>
+                        <figure class="contentBlockWidth_6_12_no_gutter contentBlockHLayoutStretchCenter imgBufferingContainer">
+                            <img onload="preLoadImage(this)" class="imageWidthInsideContainer imgBeforeLoaded imgBuffering" src="image/img_random/intro_3_cmyk.jpg" alt="">
+                        </figure>
+                        <figure class="contentBlockWidth_6_12_no_gutter contentBlockHeight_3_12_no_gutter contentBlockHLayoutCenterCenter imgBufferingContainer overflowHidden">
+                            <video class="imageWidthInsideContainer imgBeforeLoaded imgBuffering" autoplay muted loop style="position: absolute;">
+                                <source src="image/img_random/Comp 1_1.mp4" type="video/mp4"/>
+                            </video>
+                        </figure>
+                        <figure class="contentBlockWidth_6_12_no_gutter contentBlockHeight_3_12_no_gutter contentBlockHLayoutCenterCenter imgBufferingContainer overflowHidden">
+                            <video class="imageWidthInsideContainer imgBeforeLoaded imgBuffering" autoplay muted loop style="position: absolute;">
+                                <source src="image/img_random/sphere.mov" type="video/mp4"/>
+                            </video>
+                        </figure>
+                        <figure class="contentBlockWidth_3_12_no_gutter contentBlockHLayoutStretchCenter imgBufferingContainer">
+                            <img onload="preLoadImage(this)" class="imageWidthInsideContainer imgBeforeLoaded imgBuffering" src="image/img_random/01_login.png" alt="">
+                        </figure>
+                        <figure class="contentBlockWidth_3_12_no_gutter contentBlockHLayoutStretchCenter imgBufferingContainer">
+                            <img onload="preLoadImage(this)" class="imageWidthInsideContainer imgBeforeLoaded imgBuffering" src="image/img_random/02_check_out.png" alt="">
+                        </figure>
+                        <figure class="contentBlockWidth_3_12_no_gutter contentBlockHLayoutStretchCenter imgBufferingContainer">
+                            <img onload="preLoadImage(this)" class="imageWidthInsideContainer imgBeforeLoaded imgBuffering" src="image/img_random/10_share.png" alt="">
+                        </figure>
+                        <figure class="contentBlockWidth_3_12_no_gutter contentBlockHLayoutStretchCenter imgBufferingContainer">
+                            <img onload="preLoadImage(this)" class="imageWidthInsideContainer imgBeforeLoaded imgBuffering" src="image/img_random/13_message.png" alt="">
+                        </figure>
+                        <figure class="contentBlockWidth_3_12_no_gutter contentBlockHLayoutStretchCenter imgBufferingContainer">
+                            <img onload="preLoadImage(this)" class="imageWidthInsideContainer imgBeforeLoaded imgBuffering" src="image/img_random/06_map.png" alt="">
+                        </figure>
+                        <figure class="contentBlockWidth_3_12_no_gutter contentBlockHLayoutStretchCenter imgBufferingContainer">
+                            <img onload="preLoadImage(this)" class="imageWidthInsideContainer imgBeforeLoaded imgBuffering" src="image/img_random/07_filter.png" alt="">
+                        </figure>
+                        <figure class="contentBlockWidth_3_12_no_gutter contentBlockHLayoutStretchCenter imgBufferingContainer">
+                            <img onload="preLoadImage(this)" class="imageWidthInsideContainer imgBeforeLoaded imgBuffering" src="image/img_random/09_music_player.png" alt="">
+                        </figure>
+                        <figure class="contentBlockWidth_3_12_no_gutter contentBlockHLayoutStretchCenter imgBufferingContainer">
+                            <img onload="preLoadImage(this)" class="imageWidthInsideContainer imgBeforeLoaded imgBuffering" src="image/img_random/04_caculator.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="vSpace80 contentBlockWidth_12_12"></div>
                 </section>
             </section>
         </main>
 
-        <footer id="footerBottom" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround blackBackground whiteText">
+        <footer id="footerBottom" class="contentBlockWidth_1 contentBlockHLayoutCenterSaround">
+            <!-- blackBackground whiteText -->
             <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
                 <!-- <p class="pUppercase pSlab"><a class="aWhite" href="index.html">Shih-Yu Chu</a></p> -->
                 <p class="pLight" id="footerCopy">Copyright © 2021</p>
+                <!-- <p>|</p>
+                <p class="pLight"><a class="aBlack aInternalNormal aExternalTextWhite" href="index.html">Home</a></p>
+                <p class="pLight"><a class="aBlack aInternalNormal aExternalTextWhite" href="about.html">Info</a></p>
+                <p class="pLight"><a class="aBlack aInternalNormal aExternalTextWhite" href="random_work.html">Fun</a></p>
                 <p>|</p>
-                <p class="pLight"><a class="aWhite aInternalNormal aExternalTextWhite" href="index.html">Home</a></p>
-                <p class="pLight"><a class="aWhite aInternalNormal aExternalTextWhite" href="about.html">Info</a></p>
-                <p class="pLight"><a class="aWhite aInternalNormal aExternalTextWhite" href="random_work.html">Fun</a></p>
-                <p>|</p>
-                <p class="pLight"><a class="contentBlockHLayoutCenterScenter aWhite aInternalNormal" href="https://chuushiyu.cc/doc/Shihyu_Chu_Resume_2021.pdf" target="blank_"><img class="iconSize16" src="icon/cursor_arrow_topRight_white.svg" alt="">&nbsp &nbsp <span class="aExternalTextWhite">Resume</span></a></p>
-                <p class="pLight"><a class="contentBlockHLayoutCenterScenter aWhite aInternalNormal" href="mailto:sychuu@umich.edu" target="blank_"><img class="iconSize16" src="icon/cursor_arrow_topRight_white.svg" alt="">&nbsp &nbsp <span class="aExternalTextWhite">Email</span></a></p>
-                <p class="pLight"><a class="contentBlockHLayoutCenterScenter aWhite aInternalNormal" href="https://linkedin.com/in/shiyuchuu" target="blank_"><img class="iconSize16" src="icon/cursor_arrow_topRight_white.svg" alt="">&nbsp &nbsp <span class="aExternalTextWhite">LinkedIn</span></a></p>
+                <p class="pLight"><a class="contentBlockHLayoutCenterCenter aBlack aInternalNormal" href="https://chuushiyu.cc/doc/Shihyu_Chu_Resume_2021.pdf" target="blank_"><img class="iconSize16" src="icon/cursor_arrow_topRight_black.svg" alt="">&nbsp &nbsp <span class="aExternalTextWhite">Resume</span></a></p>
+                <p class="pLight"><a class="contentBlockHLayoutCenterCenter aBlack aInternalNormal" href="mailto:sychuu@umich.edu" target="blank_"><img class="iconSize16" src="icon/cursor_arrow_topRight_black.svg" alt="">&nbsp &nbsp <span class="aExternalTextWhite">Email</span></a></p>
+                <p class="pLight"><a class="contentBlockHLayoutCenterCenter aBlack aInternalNormal" href="https://linkedin.com/in/shiyuchuu" target="blank_"><img class="iconSize16" src="icon/cursor_arrow_topRight_black.svg" alt="">&nbsp &nbsp <span class="aExternalTextWhite">LinkedIn</span></a></p> -->
             </div>
             <!-- <div class="contentBlockWidth_12_12 contentBlockHLayoutStretchLeft">
                 <p><a class="aWhite aInternalNormal" href="about.html">Infooooo</a></p>
@@ -303,7 +379,30 @@
     </div>
 
     <script>
-        let cards = document.querySelectorAll('#product a, #coding a, #visual a');
+        // hover style
+        // let cards = document.querySelectorAll('#product a, #coding a, #visual a, #design_system a');
+        // cards.forEach((c)=>{
+        //     c.setAttribute('onmouseover', 'cardMouseOverEffect(this)');
+        //     c.setAttribute('onmouseout', 'cardMouseOutEffect(this)');
+        //     c.setAttribute('onmouseup', 'cardMouseOutEffect(this)');
+        // })
+        // function cardMouseOverEffect (c) {
+        //     let projectBlackFilter = c.querySelectorAll('.projectBlackFilter');
+        //     projectBlackFilter.forEach((e)=>{
+        //         e.style.opacity = 0.8;
+        //     })
+        //     let text = c.querySelector('div:nth-child(1) p:nth-child(2)');
+        //     text.setAttribute('style', 'color: white');
+        // }
+        // function cardMouseOutEffect (c) {
+        //     let projectBlackFilter = c.querySelectorAll('.projectBlackFilter');
+        //     projectBlackFilter.forEach((e)=>{
+        //         e.style.opacity = 0;
+        //     })
+        //     let text = c.querySelector('div:nth-child(1) p:nth-child(2)');
+        //     text.setAttribute('style', 'color: #999');
+        // }
+        let cards = document.querySelectorAll('#product a, #coding a, #visual a, #design_system a');
         cards.forEach((c)=>{
             c.setAttribute('onmouseover', 'cardMouseOverEffect(this)');
             c.setAttribute('onmouseout', 'cardMouseOutEffect(this)');
@@ -312,22 +411,22 @@
         function cardMouseOverEffect (c) {
             let projectBlackFilter = c.querySelectorAll('.projectBlackFilter');
             projectBlackFilter.forEach((e)=>{
-                e.style.opacity = 0.8;
+                e.style.opacity = 0.95;
             })
-            let text = c.querySelector('div:nth-child(1) p:nth-child(2)');
-            console.log(text)
-            text.setAttribute('style', 'color: white');
+            let text = c.querySelector('.projectInfo');
+            text.setAttribute('style', 'opacity: 1');
         }
         function cardMouseOutEffect (c) {
             let projectBlackFilter = c.querySelectorAll('.projectBlackFilter');
             projectBlackFilter.forEach((e)=>{
                 e.style.opacity = 0;
             })
-            let text = c.querySelector('div:nth-child(1) p:nth-child(2)');
-            console.log(text)
-            text.setAttribute('style', 'color: #999');
+            let text = c.querySelector('.projectInfo');
+            text.setAttribute('style', 'opacity: 0');
         }
     </script>
     <script src="js/loading_icon.js"></script>
+    <script src="js/video_onload.js"></script>
+    <script src="js/logo.js"></script>
 </body>
 </html>
