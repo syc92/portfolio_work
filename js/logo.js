@@ -1,24 +1,33 @@
 let logo = document.querySelector('#logo img');
 const logoClassName = logo.className;
-const logoAnimeSec = 2000;
-let animeOngoing = false;
+const logoAnimeSec = 1000;
+let rotateOngoing = false;
+
+// rotation animation
 let resetAnimeWhenDone = ()=> {
     setTimeout(() => {
         logo.setAttribute('class', logoClassName);
-        animeOngoing = false;
+        rotateOngoing = false;
     }, logoAnimeSec);
 }
 document.addEventListener("DOMContentLoaded", function() {
-    if (animeOngoing===false) {
-        animeOngoing = true;
+    if (rotateOngoing===false) {
+        rotateOngoing = true;
         logo.setAttribute('class', logoClassName + ' logoAnimation');
         resetAnimeWhenDone();
     }
 });
+
+// hover
 logo.addEventListener('mouseover', function(){
-    if (animeOngoing===false) {
-        animeOngoing = true;
-        logo.setAttribute('class', logoClassName + ' logoAnimation');
-        resetAnimeWhenDone();
+    if (rotateOngoing===false) {
+        logo.setAttribute('class', logoClassName + ' logoMouseover');
+        console.log(logo)
+    }
+})
+logo.addEventListener('mouseleave', function(){
+    if (rotateOngoing===false) {
+        logo.setAttribute('class', logoClassName + ' logoMouseleave');
+        console.log(logo)
     }
 })
