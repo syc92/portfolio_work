@@ -975,6 +975,16 @@ a:visited {
         top: 17.7%;
         left: calc(50% - calc(var(--virtual_garden1_video_width) / 2));
     }
+.interactionSection {
+    position: relative;
+}
+    .interactionText {
+        position: absolute;
+        bottom: 15%;
+        z-index: 100;
+    }
+
+
 
 /* cm guide */
 .video_play_container {
