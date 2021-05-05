@@ -999,10 +999,10 @@ a:visited {
     position: relative;
 }
     .diary_demo_video {
-        width: 32%;
+        width: 32.5%;
         position: absolute;
-        left: calc(50% - 16%);
-        top: calc(21%);
+        left: calc(50% - 16.2%);
+        top: calc(18%);
     }
 
 /* random */
