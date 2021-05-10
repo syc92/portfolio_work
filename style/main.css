@@ -21,7 +21,7 @@ body {
     /* 56px 64px */
     /* --h1Size: calc(var(--pSize) * 3.5);
     --h1LineHeight: calc(var(--h1Size) * 64 / 56); */
-    --h1Size: calc(var(--pSize) * 10);
+    --h1Size: calc(var(--pSize) * 5);
     --h1LineHeight: calc(var(--h1Size) * 64 / 56);
 
     --gutter: calc(var(--pLineHeight) * 1.5);
