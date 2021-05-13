@@ -37,8 +37,8 @@ body {
     /* project color: */
     --ColorCmxDash: #4495B6;
     /* --ColorCmxDash: #1A80AC; */
-    --ColorChime: #EDE2D1;
-    /* --ColorChime2: #44916B; */
+    --ColorChime: #DCE1DE;
+    --ColorChime2: #c4d0c9;
     --ColorCmGuide: #fff;
     /* --ColorFulcrum: #e36f4c; */
     --ColorFulcrum: #EDE2D1;
@@ -1021,17 +1021,17 @@ a:visited {
 }
 
 /* chime */
-.greenBackContainer {
-    position: relative;
+.chimeBackgroundGradient {
+    background-image: linear-gradient(to bottom right, var(--ColorChime), var(--ColorChime2));;
 }
-    .greenBack {
+    /* .greenBack {
         height: 48vw;
         background-color: var(--ColorChime2);
         position: absolute;
         left: 0;
         top: 0;
         z-index: 0;
-    }
+    } */
 
 
 
