@@ -36,6 +36,7 @@ body {
     --ColorGrayBackground: #f2f2f2;
     /* project color: */
     --ColorCmxDash: #4495B6;
+    --ColorCmxDash2: #3A3B3E;
     /* --ColorCmxDash: #1A80AC; */
     --ColorChime: #DCE1DE;
     --ColorChime2: #c4d0c9;
@@ -299,6 +300,9 @@ a:visited {
 }
 .cmDashBackground {
     background-color: var(--ColorCmxDash);
+}
+.cmDashBackground2 {
+    background-color: var(--ColorCmxDash2);
 }
 .gardenBackground {
     background-color: var(--ColorGarden);
