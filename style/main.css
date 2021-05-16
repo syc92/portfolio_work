@@ -226,7 +226,7 @@ a:visited {
 }
 .aExternal {
     /* opacity: 1; */
-    text-decoration: none;
+    text-decoration: underline;
 
     transition: opacity .1s ease-out;
     -o-transition: opacity .1s ease-out;
@@ -236,7 +236,7 @@ a:visited {
 }
 .aExternal:hover {
     /* opacity: 0.5; */
-    text-decoration: underline;
+    text-decoration: none;
     
     transition: opacity .1s ease-out;
     -o-transition: opacity .1s ease-out;
